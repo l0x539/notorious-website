@@ -1,4 +1,23 @@
+# Notorious Pirates website
+
+This is the official website for Notorious Pirates NFTs game.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Technologies used
+
+* [https://reactjs.org/](ReactJS).
+* [https://nextjs.org/](NextJS).
+
+## Site Design
+
+We use Figma design to build and update the website:
+
+* [https://www.figma.com/file/FMx29zUxHbEPzJYtzynhQB/Notorious-Pirates](Figma Design).
+
+## Note
+
+Please note that only the developers that have access to this repository are allowed to have access to the code and codebase.
 
 ## Getting Started
 
