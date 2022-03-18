@@ -6,19 +6,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Technologies used
 
-* [https://reactjs.org/](ReactJS).
-* [https://nextjs.org/](NextJS).
+* [ReactJS](https://reactjs.org/).
+* [NextJS](https://nextjs.org/).
 
 ## Site Design
 
 We use Figma design to build and update the website:
 
-* [https://www.figma.com/file/FMx29zUxHbEPzJYtzynhQB/Notorious-Pirates](Figma Design).
+* [Figma Design](https://www.figma.com/file/FMx29zUxHbEPzJYtzynhQB/Notorious-Pirates).
 
 ## Files Structure
 
 * The files structure for the project:
 
+```
     .
     ├── components
     │   ├── atoms               # Holds atom components (ex: button, text, input, divider, banner, badge ...etc)
@@ -31,7 +32,7 @@ We use Figma design to build and update the website:
     │   └── api                 # Unit tests
     ├── public                   # Test files (alternatively `spec` or `tests`)
     └── ...
-
+```
 ## Note
 
 Please note that only the developers that have access to this repository are allowed to have access to the code and codebase.
@@ -62,9 +63,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
