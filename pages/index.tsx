@@ -3,6 +3,7 @@ import Head from 'next/head';
 import PublicPage from '../components/layout/PublicPage';
 import Main from '../components/templates/Main';
 // import styles from '../styles/Home.module.scss'
+/* eslint linebreak-style: ["error", "windows"]*/
 
 const Home: NextPage = () => {
   return (
