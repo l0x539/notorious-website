@@ -15,6 +15,23 @@ We use Figma design to build and update the website:
 
 * [https://www.figma.com/file/FMx29zUxHbEPzJYtzynhQB/Notorious-Pirates](Figma Design).
 
+## Files Structure
+
+* The files structure for the project:
+
+    .
+    ├── components
+    │   ├── atoms               # Holds atom components (ex: button, text, input, divider, banner, badge ...etc)
+    │   ├── layout              # This the pages layout for different layout (ex: public page, loggedin ...etc)
+    │   ├── molecules           # Holds a group of atom components to be used in a frame (ex: Card, Carousel, Banner ...etc)
+    │   ├── organisms           # Holds a group of molecules components to be used in pages and templates (ex: Header, Footer, MainNews ...etc)
+    │   └── templates           # Holds the molecules to be used in a page but without a populated layout (ex: MainPage, Article Page)
+    ├── pages                   # All the website pages (this a special next js folder), check [NextJS pages](https://nextjs.org/docs/basic-features/pages)
+    │   ├── ...                 # This a file for a page route, holds a template and should be wrapped in the according layout.
+    │   └── api                 # Unit tests
+    ├── public                   # Test files (alternatively `spec` or `tests`)
+    └── ...
+
 ## Note
 
 Please note that only the developers that have access to this repository are allowed to have access to the code and codebase.
