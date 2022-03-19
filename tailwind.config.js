@@ -7,7 +7,11 @@ module.exports = {
     './layout/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        nav: 'url(\'../components/atoms/assets/bg-image.PNG\')',
+      }),
+    },
   },
   plugins: [],
 };

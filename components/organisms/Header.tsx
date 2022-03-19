@@ -10,8 +10,8 @@ import HeaderLink from '../atoms/HeaderLink';
 const Header = () => {
   return (
     <header>
-      <div className="container mx-auto">
-        <nav className='flex items-center flex-wrap p-3 bg-black'>
+      <div className="container mx-auto bg-nav bg-cover">
+        <nav className='flex items-center flex-wrap p-3'>
           <Link href='/'>
             <a className='inline-flex items-center p-2 mr-2 ml-40 '>
               <Image src={logo} height={65} width={65} />
