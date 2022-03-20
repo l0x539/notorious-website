@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        nav: 'url(\'../components/atoms/assets/bg-image.PNG\')',
+        nav: 'url(\'../components/assets/images/bg-image.PNG\')',
       }),
     },
   },
