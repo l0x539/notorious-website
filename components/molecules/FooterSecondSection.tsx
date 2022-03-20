@@ -1,9 +1,9 @@
 import FooterLink from '../atoms/FooterLink';
 
 
-const FooterPart2 =()=>{
+const FooterPartTwo =()=>{
   return (
-    <div className='text-yellow-300 text-lg justify-self-center' >
+    <div className='text-yellow-300 text-lg ' >
       <h3 className='underline font-bold text-white'>Your Compass
       </h3>
       <FooterLink name=' Port of Call' link='#'/>
@@ -16,4 +16,4 @@ const FooterPart2 =()=>{
   );
 };
 
-export default FooterPart2;
+export default FooterPartTwo;

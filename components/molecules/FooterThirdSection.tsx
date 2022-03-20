@@ -3,10 +3,10 @@ import Twitter from '../atoms/TwitterIcon';
 import ReddIt from '../atoms/RedditIcon';
 
 
-const FooterPart3 =()=>{
+const FooterPartThree =()=>{
   return (
     <div className=''>
-      <h3 className='text-white text-lg underline font-bold'>
+      <h3 className='text-white text-lg underline font-bold mb-4'>
   Engage with us!</h3>
       <Discord/>
       <Twitter/>
@@ -14,4 +14,4 @@ const FooterPart3 =()=>{
     </div>
   );
 };
-export default FooterPart3;
+export default FooterPartThree;

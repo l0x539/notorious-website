@@ -2,9 +2,9 @@ import Image from 'next/image';
 import logo from '../../assets/images/np.png';
 
 
-const FooterPart1 = ()=>{
+const FooterPartOne = ()=>{
   return (
-    <div className="">
+    <div className="w-1/6">
       <Image
         src={logo}
         alt="image" width="306.38px"
@@ -13,7 +13,7 @@ const FooterPart1 = ()=>{
           Welcome aboard!
       </h4>
 
-      <p className='text-white  text-lg'>Notorious Pirates
+      <p className='text-white  text-lg pb-1'>Notorious Pirates
         is an NFT MMORPG
         (Massively Multiplayer
         Online Roleplaying Game) aimed at allowing its
@@ -24,4 +24,4 @@ const FooterPart1 = ()=>{
   );
 };
 
-export default FooterPart1;
+export default FooterPartOne;

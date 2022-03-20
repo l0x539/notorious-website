@@ -7,7 +7,7 @@ const FooterLink: FC<{
 }> = ({link, name}) => {
   return (
     <div className="  text-yellow-100 text-lg hover:text-yellow-500
-    hover:translate-x-1.5 transition-transform">
+    hover:translate-x-1.5 transition-transform pt-2">
       <Link href={link}>
         <a>{name}</a>
       </Link>

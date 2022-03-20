@@ -6,8 +6,8 @@ const ReddIt = () => {
     <a href="#" className='mr-4'>
       <Image src={reddit}
         alt="imag"
-        width="45px"
-        height="45px"/>
+        width="40px"
+        height="40px"/>
     </a>
   );
 };
