@@ -7,8 +7,9 @@ const HeaderLink: FC<{
 }> = ({link, title}) => {
   return (
     <Link href={link}>
-      <a className='block mt-4 lg:inline-block lg:mt-0 text-white mr-10
-        text-base hover:text-yellow-500 hover:underline text-center'>
+      <a className='block lg:text-center lg:mt-0 text-white
+      mx-5 text-base hover:underline hover:underline-offset-4
+       hover:text-yellow-500'>
         {title}
       </a>
     </Link>

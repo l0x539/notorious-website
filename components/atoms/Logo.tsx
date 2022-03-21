@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Logo = () => {
   return (
     <Link href='/'>
-      <a className='inline-flex items-center p-2 '>
+      <a className='inline-flex items-center '>
         <Image src={logo} height={65} width={65}
           alt=" Notorious Pirates Logo" />
       </a>
