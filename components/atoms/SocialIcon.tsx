@@ -1,4 +1,4 @@
-// import {useMemo} from 'react';
+
 import Discord from '../assets/svgs/discord-logo.svg';
 import Twitter from '../assets/svgs/twitter-logo.svg';
 import Reddit from '../assets/svgs/reddit-logo.svg';
