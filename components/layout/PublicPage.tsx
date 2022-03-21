@@ -2,7 +2,7 @@ import {ReactNode} from 'react';
 import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
 import Layout from './defaultLayout/Layout';
-/* eslint linebreak-style: ["error", "windows"]*/
+
 interface PublicPageProps {
     children: ReactNode
 }

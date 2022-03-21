@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"]*/
-
 const Main = () => {
   return (
     <div className="container mx-auto">
