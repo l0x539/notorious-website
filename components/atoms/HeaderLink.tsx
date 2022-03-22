@@ -9,7 +9,7 @@ const HeaderLink: FC<{
     <Link href={link}>
       <a className='block lg:text-center lg:mt-0 text-white
       mx-5 text-base hover:underline hover:underline-offset-4
-       hover:text-yellow-500'>
+       hover:text-yellow-500 flex items-center h-full'>
         {title}
       </a>
     </Link>
