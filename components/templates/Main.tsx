@@ -1,16 +1,9 @@
-import Card from '../molecules/Card';
-import pirate from '../assets/svgs/pirate.svg';
+/* eslint linebreak-style: ["error", "windows"]*/
 
 const Main = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex inline-flex  rounded-lg">
-        <Card
-          title="Welcome to the"
-          Icon={pirate}
-          iconAlt="Pirate Icon"
-        />
-      </div>
+      <h1 className="text-3xl font-bold underline">Home Page</h1>
     </div>
   );
 };
