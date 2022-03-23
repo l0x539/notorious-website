@@ -1,4 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"]*/
+
 
 const Footer = () => {
   return (
