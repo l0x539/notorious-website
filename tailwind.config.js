@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"]*/
 
 module.exports = {
   content: [
@@ -10,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         nav: 'url(\'../components/assets/images/bg-image.PNG\')',
+        card: 'url(\'../components/assets/images/wood.png\')',
       }),
     },
   },
