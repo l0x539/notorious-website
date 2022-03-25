@@ -1,53 +1,123 @@
-import ButtonNext from '../atoms/ButtonNext';
-import ButtonPrev from '../atoms/ButtonPrevious';
 
+import ArrowNext from '../assets/svgs/Arrow 1.svg';
+import ArrowPrev from '../assets/svgs/Arrow 2.svg';
+import Image from 'next/image';
 import {FC} from 'react';
-const Carousel: FC<{
-  id: string;
-  title: string;
-  className?: string;
+import dynamic from 'next/dynamic';
+dynamic(() => import('tw-elements'));
+const Carousel : FC<{
+    id: string;
+    title: string;
 
 }> = ({
   id,
   title,
-  className,
 }) => {
   return (
-    <div id={id}
-      className={`carousel slide relative relative w-full bg-carousel 
-      ${className}`}
-      data-bs-ride="carousel">
-      <div className={`carousel-indicators absolute 
-      right-0 -bottom-10 left-0 flex justify-center p-0 mb-4`}>
+    <div id={id} className="carousel slide relative
+      bg-carousel bg-cover w-[911px] h-[261px]"
+    data-bs-ride="carousel">
+      <div className="carousel-indicators absolute right-0 bottom-0
+         left-0 flex justify-center p-0 mb-4">
         <button
           type="button"
-          data-bs-target={`#${id}`}
+          data-bs-target={id}
           data-bs-slide-to="0"
-          className={`w-3 h-3 active`}
-          aria-current='true'
-          aria-label={`Slide 1`}
-        ></button>
+          className="active"
+          aria-current="true"
+          aria-label="Slide 1" >
+        </button>
+        <button
+          type="button"
+          data-bs-target={id}
+          data-bs-slide-to="1"
+          aria-label="Slide 2" >
+        </button>
+        <button
+          type="button"
+          data-bs-target={id}
+          data-bs-slide-to="2"
+          aria-label="Slide 3" >
+        </button>
       </div>
-      <div className={`carousel-inner rounded-xl overflow-hidden`}>
-        <div className="carousel-caption hidden md:block absolute text-center">
-          <h1 className="text-xl">{title}
-            <span className='text-yellow-600 text-sm block'>
+      <div className="carousel-inner relative w-full overflow-hidden">
+        <div className="carousel-item active relative float-left w-full">
+          <div className="carousel-caption hidden md:block
+              text-center">
+            <h1 className="text-2xl text-white">{title}
+              <span className='text-yellow-600 text-xl block mb-5'>
                 Notorious Pirate!</span></h1>
-          <p>Discover the true meaning of notoriety in the world’s
-              first upcoming Pirate themed Metaverse</p>
-          <button className='text-black bg-white font-semibold
-           py-2 px-4 border rounded'>
-           Learn More..</button>
+            <p className='text-white text-center text-base font-normal'>
+              Discover the true meaning of notoriety in the<br/>
+                world’s first upcoming Pirate themed Metaverse</p>
+            <button className='text-black bg-white text-sm font-normal
+                   py-1 px-4 border rounded mt-5'>
+                  Learn More...
+            </button>
+          </div>
+        </div>
+        <div className="carousel-item  relative float-left w-full">
+          <div className="carousel-caption hidden md:block
+              text-center">
+            <h1 className="text-2xl text-white">{title}
+              <span className='text-yellow-600 text-xl block mb-5'>
+                Notorious Pirate!</span></h1>
+            <p className='text-white text-center text-base font-normal'>
+            Discover the true meaning of notoriety in the<br/>
+                world’s first upcoming Pirate themed Metaverse</p>
+            <button className='text-black bg-white text-sm font-normal
+                   py-1 px-4 border rounded mt-5'>
+                  Learn More...
+            </button>
+          </div>
+        </div>
+        <div className="carousel-item relative float-left w-full">
+          <div className="carousel-caption hidden  md:block
+              text-center">
+            <h1 className="text-2xl text-white">{title}
+              <span className='text-yellow-600 text-xl block mb-5'>
+                Notorious Pirate!</span></h1>
+            <p className='text-white text-center text-base font-normal'>
+              Discover the true meaning of notoriety in the<br/>
+                world’s first upcoming Pirate themed Metaverse</p>
+            <button className='text-black bg-white text-sm font-normal
+                   py-1 px-4 border rounded mt-5'>
+                  Learn More...
+            </button>
+          </div>
         </div>
       </div>
-      <ButtonNext target={`#${id}`} />
-      <ButtonPrev target={`#${id}`} />
+      <button
+        className="carousel-control-prev absolute top-0 bottom-0 flex
+         items-center justify-center p-0 text-center border-0 hover:outline-none
+          hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button"
+        data-bs-target={id}
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon
+         inline-block bg-no-repeat" aria-hidden="true">
+          <Image src={ArrowPrev} width={1} height={0} alt="" />
+        </span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next absolute top-0 bottom-0 flex
+         items-center justify-center p-0 text-center border-0 hover:outline-none
+          hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button"
+        data-bs-target={id}
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon
+         inline-block bg-no-repeat" aria-hidden="true">
+          <Image src={ArrowNext} width={1} height={0} alt="" />
+        </span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
 
   );
 };
 
-
 export default Carousel;
-
-
