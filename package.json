@@ -12,11 +12,18 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.9"
+    "react-easy-swipe": "^0.0.22",
+    "react-icons": "^4.3.1",
+    "react-items-carousel": "^2.8.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.28.1",
+    "sass": "^1.49.9",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.40",
+    "@types/react-slick": "^0.23.8",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "autoprefixer": "^10.4.4",
@@ -26,6 +33,7 @@
     "eslint-plugin-react": "^7.29.4",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
+    "tw-elements": "^1.0.0-alpha12",
     "typescript": "4.6.2"
   }
 }
