@@ -1,7 +1,11 @@
+import SideNavBar from '../molecules/SideNavBar';
+
 const Main = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold underline">Home Page</h1>
+      <div className="bg-sidenav bg-cover content-center">
+        <SideNavBar />
+      </div>
     </div>
   );
 };
