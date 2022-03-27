@@ -6,7 +6,7 @@ const SideNavBar = () =>{
     <div className='px-6 absolute bg-sidenav bg-cover border-4
      border-solid border-gray-400 sidenav-items hover:text-center'>
       <ul className='relative px-2'>
-        <li className='relative border-b-2'>
+        <li className='relative border-b-2 border-b-[#D8D8D8]'>
           <h5 className='relative text-white text-center
           mb-5 mt-5'> Featured News </h5>
         </li>
