@@ -1,31 +1,35 @@
 {
-  "name": "notorious-website",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.49.9"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.21",
-    "@types/react": "17.0.40",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
-    "autoprefixer": "^10.4.4",
-    "eslint": "^8.11.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-next": "12.1.0",
-    "eslint-plugin-react": "^7.29.4",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23",
-    "typescript": "4.6.2"
-  }
+    "name": "notorious-website",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@svgr/webpack": "^6.2.1",
+        "next": "12.1.0",
+        "next-compose-plugins": "^2.2.1",
+        "next-images": "^1.8.4",
+        "next-svgr": "^0.0.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "sass": "^1.49.9"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.21",
+        "@types/react": "17.0.40",
+        "@typescript-eslint/eslint-plugin": "^5.15.0",
+        "@typescript-eslint/parser": "^5.15.0",
+        "autoprefixer": "^10.4.4",
+        "eslint": "^8.11.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-next": "12.1.0",
+        "eslint-plugin-react": "^7.29.4",
+        "postcss": "^8.4.12",
+        "tailwindcss": "^3.0.23",
+        "typescript": "4.6.2"
+    }
 }
