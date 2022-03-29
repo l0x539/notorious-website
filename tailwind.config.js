@@ -8,7 +8,11 @@ module.exports = {
         fontFamily: {
             sans: ['Rosario', 'sans-serif'],
         },
-        extend: {},
+        extend: {
+          backgroundImage: (theme) => ({
+            nav: 'url(\'../components/assets/images/bg-image.PNG\')',
+          }),
+        },
     },
     plugins: [],
 };
