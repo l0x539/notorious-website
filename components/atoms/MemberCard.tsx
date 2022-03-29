@@ -32,8 +32,8 @@ const MemberCard: FC<{
                 <Image
                   src={iconlinkidin}
                   alt="likidin"
-                  width='33px'
-                  height='33px'/>
+                  width='2.062rem'
+                  height='2.062rem'/>
               </a>
             </div>
 
@@ -44,8 +44,8 @@ const MemberCard: FC<{
                 <Image
                   src={icontwitter}
                   alt="twitter"
-                  width='33px'
-                  height='33px'/>
+                  width='2.062rem'
+                  height='2.062rem'/>
               </a>
             </div>
 
