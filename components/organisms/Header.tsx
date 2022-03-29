@@ -1,8 +1,18 @@
+import Logo from '../atoms/Logo';
+import HeaderLinks from '../molecules/HeaderLinks';
+import SocialIcons from '../molecules/SocialIcons';
+import Styles from '../../styles/Home.module.scss';
+
+
 const Header = () => {
   return (
-    <header>
-      <div className="container mx-auto">
-          Footer
+    <header className={Styles.divider}>
+      <div className=" bg-nav bg-cover h-[89px]">
+        <nav className='container mx-auto flex items-center flex-wrap'>
+          <Logo />
+          <HeaderLinks />
+          <SocialIcons />
+        </nav>
       </div>
     </header>
   );
