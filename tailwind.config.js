@@ -1,3 +1,4 @@
+
 module.exports = {
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
@@ -11,7 +12,8 @@ module.exports = {
         extend: {
           backgroundImage: (theme) => ({
             nav: 'url(\'../components/assets/images/bg-image.PNG\')',
-          }),
+            card: 'url(\'../components/assets/images/wood.png\')',
+          }),            
         },
     },
     plugins: [],
