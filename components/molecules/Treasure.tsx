@@ -18,14 +18,14 @@ const Treasure: FC<{
       {isHovering && (
         <><ChestOpened />
           <div className='flex justify-center
-         items-center w-[283.2px] h-[200px]' >
+         items-center w-[283px] h-[236px]' >
             {children}
           </div></>
       )}
       {!isHovering && (
         <><ChestClosed />
           <div className='flex justify-center
-          items-center w-[283.2px] h-[200px]'>
+          items-center w-[283px] h-[236px]'>
             {children}
           </div></>
       )}
