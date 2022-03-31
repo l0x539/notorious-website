@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         woodbg: 'url(\'../components/assets/images/bg-wood.png\')',
-        section: 'url(\'../components/assets/images/sectionbg.png\')',
+        // section: 'url(\'../components/assets/images/sectionbg.png\')',
       }),
     },
   },

@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Hanger = () => {
   return (
     <div className='flex justify-between h-16'>
-      <div className='relative -left-16'>
+      <div className='relative -left-16 '>
         <Image src={HangerRight}
           alt="Hanger Right" className='left-0 z-[-1]
         relative -left-24'/>
