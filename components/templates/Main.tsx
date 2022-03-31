@@ -25,7 +25,7 @@ const Main = () => {
                 text-yellow-500'> Questions</span></h1>
               </div>
               <div className='w-[27.375rem] h-[37.875rem]'>
-                <p className=' text-xl text-white paragprah'>
+                <p className=' text-xl text-white paragraph'>
                 How do I get involved? <br/>
                 What is notoriety? <br/>
                 What type of game is coming?
