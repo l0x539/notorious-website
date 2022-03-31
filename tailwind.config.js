@@ -4,6 +4,8 @@ module.exports = {
         './pages/**/*.{js,ts,jsx,tsx}',
         './components/**/*.{js,ts,jsx,tsx}',
         './layout/**/*.{js,ts,jsx,tsx}',
+        './node_modules/tw-elements/dist/js/**/*.js',
+        './node_modules/tw-elements/dist/css/**/*.css',
     ],
     theme: {
         fontFamily: {
@@ -11,10 +13,13 @@ module.exports = {
         },
         extend: {
           backgroundImage: (theme) => ({
-            nav: 'url(\'../components/assets/images/bg-image.PNG\')',
+            nav: 'url(\'../components/assets/images/bg-image.png\')',
             card: 'url(\'../components/assets/images/wood.png\')',
+            carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
           }),            
         },
     },
-    plugins: [],
+    plugins:  [
+      require('tw-elements/dist/plugin'),
+    ],
 };
