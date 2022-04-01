@@ -7,60 +7,59 @@ import skeleton from '../../assets/images/skeleton.png';
 import red from '../../assets/images/red.png';
 
 const MainHeader = () => {
-  return (<div className='flex w-full'>
+  return (<div className='flex justify-between w-full'>
 
 
     <div
-      className='relative '>
-      <img className=' bottom-0 -lefte-[15px] '
-        src='../../assets/images/pirate.png'
+      className='flex '>
+      <img className='relative -left-24 z-20'
+        src={pirate.src}
         alt="twitter"
         width='400'
         height='335'/>
 
-      <img className=' bottom-0 lefte-[100px]'
-        src='../../assets/images/skeleton.png'
+      <img className='relative -left-[330px] z-0'
+        src={skeleton.src}
         alt="twitter"
-        width='325'
+        width='500'
         height='356'
       />
 
-      <img className=' bottom-0 lefte-[150px]'
-        src='../../assets/images/black.png'
+      <img className=' relative -left-[610px] z-10'
+        src={black.src}
         alt="twitter"
-        width='325px'
-        height='316'/>
+        width='325'
+        height='316s'/>
 
     </div>
 
 
     <div>
       <img
-        src={piratesnoto}
+        src={piratesnoto.src}
         alt="twitter"
         width='725'
         height='213'/>
 
     </div>
 
-    <div className='relative'>
+    <div className='flex'>
 
-      <img className=' bottom-0 righte-[550px]'
+      <img className=' relative -right-[10px]'
 
-        src={red}
+        src={red.src}
         alt="twitter"
         width='289'
         height='382'/>
 
-      <img className=' bottom-0 righte-[10px]'
-        src={red}
+      <img className='relative -right-[10px] '
+        src={red.src}
         alt="twitter"
         width='300'
         height='300'/>
 
-      <img className=' bottom-0 -righte-[15px]'
-
-        src={blue}
+      <img className='relative -right-[10px]'
+        src={blue.src}
         alt="twitter"
         width='425'
         height='402'/>
