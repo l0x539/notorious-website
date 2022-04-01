@@ -16,7 +16,11 @@ module.exports = {
             nav: 'url(\'../components/assets/images/bg-image.png\')',
             card: 'url(\'../components/assets/images/wood.png\')',
             carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
-          }),            
+            sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
+          }),
+          boxShadow: {
+            inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25)',
+          },
         },
     },
     plugins:  [
