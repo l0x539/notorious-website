@@ -18,6 +18,32 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.paragraphe {
+  text-shadow: 0px 4px 61px rgba(255, 203, 69, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*
+.bg-scrollimage {
+  &:hover {
+    filter: drop-shadow(0px 4px 33px #FFCB4540)
+            drop-shadow(0px, 4px 47px #FFD60040);
+    
+  }
+}*/
+
+.bg-scrollimage:hover {
+  box-shadow:0 0.25rem 2.9375rem rgba(255, 214, 0, 0.25);
+}
+@supports (filter: drop-shadow(0 	0.25rem 2.9375rem rgba(255, 214, 0, 0.25))) {
+  .bg-scrollimage:hover {
+    filter: drop-shadow(0 0.25rem 2.9375rem rgba(255, 214, 0, 0.25));
+  }
+
+  .bg-scrollimage:hover {
+    box-shadow: none;
+  }
+}
 .card-members-background{
   background-image: url("../assets/images/membersimage.png");
 }

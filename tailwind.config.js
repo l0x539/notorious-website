@@ -17,6 +17,7 @@ module.exports = {
             card: 'url(\'../components/assets/images/wood.png\')',
             carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
             sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
+            scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
           }),
           boxShadow: {
             inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.25)',
