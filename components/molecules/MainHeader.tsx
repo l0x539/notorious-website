@@ -12,18 +12,18 @@ const MainHeader = () => {
 
 
     <div className='relative'>
-      <img className='absolute bottom-0 -left-24 z-20'
+      <img className='absolute bottom-0 -left-24 z-20 '
         src={pirate.src}
         alt="twitter"
         width='400'
         height='335'/>
-      <img className='absolute bottom-0 left-[4.375rem] z-0'
+      <img className='absolute bottom-0 left-[4.375rem] z-0 '
         src={skeleton.src}
         alt="twitter"
         width='470'
         height='356'
       />
-      <img className=' absolute bottom-0 left-[16.75rem] z-10'
+      <img className=' absolute bottom-0 left-[16.75rem] z-10 '
         src={black.src}
         alt="twitter"
         width='325'
@@ -42,7 +42,7 @@ const MainHeader = () => {
     </div>
 
     <div className='relative'>
-      <img className='absolute bottom-0 right-[20.625rem] z-30'
+      <img className='absolute bottom-0 right-[20.625rem] z-30 '
         src={red.src}
         alt="twitter"
         width='289'
@@ -54,7 +54,7 @@ const MainHeader = () => {
         width='300'
         height='300'/>
 
-      <img className='absolute bottom-0 -right-[4.063rem] z-10'
+      <img className='absolute bottom-0 -right-[4.063rem] z-10 '
         src={blue.src}
         alt="twitter"
         width='425'
