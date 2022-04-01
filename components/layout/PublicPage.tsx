@@ -14,7 +14,7 @@ const PublicPage = ({children}: PublicPageProps) => {
       <main>
         {children}
       </main>
-      <Footer />
+
     </Layout>
   );
 };
