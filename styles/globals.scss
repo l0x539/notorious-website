@@ -7,8 +7,6 @@ html,
 body {
   padding: 0;
   margin: 0;
- // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  //  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: 'Rosario', sans-serif;
 }
 
@@ -19,4 +17,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.sidenav-items {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-indicators button[data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border:3px solid #FFFFFF;
+  border-radius: 20px;
+  background-color:transparent;
+}
+
+.carousel-indicators button[data-bs-target].active {
+  background-color:#FFCB45;
+  opacity: 0.9;
+}
+
+
+
+// Left/right icons
+//
+
+.carousel-control-prev-icon {
+  background-image:url( '../components/assets/images/Arrowleft.png');
+  
+  
+}
+.carousel-control-next-icon { 
+  background-image:url( '../components/assets/images/ArrowRight.png');
+}
+
+.carousel-caption{
+  h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  p {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
 }
