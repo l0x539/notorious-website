@@ -13,29 +13,23 @@ const MainHeader = () => {
     <div
       className='relative '>
       <img className=' bottom-0 -lefte-[15px] '
-        layout='fill'
-        objectFit="cover"
         src='../../assets/images/pirate.png'
         alt="twitter"
-        width='400px'
-        height='335px'/>
+        width='400'
+        height='335'/>
 
       <img className=' bottom-0 lefte-[100px]'
-        layout='fill'
-        objectFit="cover"
         src='../../assets/images/skeleton.png'
         alt="twitter"
-        width='325px'
-        height='356px'
+        width='325'
+        height='356'
       />
 
       <img className=' bottom-0 lefte-[150px]'
-        layout='fill'
-        objectFit="cover"
         src='../../assets/images/black.png'
         alt="twitter"
         width='325px'
-        height='316px'/>
+        height='316'/>
 
     </div>
 
@@ -44,35 +38,32 @@ const MainHeader = () => {
       <img
         src={piratesnoto}
         alt="twitter"
-        width='725px'
-        height='213px'/>
+        width='725'
+        height='213'/>
 
     </div>
 
     <div className='relative'>
 
       <img className=' bottom-0 righte-[550px]'
-        layout='fill'
-        objectFit="cover"
+
         src={red}
         alt="twitter"
-        width='289px'
-        height='382px'/>
+        width='289'
+        height='382'/>
 
       <img className=' bottom-0 righte-[10px]'
         src={red}
         alt="twitter"
-        width='300px'
-        height='300px'/>
+        width='300'
+        height='300'/>
 
       <img className=' bottom-0 -righte-[15px]'
 
         src={blue}
-        layout='fill'
-        objectFit="cover"
         alt="twitter"
-        width='425x'
-        height='402px'/>
+        width='425'
+        height='402'/>
 
     </div>
 
