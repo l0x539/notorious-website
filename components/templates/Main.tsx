@@ -1,6 +1,4 @@
 
-
-
 const Main = () => {
   return (
     <div className='container mx-auto'>
@@ -9,4 +7,3 @@ const Main = () => {
 };
 
 export default Main;
-
