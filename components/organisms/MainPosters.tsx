@@ -18,10 +18,10 @@ const MainPosters = () => {
           objectFit='contain' />
       </div>
       <div className="container mx-auto grid grid-flow-col gap-40
-      grid-cols-[repeat(2,_minmax(0,_1fr))">
+      grid-cols-[repeat(2,_minmax(0,_1fr))]">
         <Card>
-          <div className='h-[56.875rem] flex flex-col flex-wrap'>
-            <div className='px-10 mx-5 w-[40rem] h-[43.75rem] mt-10
+          <div className='flex flex-col flex-wrap'>
+            <div className='px-10 mx-5 mb-28 max-h-[43.75rem] mt-10
             scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-700
             overflow-y-scroll scrollbar-thumb-rounded-full
              scrollbar-track-rounded-full'>
