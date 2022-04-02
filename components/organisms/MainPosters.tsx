@@ -7,7 +7,7 @@ import twitterwidget from '../assets/images/twitterwidget.png';
 
 const MainPosters = () => {
   return (
-    <div>
+    <div className='mb-16'>
       <div className='absolute background h-full w-full'>
         <Image
           src={background}
@@ -20,7 +20,7 @@ const MainPosters = () => {
       <div className="container mx-auto grid grid-flow-col gap-40
       grid-cols-[repeat(2,_minmax(0,_1fr))]">
         <Card>
-          <div className='flex flex-col flex-wrap'>
+          <div className='pb-5 flex flex-col flex-wrap'>
             <div className='px-10 mx-5 mb-28 max-h-[43.75rem] mt-10
             scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-700
             overflow-y-scroll scrollbar-thumb-rounded-full
@@ -58,14 +58,11 @@ const MainPosters = () => {
                 Can I apply to become a staff member? <br/>
                 I have no money.Can I still participate?<br/>
               </p>
-
-
             </div>
           </div>
-
         </Card>
         <Card>
-          <div className='h-[56.875rem] flex flex-col'>
+          <div className='pb-5 flex flex-col'>
             <h1 className='font-medium text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
