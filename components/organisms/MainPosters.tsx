@@ -7,16 +7,7 @@ import twitterwidget from '../assets/images/twitterwidget.png';
 
 const MainPosters = () => {
   return (
-    <div className='mb-16'>
-      <div className='absolute background h-full w-full z-[-1]'>
-        <Image
-          src={background}
-          width={1900}
-          height={1191}
-          alt="Notorious pirates background imaeg"
-          layout='responsive'
-          objectFit='contain' />
-      </div>
+    <div className='pb-16 relative'>
       <div className="container mx-auto grid grid-flow-col gap-40
       grid-cols-[repeat(2,_minmax(0,_1fr))]">
         <Card>
@@ -71,6 +62,17 @@ const MainPosters = () => {
 
           </div>
         </Card>
+      </div>
+      <div className='absolute h-full w-full top-0 bg-black'>
+        <div className='background z-[-1]'>
+          <Image
+            src={background}
+            width={1900}
+            height={1191}
+            alt="Notorious pirates background imaeg"
+            layout='fill'
+            objectFit='cover' />
+        </div>
       </div>
     </div>
 

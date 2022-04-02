@@ -10,11 +10,15 @@ interface PublicPageProps {
 const PublicPage = ({children}: PublicPageProps) => {
   return (
     <Layout>
-      <Header />
-      <main>
+      <div className='z-20'>
+        <Header />
+      </div>
+      <main className='z-0'>
         {children}
       </main>
-      <Footer />
+      <div className='z-40'>
+        <Footer />
+      </div>
     </Layout>
   );
 };
