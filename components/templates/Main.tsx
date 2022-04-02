@@ -3,6 +3,8 @@ const Main = () => {
   return (
     <>
       <MainPosters />
+      <MainPosters />
+      <MainPosters />
     </>
   );
 };

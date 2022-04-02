@@ -8,9 +8,14 @@ import twitterwidget from '../assets/images/twitterwidget.png';
 const MainPosters = () => {
   return (
     <div>
-      <div className='absolute background'>
-        <Image src={background} width={1900} height={1191} alt=""
-          objectFit='cover' />
+      <div className='absolute background h-full w-full'>
+        <Image
+          src={background}
+          width={1900}
+          height={1191}
+          alt="Notorious pirates background imaeg"
+          layout='responsive'
+          objectFit='contain' />
       </div>
       <div className="container mx-auto grid grid-flow-col gap-40
       grid-cols-[repeat(2,_minmax(0,_1fr))">
