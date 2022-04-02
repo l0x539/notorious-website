@@ -8,7 +8,7 @@ import twitterwidget from '../assets/images/twitterwidget.png';
 const MainPosters = () => {
   return (
     <div className='mb-16'>
-      <div className='absolute background h-full w-full'>
+      <div className='absolute background h-full w-full z-[-1]'>
         <Image
           src={background}
           width={1900}
