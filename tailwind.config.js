@@ -22,6 +22,7 @@ module.exports = {
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
         header: 'url(\'../components/assets/images/kingsheadd.png\')',
+        members: 'url(\'../components/assets/images/devilsanvel.png\')',
       }),
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
