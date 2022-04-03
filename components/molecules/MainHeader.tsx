@@ -11,7 +11,8 @@ import Image from 'next/image';
 const MainHeader = () => {
   return (<div className='bg-header bg-cover bg-no-repeat
   grid grid-cols-[repeat(3,_1fr)]
-  2xl:min-h-[24.875rem] xl:min-h-[18.875rem]'>
+  2xl:min-h-[24.875rem] xl:min-h-[18.875rem]
+  border-b-[5px] border-[#8F8F8F]'>
     <div className='relative'>
       <div className='absolute bottom-0 -left-0 z-20  2xl:w-[12.625rem]
        2xl:h-[20.938rem] xl:w-[8.625rem] xl:h-[14.304rem]'>
