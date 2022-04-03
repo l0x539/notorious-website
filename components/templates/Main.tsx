@@ -1,8 +1,8 @@
 
-import MemebersCard from '../molecules/MoleculeMemebersCard';
 import MainHangers from '../organisms/MainHangers';
 import MainHeader from '../organisms/MainHeader';
 import MainPosters from '../organisms/MainPosters';
+import Memebrs from '../organisms/Members';
 
 const Main = () => {
   return (
@@ -10,7 +10,7 @@ const Main = () => {
       <MainHeader />
       <MainHangers />
       <MainPosters />
-      <MemebersCard />
+      <Memebrs />
     </>
   );
 };
