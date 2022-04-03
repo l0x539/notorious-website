@@ -16,7 +16,7 @@ const MainPosters = () => {
             scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-700
             overflow-y-scroll scrollbar-thumb-rounded-full
              scrollbar-track-rounded-full'>
-              <h1 className='font-medium text-3xl text-white mb-7'>
+              <h1 className='font-semibold text-3xl text-white mb-7'>
                 Frequently Asked <span className='font-medium text-3xl
                 text-yellow-500'> Questions</span></h1>
               <p className=' text-xl text-white paragraphFAQ'>
@@ -54,7 +54,7 @@ const MainPosters = () => {
         </Card>
         <Card>
           <div className='pb-5 flex flex-col'>
-            <h1 className='font-medium text-3xl text-white px-10 mx-5 mt-10'>
+            <h1 className='font-semibold text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
             <Image src={twitterwidget} width={589} height={774} alt=""
