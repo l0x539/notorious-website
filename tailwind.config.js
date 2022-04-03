@@ -16,10 +16,12 @@ module.exports = {
         nav: 'url(\'../components/assets/images/bg-image.png\')',
         main: 'url(\'../components/assets/images/background-main.png\')',
         card: 'url(\'../components/assets/images/wood.png\')',
+
         carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
+        header: 'url(\'../components/assets/images/kingsheadd.png\')',
       }),
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
