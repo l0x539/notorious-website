@@ -3,12 +3,12 @@ import SideNavLink from '../atoms/SideNavLink';
 
 const SideNavBar = () =>{
   return (
-    <div className='px-6 absolute bg-sidenav bg-cover border-4
-     border-solid border-gray-400 sidenav-items hover:text-center'>
-      <ul className='relative px-2'>
-        <li className='relative border-b-2 border-b-[#D8D8D8]'>
+    <div className='px-6 py-6 absolute bg-sidenav bg-cover border-4
+     border-solid border-[#8F8F8F] sidenav-items hover:text-center'>
+      <ul className='relative px-5'>
+        <li className='relative border-b-4 border-b-[#D8D8D8]'>
           <h5 className='relative text-white text-center
-          mb-5 mt-5'> Featured News </h5>
+         text-xl mb-7 font-normal'> Featured News </h5>
         </li>
       </ul>
       <SideNavLink title='All News' link='#'/>

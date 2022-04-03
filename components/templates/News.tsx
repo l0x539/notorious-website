@@ -4,24 +4,25 @@ import SearchBar from '../atoms/SearchBar';
 import background from '../assets/images/background.png';
 import Image from 'next/image';
 import {useState} from 'react';
+import NewsBanner from '../molecules/NewsBanner';
 const News = () => {
   const [search, setSearch] = useState('');
   return (
     <>
-      <div className='absolute h-full w-full top-0 bg-black'>
-        <div className='background z-[-1]'>
-          <Image
-            src={background}
-            width={1900}
-            height={1191}
-            alt="Notorious pirates background imaeg"
-            layout='fill'
-            objectFit='cover' />
-        </div>
-      </div>
       <div className="relative">
+        <div className='absolute h-full w-full top-0 bg-black'>
+          <div className='background z-[-1]'>
+            <Image
+              src={background}
+              width={1900}
+              height={1191}
+              alt="Notorious pirates background image"
+              layout='fill'
+              objectFit='cover' />
+          </div>
+        </div>
         <div className="container mx-auto grid
-           grid-cols-[minmax(0,1fr)_19.375rem] gap-4">
+           grid-cols-[minmax(0,1fr)_19.375rem] gap-6">
           <div className='pb-5 mt-10 flex flex-col'>
             <Paging
               onNext={(e)=> console.log('hey')}
@@ -37,6 +38,28 @@ const News = () => {
               totalPages={10}
               currentPage={1}
             >
+              <NewsBanner
+                title='Find out what it means to become a'
+                description=' world’s first upcoming Pirate themed Metaverse'
+                time='2022-01-21 17:00:00'
+                comments={3}
+
+              />
+              <NewsBanner
+                title='Find out what it means to become a'
+                description=' world’s first upcoming Pirate themed Metaverse'
+                time='2022-01-21 17:00:00'
+                comments={3}
+
+              />
+              <NewsBanner
+                title='Find out what it means to become a'
+                description=' world’s first upcoming Pirate themed Metaverse'
+                time='2022-01-21 17:00:00'
+                comments={3}
+
+              />
+
             </Paging>
           </div>
           <div className='pb-5 mt-10 flex flex-col'>
