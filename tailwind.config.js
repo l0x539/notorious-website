@@ -4,6 +4,8 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './layout/**/*.{js,ts,jsx,tsx}',
+    './node_modules/tw-elements/dist/js/**/*.js',
+    './node_modules/tw-elements/dist/css/**/*.css',
   ],
   theme: {
     fontFamily: {
@@ -13,9 +15,20 @@ module.exports = {
       backgroundImage: (theme) => ({
         nav: 'url(\'../components/assets/images/bg-image.png\')',
         card: 'url(\'../components/assets/images/wood.png\')',
+
+        carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
+        sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
+        scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
+        banner: 'url(\'../components/assets/images/banner-bg.png\')',
         header: 'url(\'../components/assets/images/kingsheadd.png\')',
       }),
+      boxShadow: {
+        inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+    require('tailwind-scrollbar'),
+  ],
 };
