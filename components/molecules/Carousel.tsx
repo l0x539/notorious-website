@@ -28,6 +28,11 @@ const Carousel : FC<{
           aria-current="true"
           aria-label="Slide 1" >
         </button>
+        <button
+          type="button"
+          data-bs-target={`#${id}`}
+          data-bs-slide-to="1"
+          aria-label="Slide 2" ></button>
         {/* <button
           type="button"
           data-bs-target={`#${id}`}
@@ -54,8 +59,26 @@ const Carousel : FC<{
         </button> */}
       </div>
       <div className="carousel-inner relative overflow-hidden">
-        <div className="w-full bg-carousel border-8 border-[#C0AB75]
+        <div className="carousel-item
+        w-full bg-carousel border-8 border-[#C0AB75]
         carousel-item active  float-left pb-12
+        shadow-[inset_0px_4px_62px_rgba(192,_171,_117,_0.25)]">
+          <div className=" text-center">
+            <h1 className="text-2xl text-white mt-4">{title}
+              <span className='text-yellow-600 text-xl block'>
+                Notorious Pirate!</span></h1>
+            <p className='text-white text-center text-base font-normal'>
+              Discover the true meaning of notoriety in the<br/>
+                world’s first upcoming Pirate themed Metaverse</p>
+            <button className='text-black bg-white text-sm font-normal
+                   py-1 px-4 border rounded mt-1'>
+                  Learn More...
+            </button>
+          </div>
+        </div>
+        <div className="carousel-item
+        w-full bg-carousel border-8 border-[#C0AB75]
+        carousel-item float-left pb-12
         shadow-[inset_0px_4px_62px_rgba(192,_171,_117,_0.25)]">
           <div className=" text-center">
             <h1 className="text-2xl text-white mt-4">{title}
