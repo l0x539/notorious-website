@@ -6,7 +6,7 @@ const Card: FC<{}> = ({children}) => {
   return (
     <div className='z-20'>
       <Hangers />
-      <div className='bg-card bg-cover rounded-xl top-16'>
+      <div className='relative top-0 z-20 bg-card bg-cover rounded-xl top-16'>
         {children}
       </div>
     </div>

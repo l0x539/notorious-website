@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         nav: 'url(\'../components/assets/images/bg-image.png\')',
+        main: 'url(\'../components/assets/images/background-main.png\')',
         card: 'url(\'../components/assets/images/wood.png\')',
         carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
