@@ -43,7 +43,7 @@ const CarouselTwo: FC<{
       <div
         className=''>
         <div className="flex justify-evenly
-        align-center overflow-hidden py-16">
+        align-center overflow-hidden py-8">
           <div className='flex relative left-0'>
             {items.slice(0, show + 2).map((item, i) => (
               <div className={
@@ -57,7 +57,8 @@ const CarouselTwo: FC<{
       <button
         className="carousel-control-prev absolute top-0 bottom-0 flex
          items-center justify-center p-0 text-center border-0 hover:outline-none
-          hover:no-underline focus:outline-none focus:no-underline -left-40"
+          hover:no-underline focus:outline-none focus:no-underline -left-0
+          2xl:-left-40"
         type="button"
         onClick={shiftLeft}
       >
@@ -69,7 +70,8 @@ const CarouselTwo: FC<{
       <button
         className="carousel-control-next absolute top-0 bottom-0 flex
          items-center justify-center p-0 text-center border-0 hover:outline-none
-          hover:no-underline focus:outline-none focus:no-underline -right-40"
+          hover:no-underline focus:outline-none focus:no-underline 2xl:-right-40
+          -right-0 "
         type="button"
         onClick={shiftRight}
       >

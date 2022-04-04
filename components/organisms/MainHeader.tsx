@@ -45,8 +45,6 @@ const MainHeader = () => {
           width='267'
           height='316'/>
       </div>
-
-
     </div>
 
     <div className=' flex
@@ -57,7 +55,6 @@ const MainHeader = () => {
         width='725'
         height='213'/>
     </div>
-
 
     <div className='relative'>
       <div className='absolute bottom-0 2xl:right-[20.625rem]
@@ -91,7 +88,6 @@ const MainHeader = () => {
           width='300'
           height='420'/>
       </div>
-
     </div>
   </div>);
 };

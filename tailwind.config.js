@@ -47,6 +47,9 @@ module.exports = {
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
         news: 'url(\'../components/assets/images/news-header.png\')',
         header: 'url(\'../components/assets/images/kingsheadd.png\')',
+        members: 'url(\'../components/assets/images/devilsanvel.png\')',
+        nfts: 'url(\'../components/assets/images/South_Idol.png\')',
+        maproad: 'url(\'../components/assets/images/redarrow.png\')',
       }),
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
