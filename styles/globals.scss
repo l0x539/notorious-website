@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: 'Rosario', sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow-x: hidden;
 }
 
 a {
@@ -21,7 +22,7 @@ a {
 }
 
 .card-desc-background{
-  background-image: url('../components/assets/images/background.png');
+  background-image: url('../components/assets/images/wood-nft.png');
 }
 
 .paragraphe {

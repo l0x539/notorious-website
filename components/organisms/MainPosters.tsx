@@ -67,8 +67,8 @@ const MainPosters = () => {
         <div className='background z-[-1]'>
           <Image
             src={background}
-            width={1900}
-            height={1191}
+            // width={1900}
+            // height={1191}
             alt="Notorious pirates background imaeg"
             layout='fill'
             objectFit='cover' />
