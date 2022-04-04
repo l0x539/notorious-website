@@ -19,6 +19,7 @@ module.exports = {
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
+        news: 'url(\'../components/assets/images/news-header.png\')',
       }),
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
@@ -31,3 +32,4 @@ module.exports = {
     require('tailwind-scrollbar'),
   ],
 };
+

@@ -5,10 +5,22 @@ import background from '../assets/images/background.png';
 import Image from 'next/image';
 import {useState} from 'react';
 import NewsBanner from '../molecules/NewsBanner';
+// import newsbanner from '../assets/images/newsbanner.png';
+import NewsArchive from '../assets/images/news-archive.png';
 const News = () => {
   const [search, setSearch] = useState('');
   return (
     <>
+      <div className='bg-news bg-cover bg-no-repeat py-36 px-20
+       flex justify-center border-b-4
+       border-b-[#8F8F8F] border-b-solid
+         align-center'>
+        <Image
+          src={NewsArchive}
+          width={806}
+          height={113}
+          alt="News"/>
+      </div>
       <div className="relative">
         <div className='absolute h-full w-full top-0 bg-black'>
           <div className='background z-[-1]'>
