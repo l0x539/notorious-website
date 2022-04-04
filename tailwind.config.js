@@ -26,8 +26,7 @@ module.exports = {
   ],
 
   theme: {
-    fontFamily: {
-      sans: ['Rosario', 'sans-serif'],
+    fontFamily: {sans: ['Rosario', 'sans-serif'],
     },
     extend: {
       backgroundImage: (theme) => ({
@@ -37,6 +36,13 @@ module.exports = {
 
         carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
+
+        nadjib: 'url(\'../assets/images/nadjib.png\')',
+        natur: 'url(\'../assets/images/natur.png\')',
+        pngwing: 'url(\'../assets/images/pngwing.png\')',
+        wing: 'url(\'../assets/images/wing.png\')',
+        notoriouspirateoutcast:
+        'url(\'../assets/images/notoriouspirateoutcast.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
         header: 'url(\'../components/assets/images/kingsheadd.png\')',
@@ -51,6 +57,5 @@ module.exports = {
   },
   plugins: [
     require('tw-elements/dist/plugin'),
-    require('tailwind-scrollbar'),
   ],
 };
