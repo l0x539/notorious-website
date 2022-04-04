@@ -10,29 +10,19 @@ const Treasure: FC<{
 }> = ({children}) => {
   const [isHovering, setIsHovered] = useState(false);
   return (
-    <div className='z-5 relative flex flex-col items-center
+    <div className='z-5 cursor-pointer relative flex flex-col items-center
      bg-scrollimage bg-cover'
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}>
-
-      {isHovering && (
-        <><ChestOpened />
-          <div className='flex justify-center
+      <>
+        <ChestOpened className={isHovering ? 'block' : 'hidden'} />
+        <ChestClosed className={isHovering ? 'hidden' : 'block'} />
+        <div className='flex justify-center
          items-center w-[283px] h-[236px]' >
-            {children}
-          </div></>
-      )}
-      {!isHovering && (
-        <><ChestClosed />
-          <div className='flex justify-center
-          items-center w-[283px] h-[236px]'>
-            {children}
-          </div></>
-      )}
-
-
+          {children}
+        </div>
+      </>
     </div>
-
   );
 };
 

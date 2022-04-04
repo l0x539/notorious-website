@@ -7,16 +7,16 @@ import twitterwidget from '../assets/images/twitterwidget.png';
 
 const MainPosters = () => {
   return (
-    <div className='pb-16 relative'>
+    <div className='pb-16 relative border-b-[5px] border-[#8F8F8F]'>
       <div className="container mx-auto grid grid-flow-col gap-40
-      grid-cols-[repeat(2,_minmax(0,_1fr))]">
+      grid-cols-[repeat(2,_minmax(0,_1fr))] mb-24">
         <Card>
           <div className='pb-5 flex flex-col flex-wrap'>
             <div className='px-10 mx-5 mb-28 max-h-[43.75rem] mt-10
             scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-700
             overflow-y-scroll scrollbar-thumb-rounded-full
              scrollbar-track-rounded-full'>
-              <h1 className='font-medium text-3xl text-white mb-7'>
+              <h1 className='font-semibold text-3xl text-white mb-7'>
                 Frequently Asked <span className='font-medium text-3xl
                 text-yellow-500'> Questions</span></h1>
               <p className=' text-xl text-white paragraphFAQ'>
@@ -54,7 +54,7 @@ const MainPosters = () => {
         </Card>
         <Card>
           <div className='pb-5 flex flex-col'>
-            <h1 className='font-medium text-3xl text-white px-10 mx-5 mt-10'>
+            <h1 className='font-semibold text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
             <Image src={twitterwidget} width={589} height={774} alt=""
@@ -67,8 +67,8 @@ const MainPosters = () => {
         <div className='background z-[-1]'>
           <Image
             src={background}
-            width={1900}
-            height={1191}
+            // width={1900}
+            // height={1191}
             alt="Notorious pirates background imaeg"
             layout='fill'
             objectFit='cover' />

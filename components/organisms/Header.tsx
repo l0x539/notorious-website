@@ -7,7 +7,8 @@ import Styles from '../../styles/Home.module.scss';
 const Header = () => {
   return (
     <header className={Styles.divider}>
-      <div className=" bg-nav bg-cover h-[89px]">
+      <div className=" bg-nav bg-cover
+      border-b-[5px] border-[#8F8F8F]">
         <nav className='container mx-auto flex items-center flex-wrap'>
           <Logo />
           <HeaderLinks />
