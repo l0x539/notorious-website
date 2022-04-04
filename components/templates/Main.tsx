@@ -1,10 +1,10 @@
 import NftCard from '../atoms/NftCard';
 import link from '../assets/svg/ghosty3.png';
-import CarouselTwo from '../molecules/Carousel';
+import NftsSection from '../organisms/NftsSection';
 
 const Main = () => {
   return (
-    <div className="container mx-auto">
+    <>
       <h1 className="text-3xl font-bold underline">Home Page</h1>
 
       <NftCard
@@ -13,8 +13,8 @@ const Main = () => {
         Notoriety='20'
         PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
 
-      <CarouselTwo />
-    </div>
+      <NftsSection />
+    </>
   );
 };
 

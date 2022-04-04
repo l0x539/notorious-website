@@ -14,10 +14,8 @@ import ArrowNext from '../assets/images/ArrowRight.png';
 
 const CarouselTwo: FC<{
   show: number,
-  gap: 2 | 4 | 8 | 16 | 32;
 }> = ({
   show,
-  gap,
   children,
 }) => {
   const [items, setItems] = useState<(
