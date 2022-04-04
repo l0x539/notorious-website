@@ -1,0 +1,40 @@
+@keyframes hide {
+  from {
+    width: 160px;
+    display: block;
+  }
+  99% {
+    width: 1px;
+  }
+  to {
+    width: 0px;
+    display: none;
+  }
+}
+
+@keyframes show {
+  0% {
+    width: 0px;
+    display: none;
+  }
+  1% {
+    display: block;
+    width: 1px;
+  }
+  99% {
+    display: block;
+    width: 160px;
+  }
+  to {
+    width: auto;
+    display: block;
+  }
+}
+
+.hide {
+  animation: hide 100ms ease;
+}
+
+.show {
+  animation: show 100ms ease;
+}

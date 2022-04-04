@@ -1,5 +1,22 @@
 
 module.exports = {
+  purge: {
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+      './layout/**/*.{js,ts,jsx,tsx}',
+    ],
+
+    // These options are passed through directly to PurgeCSS
+    options: {
+      safelist: [
+        {
+          pattern: /^(grid-cols|grid-rows|gap|left|right)-.*/,
+        },
+      ],
+    },
+  },
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -7,6 +24,7 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js',
     './node_modules/tw-elements/dist/css/**/*.css',
   ],
+
   theme: {
     fontFamily: {
       sans: ['Rosario', 'sans-serif'],
