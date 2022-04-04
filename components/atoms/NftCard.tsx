@@ -1,3 +1,4 @@
+import {StaticImageData} from 'next/image';
 import {FC} from 'react';
 
 
@@ -12,11 +13,9 @@ const NftCard: FC<{
     <div>
       <div key={Pirate} className={`${'border-solid border-4 ' +
         'border-[#C0AB75] bg-[#C0AB75] ' + 'rounded w-[10rem] ' +
-        'shadow-[0px_4px_4px_rgba(0,0,0,0.25),0px_4px_4px_rgba(0,0,0,0.25)] ' +
         'hover:scale-110 ' +
         'hover:border-[#FFCB45] hover:bg-[#FFCB45] duration-150 ' +
-        'hover:shadow-[0px_4px_77px_25px_rgba(255,203,69,0.25)' +
-        ',0px_4px_4px_rgba(0,0,0,0.25)]'
+        'cursor-pointer'
       }`}>
         <div className='border-b-4 border-[#8F8F8F] bg-cover bg-center
         bg-no-repeat h-44 ' style={{backgroundImage: `url(${link.src})`}} >
