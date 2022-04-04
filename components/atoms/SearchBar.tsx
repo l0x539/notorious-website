@@ -17,10 +17,10 @@ const SearchBar : FC<{
      my-20 px-5 py-5 flex flex-col items-center'>
       <input type="search" className='form-control block
         bg-white rounded-md border border-solid
-         hover:border-[#3b82f6] hover:cursor-pointer
+         hover:cursor-pointer
          text-base font-normal mx-5 my-4 px-5 py-1.5
         text-[#909090] focus:text-gray-700 focus:bg-white
-        focus:outline-none hover:border-sky-400 hover:border-2'
+        focus:outline-none hover:border-2 my-[1px] hover:my-0'
       placeholder={placeholder}
       value={value}
       onChange={OnChange}/>

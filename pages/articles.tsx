@@ -1,10 +1,10 @@
-import Head from "next/head";
-import PublicPage from "../components/layout/PublicPage";
-import Articles from "../components/templates/Articles";
+import Head from 'next/head';
+import PublicPage from '../components/layout/PublicPage';
+import Articles from '../components/templates/Articles';
 
 const ArticlesPage = () => {
   return (
-<PublicPage>
+    <PublicPage>
       <Head>
         <title>Notorious Pirates | News Articles </title>
         <meta name="description" content="Notorious Pirates Main website" />
@@ -12,7 +12,7 @@ const ArticlesPage = () => {
       </Head>
       <Articles/>
     </PublicPage>
-    );
+  );
 };
 
 export default ArticlesPage;

@@ -12,7 +12,7 @@ const News = () => {
   return (
     <>
       <div className='bg-news bg-cover bg-no-repeat py-36 px-20
-       flex justify-center border-b-4
+       flex justify-center border-b-[5px]
        border-b-[#8F8F8F] border-b-solid
          align-center'>
         <Image
@@ -21,7 +21,8 @@ const News = () => {
           height={113}
           alt="News"/>
       </div>
-      <div className="relative">
+      <div className="relative border-b-[5px]
+       border-b-[#8F8F8F]">
         <div className='absolute h-full w-full top-0 bg-black'>
           <div className='background z-[-1]'>
             <Image

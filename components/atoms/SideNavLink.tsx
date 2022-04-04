@@ -5,7 +5,7 @@ const SideNavLink: FC<{
   title: string;
 }> = ({link, title}) => {
   return (
-    <div className='sidenav-link'>
+    <div className='sidenav-link cursor-pointer'>
       <Link href={link} passHref>
         <ul className="relative">
           <li className="relative mt-2">

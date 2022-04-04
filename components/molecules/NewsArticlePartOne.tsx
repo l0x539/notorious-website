@@ -2,7 +2,8 @@
 
 const NewsArticlePartOne= ()=>{
   return (
-    <div className="bg-natur bg-cover  w-full">
+    <div className="bg-natur bg-cover  w-full border-b-[5px]
+    border-b-[#8F8F8F]">
 
       <div className="border-white border-1
       py-[7.125rem] px-[26.938rem]">

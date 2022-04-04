@@ -2,7 +2,8 @@ import CardNewsArticles from '../atoms/CardNewsArticles';
 
 const NewsArticlePartThree= ()=>{
   return (
-    <div className="bg-notoriouspirateoutcast bg-cover text-white  ">
+    <div className="bg-notoriouspirateoutcast bg-cover text-white
+    bg-black border-b-[5px] border-b-[#8F8F8F]">
       <div className="text-center py-2">
         <p>Posted in NFT Releases</p>
         <p>Please <span className="text-yellow-500">login</span> to comment</p>
@@ -38,81 +39,81 @@ const NewsArticlePartThree= ()=>{
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='py-4'>
+        <div className='py-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='py-4'>
+        <div className='py-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='pb-4'>
+        <div className='pb-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='pb-4'>
+        <div className='pb-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='pb-4'>
+        <div className='pb-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
 
-          <div className='pb-4'>
+        <div className='pb-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
-          </div>
-          <div className='pb-4'>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
+        <div className='pb-4'>
           <CardNewsArticles title={'Edward Sailshot'}
-        description={`Avast young swashbucklers, and old buccaneers!
+            description={`Avast young swashbucklers, and old buccaneers!
         It's been a while since we've hosted a GM
         event here at Pirates Online Retribution,
         and so to break that recent period of idleness
         the crew here at POR will be`}
-        time={'20222-01-31 22:42:31'} className={''}/>
+            time={'20222-01-31 22:42:31'} className={''}/>
+        </div>
+
+
       </div>
-      
-
     </div>
-</div>
 
 
   );

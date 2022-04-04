@@ -13,7 +13,8 @@ const NewsBanner: FC<{
     return (
       <div className="container mx-14 my-5 bg-banner bg-cover border-4
       border-solid border-[#8F8F8F] flex items-center
-      flex-wrap banner-div hover:shadow-banner text">
+      flex-wrap banner-div hover:shadow-banner text
+      cursor-pointer">
         <div className='inline-flex mx-20 banner'>
           <Image src={bannerlogo} width={141} height={139} alt=""
             className=
