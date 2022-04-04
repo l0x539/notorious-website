@@ -1,3 +1,4 @@
+
 module.exports = {
   purge: {
     content: [
@@ -21,11 +22,31 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './layout/**/*.{js,ts,jsx,tsx}',
     './node_modules/tw-elements/dist/js/**/*.js',
+    './node_modules/tw-elements/dist/css/**/*.css',
   ],
 
   theme: {
-    extend: {},
-  },
+    fontFamily: {
+      sans: ['Rosario', 'sans-serif'],
+    },
+    extend: {
+      backgroundImage: (theme) => ({
+        nav: 'url(\'../components/assets/images/bg-image.png\')',
+        card: 'url(\'../components/assets/images/wood.png\')',
 
-  plugins: [require('tw-elements/dist/plugin')],
+        carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
+        sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
+        scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
+        banner: 'url(\'../components/assets/images/banner-bg.png\')',
+        header: 'url(\'../components/assets/images/kingsheadd.png\')',
+      }),
+      boxShadow: {
+        inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
+      },
+    },
+  },
+  plugins: [
+    require('tw-elements/dist/plugin'),
+    require('tailwind-scrollbar'),
+  ],
 };
