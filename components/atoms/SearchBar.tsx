@@ -12,15 +12,30 @@ const SearchBar : FC<{
   OnChange,
 }) => {
   return (
-    <input type="search" className='form-control block
+    <div className='relative  bg-sidenav bg-cover border-4
+    border-solid border-[#8F8F8F]
+     my-20 px-5 py-5 flex flex-col items-center'>
+      <input type="search" className='form-control block
         bg-white rounded-md border border-solid
          hover:border-[#3b82f6] hover:cursor-pointer
-        px-3 py-1.5 text-base font-normal w-[247px] h-[39px]
+         text-base font-normal mx-5 my-4 px-5 py-1.5
         text-[#909090] focus:text-gray-700 focus:bg-white
         focus:outline-none hover:border-sky-400 hover:border-2'
-    placeholder={placeholder}
-    value={value}
-    onChange={OnChange}/>
+      placeholder={placeholder}
+      value={value}
+      onChange={OnChange}/>
+      <div className='inline-flex'>
+        <button className='border border-solid bg-[#E3E3E3]
+       border-[#AEAEAE] rounded mx-2 px-4 py-1
+        text-[#3A3A3A] text-sm font-normal'>Search </button>
+        <button className='border border-solid bg-[#E3E3E3]
+       border-[#AEAEAE] rounded mx-2 px-4 py-1
+        text-[#3A3A3A] text-sm font-normal'>Reset</button>
+
+      </div>
+
+    </div>
+
   );
 };
 

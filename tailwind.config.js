@@ -45,6 +45,7 @@ module.exports = {
         'url(\'../assets/images/notoriouspirateoutcast.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
+        news: 'url(\'../components/assets/images/news-header.png\')',
         header: 'url(\'../components/assets/images/kingsheadd.png\')',
         members: 'url(\'../components/assets/images/devilsanvel.png\')',
         nfts: 'url(\'../components/assets/images/South_Idol.png\')',
@@ -52,6 +53,7 @@ module.exports = {
       }),
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
+        banner: 'inset 0px 4px 118px 48px rgba(0, 0, 0, 0.75)',
       },
     },
   },
@@ -59,3 +61,4 @@ module.exports = {
     require('tw-elements/dist/plugin'),
   ],
 };
+

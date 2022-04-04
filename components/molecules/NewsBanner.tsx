@@ -1,6 +1,7 @@
-import logo from '../assets/svgs/logo.svg';
+import bannerlogo from '../assets/svgs/bannerlogo.svg';
 import Image from 'next/image';
 import {FC} from 'react';
+// mr-133px ml-20px
 
 const NewsBanner: FC<{
     title: string;
@@ -10,16 +11,14 @@ const NewsBanner: FC<{
 
   }> = ({title, description, time, comments}) => {
     return (
-      <div className="container  w-[911px] h-[232px] bg-banner bg-cover border-4
-           border-solid border-gray-400 flex items-center flex-wrap
-           banner-div hover:shadow-inner">
-        <div className='inline-flex h-full w-full '>
-          <div className='mx-12 my-10'>
-            <Image src={logo} width={141} height={139} alt=""
-              className=
-                'hover:drop-shadow-[0_4px_50px_1px_rgba(187, 173, 123, 1)]'/>
-          </div>
-          <div className='mx-5 my-5 banner-items'>
+      <div className="container mx-14 my-5 bg-banner bg-cover border-4
+      border-solid border-[#8F8F8F] flex items-center
+      flex-wrap banner-div hover:shadow-banner text">
+        <div className='inline-flex mx-20 banner'>
+          <Image src={bannerlogo} width={141} height={139} alt=""
+            className=
+              'hover:drop-shadow-[0_4px_50px_1px_rgba(187, 173, 123, 1)]'/>
+          <div className='my-2 banner-items'>
             <h1 className='text-3xl text-white text-center'>{title}
               <span className='text-yellow-400 text-2xl block mb-5'>
                 Notorious Pirate!</span></h1>

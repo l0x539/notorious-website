@@ -32,13 +32,13 @@ const Paging: FC<{
   className,
 }) => {
   return (
-    <div className={`flex flex-col items-center
+    <div className={`relative flex flex-col items-center
     ${className}`}>
       {title}
-      <div className={` flex justify-center items-center`}>
+      <div className={` flex flex-col  items-center`}>
         {children}
       </div>
-      <div>
+      <div className='mt-5'>
         <button onClick={onFirst}
           className={`border border-solid bg-[#E3E3E3] border-[#AEAEAE] rounded
          text-[#3A3A3A] text-sm font-normal w-[4.7rem] h-[1.6rem] mx-5`}>
@@ -70,7 +70,7 @@ const Paging: FC<{
         Last </button>
       </div>
 
-      <div className={`text-black text-base font-normal mt-5`}>
+      <div className={`text-base font-normal mt-5 text-white`}>
         <span> Page {currentPage} of {totalPages} </span>
       </div>
 

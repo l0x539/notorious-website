@@ -5,13 +5,13 @@ const SideNavLink: FC<{
   title: string;
 }> = ({link, title}) => {
   return (
-    <div>
+    <div className='sidenav-link'>
       <Link href={link} passHref>
         <ul className="relative">
           <li className="relative mt-2">
             <a className='flex flex-col flex-wrap items-center
-            text-white text-sm py-1 px-4 hover:bg-[#894C15]
-            hover:shadow-inner transition duration-300 ease-in-out h-7'>
+            text-white text-xl font-normal py-1 px-6 hover:bg-[#894C15]
+            hover:shadow-inner transition duration-300 ease-in-out h-9'>
               {title}
             </a>
           </li>
