@@ -8,7 +8,9 @@ const MemberCard: FC<{
   link: StaticImageData;
   name: string;
   description: string;
-}> = ({name, description, link}) =>{
+  twitter: string;
+  linkidin: string;
+}> = ({name, description, link, twitter, linkidin}) =>{
   return (
     <div>
       <div key={name} className={`${' relative border-solid border-4 '+
@@ -40,14 +42,14 @@ const MemberCard: FC<{
             <li className='text-clip overflow-hidden'> {description}</li>
           </ul>
           <div className='flex justify-end'>
-            <a className='mr-2' href='#'>
+            <a className='mr-2' href={linkidin}>
               <Image
                 src={iconlinkidin}
                 alt="likidin"
                 width='32'
                 height='32'/>
             </a>
-            <a href='#'>
+            <a href={twitter}>
               <Image
                 src={icontwitter}
                 alt="twitter"
