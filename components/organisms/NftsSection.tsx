@@ -2,6 +2,7 @@ import NftCard from '../atoms/NftCard';
 import link from '../assets/svg/ghosty3.png';
 import big from '../assets/images/bigbuck1.png';
 import bourbon from '../assets/images/bourbon1.png';
+import anne from '../assets/images/anne.png';
 import Carousel from '../molecules/NftsCarousel';
 
 const NftsSection = () => {
@@ -22,66 +23,88 @@ const NftsSection = () => {
         </h1>
         <Carousel show={7} >
           <NftCard
-            Pirate='1'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
+            Pirate='217'
+            name='Juan Carlos Trastamara'
+            Notoriety='27'
+            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
 
           <NftCard
-            Pirate='2'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin'
-            link={bourbon} />
-          <NftCard
-            Pirate='1'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
-
-          <NftCard
-            Pirate='2'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
+            Pirate='217'
+            name='Juan Carlos Trastamara'
+            Notoriety='27'
+            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
 
           <NftCard
             Pirate='3'
             name='Anne Bonny'
             Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin'
+            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
+            link={anne} />
+          <NftCard
+            Pirate='2'
+            name='Captain Bourbon'
+            Notoriety='18'
+            PrimarySkills=' Poker, Blackjack, Daggers'
             link={bourbon} />
 
           <NftCard
             Pirate='1'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
+            name='Big Buck Buccaneer'
+            Notoriety='27'
+            PrimarySkills='Sailing, Swordcraft, Gunnery' link={big} />
 
           <NftCard
-            Pirate='2'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
+            Pirate='217'
+            name='Juan Carlos Trastamara'
+            Notoriety='27'
+            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
 
           <NftCard
             Pirate='3'
             name='Anne Bonny'
             Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin'
+            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
+            link={anne} />
+
+          <NftCard
+            Pirate='2'
+            name='Captain Bourbon'
+            Notoriety='18'
+            PrimarySkills=' Poker, Blackjack, Daggers'
             link={bourbon} />
 
           <NftCard
-            Pirate='1'
+            Pirate='3'
             name='Anne Bonny'
             Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
+            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
+            link={anne} />
+
+          <NftCard
+            Pirate='1'
+            name='Big Buck Buccaneer'
+            Notoriety='27'
+            PrimarySkills='Sailing, Swordcraft, Gunnery' link={big} />
+
+          <NftCard
+            Pirate='3'
+            name='Anne Bonny'
+            Notoriety='20'
+            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
+            link={anne} />
+
+          <NftCard
+            Pirate='217'
+            name='Juan Carlos Trastamara'
+            Notoriety='27'
+            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
+
+          <NftCard
+            Pirate='3'
+            name='Anne Bonny'
+            Notoriety='20'
+            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
+            link={anne} />
 
           <NftCard
             Pirate='2'
@@ -90,29 +113,10 @@ const NftsSection = () => {
             PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
 
           <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin'
-            link={bourbon} />
-
-          <NftCard
-            Pirate='1'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={link} />
-
-          <NftCard
             Pirate='2'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin'
+            name='Captain Bourbon'
+            Notoriety='18'
+            PrimarySkills=' Poker, Blackjack, Daggers'
             link={bourbon} />
         </Carousel>
       </div>

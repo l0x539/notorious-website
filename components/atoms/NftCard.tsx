@@ -23,7 +23,7 @@ const NftCard: FC<{
         <div className="card-desc-background
         bg-cover bg-center bg-no-repeat px-3.5 py-4
          rounded-b drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]">
-          <div className=" text-base mb-2
+          <div className="text-base mb-2
            underline text-white ... ">{name}</div>
           <ul className="text-white text-xs ">
             <li>Pirate #:<span>{Pirate}</span> </li>
