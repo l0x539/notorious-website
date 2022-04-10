@@ -11,18 +11,20 @@ const NftCard: FC<{
 }> = ({Pirate, name, Notoriety, PrimarySkills, link}) => {
   return (
     <div>
-      <div key={Pirate} className={`${'border-solid border-4 ' +
-        'border-[#C0AB75] bg-[#C0AB75] ' + 'rounded w-[10rem] ' +
+      <div key={Pirate} className={`${'border-solid border-[5px] black ' +
+        'border-[#C0AB75] bg-[#C0AB75] ' + 'rounded w-[11.5rem] ' +
         'hover:scale-110 ' +
-        'hover:border-[#FFCB45] hover:bg-[#FFCB45] duration-150 ' +
-        'cursor-pointer'
+        'hover:border-[#FFCB45] hover:bg-[#FFCB45] transition duration-200' +
+        'cursor-pointer boxshadowcard'
       }`}>
-        <div className='border-b-4 border-[#8F8F8F] bg-cover bg-center
-        bg-no-repeat h-44 ' style={{backgroundImage: `url(${link.src})`}} >
+        <div className='border-b-[5px] border-[#8F8F8F] bg-cover bg-center
+        bg-no-repeat h-48 '
+        style={{backgroundImage: `url(${link.src})`}} >
         </div>
         <div className="card-desc-background
+        drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]
         bg-cover bg-center bg-no-repeat px-3.5 py-4
-         rounded-b drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]">
+         rounded-b  ">
           <div className=" text-base mb-2
            underline text-white ... ">{name}</div>
           <ul className="text-white text-xs ">
