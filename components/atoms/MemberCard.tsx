@@ -42,14 +42,15 @@ const MemberCard: FC<{
             <li className='text-clip overflow-hidden'> {description}</li>
           </ul>
           <div className='flex justify-end'>
-            <a className='mr-2' href={linkidin}>
+            <a className='mr-2' href={linkidin}
+              target="_blank" rel="noopener noreferrer">
               <Image
                 src={iconlinkidin}
                 alt="likidin"
                 width='32'
                 height='32'/>
             </a>
-            <a href={twitter}>
+            <a href={twitter} target="_blank" rel="noopener noreferrer">
               <Image
                 src={icontwitter}
                 alt="twitter"
