@@ -20,9 +20,10 @@ const SocialIcon: FC<{
   }, [type]);
 
 
-  return <a href={link}><Image src={Comp}
-    width={40} height={40}
-    alt="Notorious pirates Social media links logo"/></a>;
+
+  return <a href={link}
+    target="_blank" rel="noopener noreferrer"><Image src={Comp}
+      alt="Notorious pirates Social media links logo"/></a>;
 };
 
 
