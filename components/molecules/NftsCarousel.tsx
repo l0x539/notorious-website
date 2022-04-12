@@ -43,11 +43,11 @@ const CarouselTwo: FC<{
       <div
         className=''>
         <div className="flex justify-evenly
-        align-center overflow-hidden py-8">
+        align-center clip-hidden py-8 ">
           <div className='flex relative left-0'>
             {items.slice(0, show + 2).map((item, i) => (
               <div className={
-                `mx-8 ${i === items.length?
+                `mx-5 ${i === items.length?
                   styles.hide:styles.show}`
               } key={i + index}>{item}</div>
             ))}
