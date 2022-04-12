@@ -1,22 +1,32 @@
-import {ReactNode} from 'react';
+import {ReactNode, useEffect, useState} from 'react';
+import Loading from '../../templates/Loading';
 import Maintenance from '../../templates/Maintenance';
 
 
 interface LayoutProps {
-    children: ReactNode
+  children: ReactNode
 }
 
 const Layout = ({children}: LayoutProps) => {
-  return (
-    <>
-      <div className='block lg:hidden'>
-        <Maintenance />
-      </div>
-      <div className='hidden lg:block'>
-        {children}
-      </div>
-    </>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, [setLoading]);
+
+  return loading ? (
+    <Loading />
+  ) :
+    (
+      <>
+        <div className='block lg:hidden'>
+          <Maintenance />
+        </div>
+        <div className='hidden lg:block'>
+          {children}
+        </div>
+      </>
+    );
 };
 
 export default Layout;
