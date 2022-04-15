@@ -57,23 +57,25 @@ const MainPosters = () => {
             <h1 className='font-semibold text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
-            <div className='grid justify-items-center
-            shadow-[0px_4px_12px_17px_rgba(255,203,69,0.25)]
-            mr-[62px] ml-[42px] mt-5 rounded mb-5
+            <div className='rounded-xl mx-[42px] my-5
+            overflow-hidden'>
+              <div className='shadow-[0px_4px_12px_17px_rgba(255,203,69,0.25)]
+            h-[48.375rem] overflow-y-scroll scrollbar-thin
+            scrollbar-thumb-gray-400 scrollbar-track-gray-700
+            overflow-y-scroll scrollbar-thumb-rounded-full
+            scrollbar-track-rounded-full
             '>
-
-
-              <Timeline
-                dataSource={{
-                  sourceType: 'profile',
-                  screenName: '',
-                }}
-                options={{
-                  height: '774',
-                  width: '589',
-                  theme: 'dark',
-                }}
-              />
+                <Timeline
+                  dataSource={{
+                    sourceType: 'profile',
+                    screenName: 'piratenfts',
+                  }}
+                  options={{
+                    width: '100%',
+                    theme: 'dark',
+                  }}
+                />
+              </div>
             </div>
           </div>
         </Card>
