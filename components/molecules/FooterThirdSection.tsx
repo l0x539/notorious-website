@@ -5,8 +5,8 @@ import ReddIt from '../atoms/RedditIcon';
 
 const FooterPartThree =()=>{
   return (
-    <div className=''>
-      <h3 className='text-white text-lg underline font-bold mb-4'>
+    <div className='w-1/7 '>
+      <h3 className='text-white text-lg underline font-bold mb-3.5'>
   Engage with us!</h3>
       <Discord/>
       <Twitter/>
