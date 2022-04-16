@@ -12,7 +12,7 @@ const Layout = ({children}: LayoutProps) => {
 
   useEffect(() => {
     setLoading(false);
-  }, [setLoading]);
+  }, []);
 
   return loading ? (
     <Loading />

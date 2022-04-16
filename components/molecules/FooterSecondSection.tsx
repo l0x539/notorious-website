@@ -3,7 +3,7 @@ import FooterLink from '../atoms/FooterLink';
 
 const FooterPartTwo =()=>{
   return (
-    <div className='text-yellow-300 text-lg ' >
+    <div className='text-yellow-300 text-lg w-1/7' >
       <h3 className='underline font-bold text-white'>Your Compass
       </h3>
       <FooterLink name=' Port of Call' link='#'/>
