@@ -13,22 +13,22 @@ const Layout = ({children}: LayoutProps) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
-  return loading ? (
-    <Loading />
-  ) :
-    (
-      <>
+  return (
+    <>
+      {loading && <Loading />}
+      <div className={`${loading?'hidden':'block'}`}>
         <div className='block lg:hidden'>
           <Maintenance />
         </div>
         <div className='hidden lg:block'>
           {children}
         </div>
-      </>
-    );
+      </div>
+    </>
+  );
 };
 
 export default Layout;
