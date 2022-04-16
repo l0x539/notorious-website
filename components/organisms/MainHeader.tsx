@@ -2,11 +2,12 @@
 import blue from '../../assets/images/blue.png';
 import pirate from '../../assets/images/pirate.png';
 import black from '../../assets/images/black.png';
-import piratesnoto from '../../assets/images/piratesNoto.png';
+// import piratesnoto from '../../assets/images/piratesNoto.png';
 import skeleton from '../../assets/images/skeleton.png';
 import red from '../../assets/images/red.png';
 import women from '../../assets/images/women.png';
 import Image from 'next/image';
+import NotoriousPiratesMain from '../atoms/NotoriousPiratesMain';
 
 const MainHeader = () => {
   return (<div className='bg-header bg-cover bg-no-repeat
@@ -48,12 +49,13 @@ const MainHeader = () => {
     </div>
 
     <div className=' flex
-    items-center place-content-around  '>
-      <Image className=''
+    items-center place-content-around'>
+      <NotoriousPiratesMain />
+      {/* <Image className=''
         src={piratesnoto.src}
         alt="twitter"
         width='725'
-        height='213'/>
+        height='213'/> */}
     </div>
 
     <div className='relative'>

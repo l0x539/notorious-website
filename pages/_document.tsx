@@ -7,7 +7,8 @@ const Document = () => {
       <body className='scrollbar-thin scrollbar-thumb-gray-400
     scrollbar-track-gray-700
     overflow-y-scroll scrollbar-thumb-rounded-full
-     scrollbar-track-rounded-full'>
+     scrollbar-track-rounded-full
+     transition-all'>
         <Main />
         <NextScript />
       </body>

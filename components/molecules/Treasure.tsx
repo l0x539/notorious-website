@@ -1,8 +1,9 @@
 
 import {FC} from 'react';
 import {useState} from 'react';
-import ChestClosed from '../atoms/ChestClosed';
-import ChestOpened from '../atoms/ChestOpened';
+// import ChestClosed from '../atoms/ChestClosed';
+// import ChestOpened from '../atoms/ChestOpened';
+import TreasureOpen from '../atoms/TreasureOpen';
 
 const Treasure: FC<{
 
@@ -15,8 +16,12 @@ const Treasure: FC<{
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}>
       <>
-        <ChestOpened className={isHovering ? 'block' : 'hidden'} />
-        <ChestClosed className={isHovering ? 'hidden' : 'block'} />
+        <div className='absolute flex flex-col items-center
+         bottom-[170px] h-[200px] w-[200px] mr-10'>
+          <TreasureOpen isHovering={isHovering} />
+        </div>
+        {/* <ChestOpened className={isHovering ? 'block' : 'hidden'} />
+        <ChestClosed className={isHovering ? 'hidden' : 'block'} /> */}
         <div className='flex justify-center
          items-center w-[283px] h-[236px]' >
           {children}
