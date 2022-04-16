@@ -11,7 +11,9 @@ const Layout = ({children}: LayoutProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }, []);
 
   return loading ? (

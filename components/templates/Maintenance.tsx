@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import background from '../assets/images/background.png';
+import Oops from '../atoms/Oops';
 
 
 const Maintenance = () => {
@@ -14,9 +15,8 @@ const Maintenance = () => {
             objectFit='cover' />
         </div>
       </div>
-      <div className='relative flex flex-col h-full justify-center'>
-        <h1 className="text-white text-center text-xl font-semibold">
-            Not supported for mobile yer, use a Desktop</h1>
+      <div className='relative flex flex-col h-full justify-center mx-6'>
+        <Oops />
       </div>
     </div>
   );

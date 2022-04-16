@@ -22,7 +22,7 @@ const Treasures = () => {
             px-16'
         >
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-bold  text-xl
                leading-6 paragraphe'>
                 Create <span className='text-[#FFCB45]'>interactive <br/>
@@ -32,7 +32,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-6 paragraphe'>
                 Create one hundred <br/>
@@ -43,7 +43,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-6 paragraphe'>
                 Transform characters <br/>
@@ -55,7 +55,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-7 paragraphe'>
                 Grant <span className='text-[#FFCB45]'>
@@ -66,7 +66,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-7 paragraphe'>
                 Release <span className='text-[#FFCB45]'>NFT <br/>
@@ -76,7 +76,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-7 paragraphe'>
                 Complete <br/>
@@ -87,7 +87,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-7 paragraphe'>
                 Release videogame to <br/>
@@ -98,7 +98,7 @@ const Treasures = () => {
             </div>
           </Treasure>
           <Treasure >
-            <div className="text-center mt-8">
+            <div className="text-center mt-2">
               <p className='text-white font-semibold text-xl
                leading-7 paragraphe'>
                 Announce the winner <br/>
