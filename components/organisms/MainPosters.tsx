@@ -1,9 +1,9 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 
 import Card from '../molecules/Card';
 import Image from 'next/image';
 import background from '../assets/images/background.png';
-import twitterwidget from '../assets/images/twitterwidget.png';
-
+import {Timeline} from 'react-twitter-widgets';
 
 const MainPosters = () => {
   return (
@@ -57,9 +57,26 @@ const MainPosters = () => {
             <h1 className='font-semibold text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
-            <Image src={twitterwidget} width={589} height={774} alt=""
-              objectFit='contain' objectPosition='center'/>
-
+            <div className='rounded-xl mx-[2.625rem] my-5
+            overflow-hidden'>
+              <div className='shadow-[0px_4px_12px_17px_rgba(255,203,69,0.25)]
+            h-[48.375rem] overflow-y-scroll scrollbar-thin
+            scrollbar-thumb-gray-400 scrollbar-track-gray-700
+            overflow-y-scroll scrollbar-thumb-rounded-full
+            scrollbar-track-rounded-full
+            '>
+                <Timeline
+                  dataSource={{
+                    sourceType: 'profile',
+                    screenName: 'piratenfts',
+                  }}
+                  options={{
+                    width: '100%',
+                    theme: 'dark',
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </Card>
       </div>
