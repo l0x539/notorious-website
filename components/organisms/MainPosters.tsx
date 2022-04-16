@@ -57,7 +57,7 @@ const MainPosters = () => {
             <h1 className='font-semibold text-3xl text-white px-10 mx-5 mt-10'>
                 The Good <span className='font-medium text-3xl
                 text-yellow-500'> Captain&apos;s Log</span></h1>
-            <div className='rounded-xl mx-[42px] my-5
+            <div className='rounded-xl mx-[2.625rem] my-5
             overflow-hidden'>
               <div className='shadow-[0px_4px_12px_17px_rgba(255,203,69,0.25)]
             h-[48.375rem] overflow-y-scroll scrollbar-thin
