@@ -16,7 +16,7 @@ const MainHangers = () => {
           <div className='mb-24'>
             <Card>
               <div className='flex flex-col align-center justify-center p-12
-              drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]'>
+              '>
                 <h1 className='font-semibold text-center text-3xl text-white
                   mb-4 truncate'>
                 Welcome to <div className='text-3xl
@@ -58,7 +58,7 @@ const MainHangers = () => {
           <div>
             <Card>
               <div className='flex flex-col align-center justify-center p-12
-              drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]'>
+              '>
                 <Carousel id="test" title="Hello friends" />
                 <Divider />
                 <div className='text-center'>
