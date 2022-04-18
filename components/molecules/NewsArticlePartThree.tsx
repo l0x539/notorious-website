@@ -2,15 +2,15 @@ import CardNewsArticles from '../atoms/CardNewsArticles';
 
 const NewsArticlePartThree= ()=>{
   return (
-    <div className="bg-notoriouspirateoutcast bg-cover text-white
-    bg-black border-b-[5px] border-b-[#8F8F8F]">
-      <div className="text-center py-2">
+    <div className="bg-notoriouspirateoutcast bg-cover text-white bg-center
+    bg-black border-b-[5px] border-b-[#8F8F8F] ">
+      <div className="text-center py-4">
         <p>Posted in NFT Releases</p>
         <p>Please <span className="text-yellow-500">login</span> to comment</p>
         <p>12 total comments</p>
       </div>
       <div className=" container mx-auto grid grid-rows-2
-      grid-cols-5 px-7 place-content-evenly">
+      grid-cols-5 px-7 place-content-evenly gap-[2.375rem]">
 
         <div className='py-4'>
           <CardNewsArticles title={'Edward Sailshot'}
