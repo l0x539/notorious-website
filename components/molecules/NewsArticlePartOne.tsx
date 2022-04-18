@@ -6,7 +6,7 @@ const NewsArticlePartOne= ()=>{
     border-b-[#8F8F8F]">
 
       <div className="border-white border-1
-      py-[7.125rem] px-[26.938rem]">
+      py-[7.125rem] px-[10.938rem]">
         <div className={`${ 'text-white  px-[5.438rem] ' + 'py-[0.625rem] '+
         'bg-black/50 text-[3.438rem] '+
         // eslint-disable-next-line max-len
