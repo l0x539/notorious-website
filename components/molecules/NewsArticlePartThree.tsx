@@ -10,7 +10,7 @@ const NewsArticlePartThree= ()=>{
         <p>12 total comments</p>
       </div>
       <div className=" container mx-auto grid grid-rows-2
-      grid-cols-5 px-7 place-content-evenly gap-[2.375rem]">
+      grid-cols-5 place-content-evenly gap-[4rem]">
 
         <div className='py-4'>
           <CardNewsArticles title={'Edward Sailshot'}
