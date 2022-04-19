@@ -21,8 +21,9 @@ const SocialIcon: FC<{
 
 
   return (
-    <a href={link}
-      target="_blank" rel="noopener noreferrer">
+    <a className=
+      'hover:drop-shadow-[3px_5px_10px_rgba(255,203,69,1)]' href={link}
+    target="_blank" rel="noopener noreferrer">
       <Image src={Comp}
         width={40} height={40}
         alt="Notorious pirates Social media links logo"/>

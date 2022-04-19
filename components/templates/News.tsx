@@ -36,7 +36,8 @@ const News = () => {
         </div>
         <div className="container mx-auto grid
            grid-cols-[minmax(0,1fr)_19.375rem] gap-6">
-          <div className='pb-5 mt-10 flex flex-col'>
+          <div className='pb-5 mt-10 flex flex-col
+          shadow-[0_4px_75px_48px_rgba(0,0,0,0.25)]'>
             <Paging
               onNext={(e)=> console.log('hey')}
               onFirst={(e)=> console.log('hey')}

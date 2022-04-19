@@ -4,7 +4,8 @@ import SideNavLink from '../atoms/SideNavLink';
 const SideNavBar = () =>{
   return (
     <div className='px-6 py-6 absolute bg-sidenav bg-cover border-4
-     border-solid border-[#8F8F8F] sidenav-items hover:text-center'>
+     border-solid border-[#8F8F8F] sidenav-items hover:text-center
+     shadow-[0_4px_75px_-85px_rgba(0,0,0,0.2)]'>
       <ul className='relative px-5'>
         <li className='relative border-b-4 border-b-[#D8D8D8]'>
           <h5 className='relative text-white text-center

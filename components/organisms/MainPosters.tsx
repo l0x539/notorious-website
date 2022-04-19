@@ -11,7 +11,8 @@ const MainPosters = () => {
       <div className="container mx-auto grid grid-flow-col gap-40
       grid-cols-[repeat(2,_minmax(0,_1fr))] mb-24">
         <Card>
-          <div className='pb-5 flex flex-col flex-wrap'>
+          <div className='pb-5 flex flex-col flex-wrap
+          drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]'>
             <div className='px-10 mx-5 mb-28 max-h-[43.75rem] mt-10
             scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-700
             overflow-y-scroll scrollbar-thumb-rounded-full
