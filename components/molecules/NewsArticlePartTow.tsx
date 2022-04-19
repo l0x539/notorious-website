@@ -10,8 +10,9 @@ const NewsArticlePartTow= ()=>{
 
       <div className="bg-main text-center text-white ">
         <div className="container mx-auto py-8 ">
-          <div className="bg-pngwing mx-32 border-2 border-gray-400 ">
-            <div className="py-4">
+          <div className="bg-pngwing bg-cover bg-norepeat bg-center
+          border-2 border-gray-400 ">
+            <div className="py-5">
               <p>Posted by The Crew on</p>
               <p>January 31st, 2022, 2 p.m.</p>
             </div>
@@ -24,7 +25,7 @@ const NewsArticlePartTow= ()=>{
                 width='577.56'
                 height='325'/>
             </div>
-            <div className='mx-20 my-3 bg-black/50
+            <div className='mx-[11.313rem] my-3 bg-black/50
             shadow-[0px_4px_27px_24px_rgba(0,0,0,0.25)]'>
               <p className='px-10 py-10 text-xl '>
         Avast young swashbucklers, and old buccaneers! It&apos;s been a
