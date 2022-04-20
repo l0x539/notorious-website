@@ -19,7 +19,7 @@ const Layout = ({children}: LayoutProps) => {
   return (
     <>
       {loading && <Loading />}
-      <div className={`${loading?'hidden':'block'}`}>
+      <div className={`${loading?'invisible':'visible'}`}>
         <div className='block lg:hidden'>
           <Maintenance />
         </div>

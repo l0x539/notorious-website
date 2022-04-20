@@ -8,8 +8,8 @@ const FooterPartTwo =()=>{
       </h3>
       <FooterLink name=' Port of Call' link='#'/>
       <FooterLink name='Earn Notoriety' link='/'/>
-      <FooterLink name='News' link='news'/>
-      <FooterLink name=' Community' link='articles'/>
+      <FooterLink name='News' link='/news'/>
+      <FooterLink name=' Community' link='/articles'/>
       <FooterLink name='Pirate Store' link='#'/>
       <FooterLink name='Play Game' link='#'/>
     </div>
