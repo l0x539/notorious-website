@@ -24,7 +24,7 @@ const NftCard: FC<{
          rounded-b drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]">
         <div className="text-base mb-2
            underline text-white truncate ">{name}</div>
-        <ul className="text-white text-xs ">
+        <ul className="text-white text-base ">
           <li>Pirate #:<span>{Pirate}</span> </li>
           <li>Notoriety: <span> {Notoriety}</span></li>
           <li className='text-clip overflow-hidden
