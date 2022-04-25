@@ -26,7 +26,7 @@ module.exports = {
   ],
 
   theme: {
-    fontFamily: {sans: ['Rosario', 'sans-serif'],
+    fontFamily: {sans: ['Rosario'],
     },
     extend: {
       backgroundImage: (theme) => ({
