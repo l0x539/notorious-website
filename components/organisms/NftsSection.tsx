@@ -15,9 +15,9 @@ const NftsSection = () => {
         mb-4 truncate'>
           Discover the most
           <span className='text-3xl
-        text-yellow-500 truncate mx-2'>Notorious Pirates </span>
+        text-notorious-golden-500 truncate mx-2'>Notorious Pirates </span>
 
-          <div className='text-3xl text-yellow-500 truncate'>
+          <div className='text-3xl text-notorious-golden-500 truncate'>
           on the Open Seas!
           </div>
         </h1>

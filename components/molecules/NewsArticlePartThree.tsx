@@ -6,7 +6,9 @@ const NewsArticlePartThree= ()=>{
     bg-black border-b-[5px] border-b-[#8F8F8F] ">
       <div className="text-center py-4">
         <p>Posted in NFT Releases</p>
-        <p>Please <span className="text-yellow-500">login</span> to comment</p>
+        <p>Please
+          <span className="text-notorious-golden-500">login
+          </span> to comment</p>
         <p>12 total comments</p>
       </div>
       <div className=" container mx-auto grid grid-rows-2

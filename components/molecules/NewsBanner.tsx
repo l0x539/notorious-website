@@ -21,7 +21,7 @@ const NewsBanner: FC<{
               'hover:drop-shadow-[0_4px_50px_1px_rgba(187, 173, 123, 1)]'/>
           <div className='my-2 banner-items'>
             <h1 className='text-3xl text-white text-center'>{title}
-              <span className='text-yellow-400 text-2xl block mb-5'>
+              <span className='text-notorious-golden-500 text-2xl block mb-5'>
                 Notorious Pirate!</span></h1>
             <p className='text-white text-center text-xl font-normal'>
               Discover the true meaning of notoriety in the <br/>

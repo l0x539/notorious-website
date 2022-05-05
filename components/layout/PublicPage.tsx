@@ -1,6 +1,8 @@
+import {useRouter} from 'next/router';
 import {ReactNode} from 'react';
 import Footer from '../organisms/Footer';
 import Header from '../organisms/Header';
+import MainHeader from '../organisms/MainHeader';
 import Layout from './defaultLayout/Layout';
 
 interface PublicPageProps {
@@ -8,11 +10,16 @@ interface PublicPageProps {
 }
 
 const PublicPage = ({children}: PublicPageProps) => {
+  const router = useRouter();
+  console.log();
+
   return (
     <Layout>
-      <div className='z-20'>
+      {
+        router.pathname === '/' ?
+        <MainHeader /> :
         <Header />
-      </div>
+      }
       <main className='z-0'>
         {children}
       </main>

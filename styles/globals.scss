@@ -109,12 +109,6 @@ a {
   margin-left: 30px;
 }
 
-
-.paragraphFAQ {
-  line-height: 2;
-}
-
-
 .background {
   opacity: 0.75;
 }
@@ -129,7 +123,7 @@ a {
 
 .text:hover {
   h1 {
-    text-decoration: underline;
+    text-decoration: underline underline-offset-4;
   }
   
 }

@@ -55,6 +55,15 @@ module.exports = {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
         banner: 'inset 0px 4px 118px 48px rgba(0, 0, 0, 0.75)',
       },
+      colors: {
+        'notorious-golden': {
+          100: '#C0AB75',
+          500: '#FFCB45',
+        },
+      },
+      screens: {
+        '2xl': '1476px',
+      },
     },
   },
   plugins: [

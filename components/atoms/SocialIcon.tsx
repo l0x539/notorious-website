@@ -22,7 +22,7 @@ const SocialIcon: FC<{
 
   return (
     <a className=
-      'hover:drop-shadow-[3px_5px_10px_rgba(255,203,69,1)]' href={link}
+      'hover:drop-shadow-[0px_0px_16px_rgba(255,203,69,1)]' href={link}
     target="_blank" rel="noopener noreferrer">
       <Image src={Comp}
         width={40} height={40}
