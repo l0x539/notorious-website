@@ -37,12 +37,12 @@ module.exports = {
         carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
 
-        nadjib: 'url(\'../assets/images/nadjib.png\')',
-        natur: 'url(\'../assets/images/natur.png\')',
-        pngwing: 'url(\'../assets/images/pngwing.png\')',
-        wing: 'url(\'../assets/images/wing.png\')',
+        nadjib: 'url(\'../components/assets/images/nadjib.png\')',
+        natur: 'url(\'../components/assets/images/natur.png\')',
+        pngwing: 'url(\'../components/assets/images/pngwing.png\')',
+        wing: 'url(\'../components/assets/images/wing.png\')',
         notoriouspirateoutcast:
-        'url(\'../assets/images/notoriouspirateoutcast.png\')',
+        'url(\'../components/assets/images/notoriouspirateoutcast.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
         news: 'url(\'../components/assets/images/news-header.png\')',
@@ -54,6 +54,16 @@ module.exports = {
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
         banner: 'inset 0px 4px 118px 48px rgba(0, 0, 0, 0.75)',
+        articles: 'inset 0px 4px 171px 90px rgba(0, 0, 0, 0.75)',
+      },
+      colors: {
+        'notorious-golden': {
+          100: '#C0AB75',
+          500: '#FFCB45',
+        },
+      },
+      screens: {
+        '2xl': '1476px',
       },
     },
   },

@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import NotoriousPiratesJson from '../../assets/json/notorious-pirates.json';
+import NotoriousPiratesJson from '../assets/json/notorious-pirates.json';
 
 
 const NotoriousPiratesMain = () => {

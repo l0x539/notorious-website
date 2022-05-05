@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import SkeletonJson from '../../assets/json/Skull.json';
+import SkeletonJson from '../assets/json/Skull.json';
 
 const Skeleton = () => {
   const options = {

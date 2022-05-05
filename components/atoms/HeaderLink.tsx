@@ -8,8 +8,10 @@ const HeaderLink: FC<{
   return (
     <Link href={link}>
       <a className='block lg:text-center lg:mt-0 text-white
-      mx-5 text-[1.375rem] hover:underline hover:underline-offset-4
-       hover:text-yellow-500 flex items-center h-full'>
+      mx-5 text-[1.375rem] hover:underline
+      hover:underline-offset-4 hover:underline hover:underline-offset-4-offset-4
+       hover:text-notorious-golden-500 hover:cursor-pointer flex
+       items-center h-full'>
         {title}
       </a>
     </Link>

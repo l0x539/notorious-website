@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import ShipJson from '../../assets/json/ship.json';
+import ShipJson from '../assets/json/ship.json';
 
 const Ship = () => {
   const options = {

@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import BluePirateJson from '../../assets/json/bluePirate.json';
+import BluePirateJson from '../assets/json/bluePirate.json';
 
 const BluePirate = () => {
   const options = {

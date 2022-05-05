@@ -11,16 +11,20 @@ const MainHangers = () => {
       <div className='bg-main bg-no-repeat bg-cover
         border-b-[5px] border-[#8F8F8F]'>
         <div
-          className='container mx-auto grid grid-cols-[1fr_2fr] gap-28'
+          className='container mx-auto grid grid-cols-[27.25rem_1fr]
+          gap-[5.125rem]'
         >
           <div className='mb-24'>
             <Card>
-              <div className='flex flex-col align-center justify-center p-12
+              <div className='flex flex-col align-center
+              justify-center py-[1rem] px-[2.875rem]
               '>
                 <h1 className='font-semibold text-center text-3xl text-white
                   mb-4 truncate'>
                 Welcome to <div className='text-3xl
-                text-yellow-500 truncate'> Notorious Pirates Club</div></h1>
+                text-notorious-golden-500 truncate'>
+                Notorious Pirates Club</div>
+                </h1>
                 <div className='rounded border-4 border-[#C0AB75]'>
                   <Image
                     src={PirateMoon}
@@ -31,7 +35,8 @@ const MainHangers = () => {
               </div>
             </Card>
             <Card>
-              <div className='flex flex-col align-center justify-center p-12
+              <div className='flex flex-col align-center
+              justify-center py-[2.875rem] px-[2.875rem]
               drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]'>
                 <div className='bg-[#202020]
                   rounded border-4 border-[#C0AB75]'>
@@ -39,11 +44,12 @@ const MainHangers = () => {
                     text-3xl text-white p-4'>
                     <span>
                         Join
-                      <span className='text-yellow-500 mx-2'>4,000+</span>
+                      <span
+                        className='text-notorious-golden-500 mx-2'>4,000+</span>
                         other
                     </span>
                     <div>notorious pirates</div>
-                    <span className='text-yellow-500 mx-2'>on</span>
+                    <span className='text-notorious-golden-500 mx-2'>on</span>
                     <span className='text-blue-400 mx-1'>Discord!</span>
                   </h1>
                   <Image
@@ -57,25 +63,37 @@ const MainHangers = () => {
           </div>
           <div>
             <Card>
-              <div className='flex flex-col align-center justify-center p-12
+              <div className='flex flex-col align-center
+              justify-center pt-[1rem] pb-[4.75rem] px-[2.875rem]
               '>
-                <Carousel id="test" title="Hello friends" />
+                <Carousel
+                  id="carousel-news"
+                  title={
+                    <>
+                    Find out what it means to become a
+                      <span className='text-3xl text-notorious-golden-500
+                      truncate block'>
+                      Notorious Pirate!</span></>}
+                  description={<>
+                  Discover the true meaning of notoriety in the<br/>
+                  world’s first upcoming Pirate themed Metaverse
+                  </>} />
                 <Divider />
                 <div className='text-center'>
                   <h1 className='font-semibold text-center text-3xl text-white
                   truncate'>
                       Find out what it means to become a
                     <div className='text-3xl
-                text-yellow-500 truncate'>Notorious Pirate!</div>
+                text-notorious-golden-500 truncate'>Notorious Pirate!</div>
                   </h1>
-                  <div className='text-white text-xl'>
+                  <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
                   <div className='text-white text-lg px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal
-                   py-1 px-4 border rounded mt-1'>
+                   py-[9px] text-[1.125rem] px-[1.125rem] border rounded mt-1'>
                   Learn More...
                   </button>
                 </div>
@@ -85,20 +103,19 @@ const MainHangers = () => {
                   truncate'>
                       Find out what it means to become a
                     <div className='text-3xl
-                text-yellow-500 truncate'>Notorious Pirate!</div>
+                text-notorious-golden-500 truncate'>Notorious Pirate!</div>
                   </h1>
-                  <div className='text-white text-xl'>
+                  <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
                   <div className='text-white text-lg px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal
-                   py-1 px-4 border rounded mt-1'>
+                   py-[9px] text-[1.125rem] px-[1.125rem] border rounded mt-1'>
                   Learn More...
                   </button>
                 </div>
-                <Divider />
               </div>
             </Card>
           </div>

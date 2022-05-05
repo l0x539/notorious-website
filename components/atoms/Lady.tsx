@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import LadyJson from '../../assets/json/lady.json';
+import LadyJson from '../assets/json/lady.json';
 
 const Lady = () => {
   const options = {

@@ -16,7 +16,7 @@ const Treasures = () => {
           />
         </div>
         <div
-          className='container mx-auto grid grid-cols-4
+          className='max-w-[1572px] mx-auto grid grid-cols-4
             grid-rows-2 gap-16 gap-y-24 py-20
             bg-maproad bg-cover bg-no-repeat bg-center
             px-16'

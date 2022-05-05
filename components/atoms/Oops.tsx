@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import OopsJson from '../../assets/json/oops.json';
+import OopsJson from '../assets/json/oops.json';
 
 const Oops = () => {
   const options = {

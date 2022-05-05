@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import GhostJson from '../../assets/json/ghost.json';
+import GhostJson from '../assets/json/ghost.json';
 
 const Ghost = () => {
   const options = {

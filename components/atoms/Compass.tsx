@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import CompassJson from '../../assets/json/compass.json';
+import CompassJson from '../assets/json/compass.json';
 
 const Compass = () => {
   const options = {

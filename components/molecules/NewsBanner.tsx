@@ -11,7 +11,7 @@ const NewsBanner: FC<{
 
   }> = ({title, description, time, comments}) => {
     return (
-      <div className="container mx-14 my-5 bg-banner bg-cover border-4
+      <div className="container my-5 bg-banner bg-cover border-4
       border-solid border-[#8F8F8F] flex items-center
       flex-wrap banner-div hover:shadow-banner text
       cursor-pointer">
@@ -20,15 +20,16 @@ const NewsBanner: FC<{
             className=
               'hover:drop-shadow-[0_4px_50px_1px_rgba(187, 173, 123, 1)]'/>
           <div className='my-2 banner-items'>
-            <h1 className='text-3xl text-white text-center'>{title}
-              <span className='text-yellow-400 text-2xl block mb-5'>
+            <h1 className='text-3xl fonst-semibold
+            text-white text-center'>{title}
+              <span className='text-notorious-golden-500 block mb-4'>
                 Notorious Pirate!</span></h1>
-            <p className='text-white text-center text-xl font-normal'>
+            <p className='text-white text-center text-[22px] font-normal'>
               Discover the true meaning of notoriety in the <br/>
               {description}
             </p>
             <div className='my-5 text-center'>
-              <span className='text-white font-bold text-base'>
+              <span className='text-white no-text-shadow font-bold text-[22px]'>
                 {time} | {comments} comments
               </span>
 

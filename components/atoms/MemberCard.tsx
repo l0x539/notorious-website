@@ -1,7 +1,7 @@
 
 import {FC} from 'react';
-import iconlinkidin from '../../assets/images/linkedin1.png';
-import icontwitter from '../../assets/images/twitter1.png';
+import iconlinkidin from '../assets/images/linkedin1.png';
+import icontwitter from '../assets/images/twitter1.png';
 import Image, {StaticImageData} from 'next/image';
 
 const MemberCard: FC<{
@@ -29,19 +29,19 @@ const MemberCard: FC<{
 
         <div className="card-members-background
           flex flex-col justify-between
-            bg-center   px-3.5 py-4
+            bg-center px-[0.625rem] pt-[1.125rem] pb-2.5
             rounded-b drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]
-            min-h-[13.875rem]">
-          <div className="  mb-2
-           underline  text-white text-center not-italic
-            text-2xl ... ">{name}
+            h-[13.875rem]">
+          <div className="mb-2
+           underline underline-offset-4 text-white text-center not-italic
+            text-2xl font-semibold">{name}
           </div>
-          <ul className="leading-[1.5rem]
-          text-white text-center font-light text-[19px]
+          <div className="h-full text-white text-center max-h-[90px]
+          overflow-y-hidden text-[19px]
           ">
-            <li className='text-clip overflow-hidden'> {description}</li>
-          </ul>
-          <div className='flex justify-end'>
+            <div className='text-clip overflow-hidden'> {description}</div>
+          </div>
+          <div className='flex h-[32px] justify-end'>
             <a className='mr-2' href={linkidin}
               target="_blank" rel="noopener noreferrer">
               <Image

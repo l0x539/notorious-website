@@ -1,6 +1,6 @@
 import {useLottie} from 'lottie-react';
 import {FC, useEffect, useState} from 'react';
-import TreasureOpenJson from '../../assets/json/teasor opening.json';
+import TreasureOpenJson from '../assets/json/teasor opening.json';
 
 const TreasureOpen: FC<{isHovering: boolean}> = ({isHovering}) => {
   const [playing, setPlaying] = useState(false);

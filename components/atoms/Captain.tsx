@@ -1,5 +1,5 @@
 import {useLottie} from 'lottie-react';
-import CaptainJson from '../../assets/json/captain.json';
+import CaptainJson from '../assets/json/captain.json';
 
 const Captain = () => {
   const options = {

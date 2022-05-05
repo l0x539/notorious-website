@@ -29,15 +29,13 @@ const Paging: FC<{
   onBackward,
   onForward,
   title,
-  className,
+  className='',
 }) => {
   return (
     <div className={`relative flex flex-col items-center
     ${className}`}>
       {title}
-      <div className={` flex flex-col  items-center`}>
-        {children}
-      </div>
+      {children}
       <div className='mt-5'>
         <button onClick={onFirst}
           className={`border border-solid bg-[#E3E3E3] border-[#AEAEAE] rounded
@@ -71,12 +69,11 @@ const Paging: FC<{
       </div>
 
       <div className={`text-base font-normal mt-5 text-white`}>
-        <span> Page {currentPage} of {totalPages} </span>
+        <span className='text-[22px]'>
+          Page {currentPage} of {totalPages}
+        </span>
       </div>
-
-
     </div>
-
   );
 };
 

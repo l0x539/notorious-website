@@ -1,16 +1,17 @@
-import Discord from '../atoms/DiscordIcon';
-import Twitter from '../atoms/TwitterIcon';
-import ReddIt from '../atoms/RedditIcon';
+import SocialIcon from '../atoms/SocialIcon';
 
 
 const FooterPartThree =()=>{
   return (
-    <div className='w-1/7 '>
-      <h3 className='text-white text-lg underline font-bold mb-3.5'>
+    <div className=''>
+      <h3 className='text-white text-xl underline
+      underline-offset-4 font-bold mb-3.5'>
   Engage with us!</h3>
-      <Discord/>
-      <Twitter/>
-      <ReddIt/>
+      <div className='grid grid-cols-3 items-center gap-[22px]'>
+        <SocialIcon type='discord' link=" https://discord.gg/Au6rp6JQn7 " />
+        <SocialIcon type='twitter' link="https://twitter.com/PirateNFTs" />
+        <SocialIcon type='reddit' link="https://www.reddit.com/r/notoriouspirates/" />
+      </div>
     </div>
   );
 };

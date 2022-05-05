@@ -1,24 +1,27 @@
 
 import MemberCard from '../atoms/MemberCard';
-import chris from '../../assets/images/ChrisHeuvel.png';
-import pearso from '../../assets/images/PearsonWright.png';
-import muhammed from '../../assets/images/MuhammadSafdar.png';
-import holten from '../../assets/images/HoltenRuff.png';
-import jeff from '../../assets/images/jefft1.png';
+import chris from '../assets/images/ChrisHeuvel.png';
+import pearso from '../assets/images/PearsonWright.png';
+import maddi from '../assets/images/MaddiAshley.png';
+import nino from '../assets/images/SikoukNourdin.png';
+import muhammed from '../assets/images/MuhammadSafdar.png';
+import holten from '../assets/images/HoltenRuff.png';
+import jeff from '../assets/images/jefft1.png';
 
 const MemebersCards = () =>{
   return (
-    <div className='container mx-auto grid grid-cols-7 gap-6'>
+    <div className='2xl:max-w-[1620px] mx-auto
+    grid grid-cols-7 gap-[2.5rem]'>
       <MemberCard link={holten} name='Holten Ruff'
         description='Character Designer & GFX Assisant'
         twitter='https://twitter.com/ruff_holten'
         linkidin='#'
       />
 
-      <MemberCard link={chris} name='Chris Heuvel'
-        description='Game Developer & System Admin'
-        twitter='#'
-        linkidin='https://www.linkedin.com/in/christian-van-den-heuvel-011156205/'
+      <MemberCard link={nino} name='Sikouk Nourdin'
+        description='Software Developer & DevSolvers.com CEO'
+        twitter='https://twitter.com/l0x539'
+        linkidin='https://www.linkedin.com/in/sikouknourdin/'
       />
 
       <MemberCard link={chris} name='Chris Heuvel'
@@ -38,7 +41,7 @@ const MemebersCards = () =>{
         twitter='https://twitter.com/PearsonWright_'
         linkidin='https://www.linkedin.com/in/pearsonwright/'/>
 
-      <MemberCard link={pearso} name='Maddi Ashley'
+      <MemberCard link={maddi} name='Maddi Ashley'
         description='Community Engagement & Partnership Manager'
         twitter='#'
         linkidin='#'/>

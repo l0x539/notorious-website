@@ -1,7 +1,7 @@
 
-import Discord from '../../assets/svgs/discord-logo-png-7622 2.svg';
-import Twitter from '../../assets/svgs/twitter.svg';
-import Reddit from '../../assets/svgs/reddit.svg';
+import Discord from '../assets/svgs/discord-logo-png-7622 2.svg';
+import Twitter from '../assets/svgs/twitter.svg';
+import Reddit from '../assets/svgs/reddit.svg';
 import {useMemo} from 'react';
 import {FC} from 'react';
 import Image from 'next/image';
@@ -22,7 +22,7 @@ const SocialIcon: FC<{
 
   return (
     <a className=
-      'hover:drop-shadow-[3px_5px_10px_rgba(255,203,69,1)]' href={link}
+      'hover:drop-shadow-[0px_0px_16px_rgba(255,203,69,1)]' href={link}
     target="_blank" rel="noopener noreferrer">
       <Image src={Comp}
         width={40} height={40}
