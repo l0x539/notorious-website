@@ -54,6 +54,7 @@ module.exports = {
       boxShadow: {
         inner: 'inset 0px 0px 15px 5px rgba(0, 0, 0, 0.75)',
         banner: 'inset 0px 4px 118px 48px rgba(0, 0, 0, 0.75)',
+        articles: 'inset 0px 4px 171px 90px rgba(0, 0, 0, 0.75)',
       },
       colors: {
         'notorious-golden': {

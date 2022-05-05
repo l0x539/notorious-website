@@ -4,7 +4,7 @@ import logo from '../assets/images/np.png';
 
 const FooterPartOne = ()=>{
   return (
-    <div className="w-1/7">
+    <div className="">
       <Image
         src={logo}
         alt="image" width="306.38px"

@@ -6,11 +6,13 @@ const CardNewsArticles: FC<{title:string,
        className:string}> = ({title, description, time, className}) => {
          return (
            <div className={`bg-wing bg-cover border-2 border-[#8F8F8F] 
-           h-[26.125rem] text-white shadow-[0px_4px_171px_90px_rgba(0,0,0,0.25)]
+           text-white shadow-[0px_4px_171px_90px_rgba(0,0,0,0.25)]
+           px-5
            ${className}`}>
-             <p className='pb-2 pt-5 px-1.5 text-center text-2xl'> {title} </p>
-             <p className='text-lg mx-8 my-1 text-center '>{description}</p>
-             <p className='px-1 py-3 text-lg text-center'> {time}</p>
+             <p className='pb-3 pt-7 text-center
+             text-2xl font-bold'> {title} </p>
+             <p className='text-center text-[20px] '>{description}</p>
+             <p className='px-1 pt-5 pb-[70px] text-center'> {time}</p>
 
            </div>
          );

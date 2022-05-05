@@ -2,7 +2,7 @@ import DiscordJoin from '../atoms/DiscordJoin';
 
 const FooterPartFour= () =>{
   return (
-    <div className='w-1/7'>
+    <div className=''>
       <DiscordJoin/>
       <h3 className='text-white text-xl underline
       underline-offset-4 font-bold ml-2 mt-5'>

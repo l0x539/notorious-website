@@ -8,11 +8,11 @@ const NewsArticlePartTow= ()=>{
     <div className='bg-black border-b-[5px]
     border-b-[#8F8F8F]'>
 
-      <div className="bg-main text-center text-white ">
-        <div className="container mx-auto py-8 ">
+      <div className="bg-main bg-cover bg-no-repeat text-center text-white ">
+        <div className="container mx-auto py-14 px-[103px]">
           <div className="bg-pngwing bg-cover bg-norepeat bg-center
-          border-2 border-gray-400 ">
-            <div className="py-5">
+          border-2 border-gray-400">
+            <div className="py-5 text-[22px] ">
               <p>Posted by The Crew on</p>
               <p>January 31st, 2022, 2 p.m.</p>
             </div>
@@ -48,10 +48,10 @@ const NewsArticlePartTow= ()=>{
                   and to upload said recording to Youtube or
                   elsewhere to help raise awareness about our swashbuckling MMO!
                    Fair winds for now me hearties!</p>
-              <p className='px-10 pb-6 text-xl '> Be sure to join us on our Forums over at https://piratesforums.com as well
+              <p className='px-10 pb-14 text-xl '> Be sure to join us on our Forums over at https://piratesforums.com as well
          to connect with yer fellow Pirates and Swashbucklers here at POR!. </p>
             </div>
-            <div className='flex justify-center py-3  '>
+            <div className='flex justify-center pb-8  '>
               <Image
                 src={d9plaqo}
                 alt="twitter"

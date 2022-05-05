@@ -3,7 +3,7 @@ import SocialIcon from '../atoms/SocialIcon';
 
 const FooterPartThree =()=>{
   return (
-    <div className='w-1/7 '>
+    <div className=''>
       <h3 className='text-white text-xl underline
       underline-offset-4 font-bold mb-3.5'>
   Engage with us!</h3>

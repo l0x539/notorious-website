@@ -6,8 +6,12 @@ import FooterPartFour from '../molecules/FooterFourthSection';
 const Footer = () => {
   return (
     <footer className='bg-black '>
-      <div className="container mx-auto
-       pt-10 pb-10 flex  justify-between  ">
+      {/* eslint-disable-next-line max-len*/}
+      <div className="grid grid-cols-[minmax(0px,306px)_minmax(0px,176px)_minmax(0px,176px)_minmax(0px,288px)]
+      container mx-auto
+       pt-10 pb-10
+       gap-[171px]
+       ">
         <FooterPartOne/>
         <FooterPartTwo/>
         <FooterPartThree/>

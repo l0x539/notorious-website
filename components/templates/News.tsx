@@ -23,21 +23,9 @@ const News = () => {
       </div>
       <div className="relative border-b-[5px]
        border-b-[#8F8F8F]">
-        <div className='absolute h-full w-full top-0 bg-black'>
-          <div className='background z-[-1]'>
-            <Image
-              src={background}
-              width={1900}
-              height={1191}
-              alt="Notorious pirates background image"
-              layout='fill'
-              objectFit='cover' />
-          </div>
-        </div>
-        <div className="container mx-auto grid
-           grid-cols-[minmax(0,1fr)_19.375rem] gap-6">
-          <div className='pb-5 mt-14 flex flex-col
-          shadow-[0_4px_75px_48px_rgba(0,0,0,0.25)]'>
+        <div className="relative container mx-auto grid z-20
+           grid-cols-[minmax(0,1fr)_19.375rem] gap-[2.375rem]">
+          <div className='pb-5 mt-10 flex flex-col pl-36'>
             <Paging
               onNext={(e)=> console.log('hey')}
               onFirst={(e)=> console.log('hey')}
@@ -47,7 +35,7 @@ const News = () => {
               onBackward={(e)=> console.log('hey')}
               onForward={(e)=> console.log('hey')}
               onPrevious={(e)=> console.log('hey')}
-              title={<div className='text-[35px] font-semibold text-white mb-4'
+              title={<div className='text-[35px] font-semibold text-white'
               >News <span className='text-notorious-golden-500'>List!</span>
               </div>}
               totalPages={10}
@@ -86,6 +74,17 @@ const News = () => {
                 OnChange={(e)=> setSearch(e.target.value)}
               />
             </div>
+          </div>
+        </div>
+        <div className='absolute h-full w-full top-0 bg-black z-10'>
+          <div className='background'>
+            <Image
+              src={background}
+              width={1900}
+              height={1191}
+              alt="Notorious pirates background image"
+              layout='fill'
+              objectFit='cover' />
           </div>
         </div>
       </div>

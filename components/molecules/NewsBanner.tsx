@@ -11,7 +11,7 @@ const NewsBanner: FC<{
 
   }> = ({title, description, time, comments}) => {
     return (
-      <div className="container mx-8 my-5 bg-banner bg-cover border-4
+      <div className="container my-5 bg-banner bg-cover border-4
       border-solid border-[#8F8F8F] flex items-center
       flex-wrap banner-div hover:shadow-banner text
       cursor-pointer">

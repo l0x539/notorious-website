@@ -75,13 +75,13 @@ const MainHeader = () => {
 
           </div>
           <div className='absolute bottom-0 2xl:right-[13.2rem]
-      z-20 2xl:w-[11.75rem] 2xl:h-[18.75rem]
-      xl:w-[9rem] xl:h-[14.35rem] xl:right-[9.9rem]'>
+      z-20 2xl:w-[11.25rem] 2xl:h-[18.75rem]
+      xl:w-[8.625rem] xl:h-[14.35rem] xl:right-[9.9rem]'>
             <Image
               layout='responsive'
               src={women.src}
               alt="twitter"
-              width='188'
+              width='180'
               height='300'/>
           </div>
 
