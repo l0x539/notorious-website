@@ -36,7 +36,8 @@ const MemberCard: FC<{
            underline underline-offset-4 text-white text-center not-italic
             text-2xl font-semibold">{name}
           </div>
-          <div className="h-full text-white text-center text-[19px]
+          <div className="h-full text-white text-center max-h-[90px]
+          overflow-y-hidden text-[19px]
           ">
             <div className='text-clip overflow-hidden'> {description}</div>
           </div>

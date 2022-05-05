@@ -36,7 +36,7 @@ const News = () => {
         </div>
         <div className="container mx-auto grid
            grid-cols-[minmax(0,1fr)_19.375rem] gap-6">
-          <div className='pb-5 mt-10 flex flex-col
+          <div className='pb-5 mt-14 flex flex-col
           shadow-[0_4px_75px_48px_rgba(0,0,0,0.25)]'>
             <Paging
               onNext={(e)=> console.log('hey')}
@@ -47,8 +47,9 @@ const News = () => {
               onBackward={(e)=> console.log('hey')}
               onForward={(e)=> console.log('hey')}
               onPrevious={(e)=> console.log('hey')}
-              title={<div className='text-3xl font-semibold text-white'
-              >News <span className='text-yellow-600'>List!</span> </div>}
+              title={<div className='text-[35px] font-semibold text-white mb-4'
+              >News <span className='text-notorious-golden-500'>List!</span>
+              </div>}
               totalPages={10}
               currentPage={1}
             >
