@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Image from 'next/image';
-import banner from '../../assets/images/Banner.png';
-import d9plaqo from '../../assets/images/d9plaqo.png';
+import banner from '../assets/images/Banner.png';
+import d9plaqo from '../assets/images/d9plaqo.png';
 
 const NewsArticlePartTow= ()=>{
   return (
