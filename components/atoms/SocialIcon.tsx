@@ -1,7 +1,7 @@
 
-import Discord from '../../assets/svgs/discord-logo-png-7622 2.svg';
-import Twitter from '../../assets/svgs/twitter.svg';
-import Reddit from '../../assets/svgs/reddit.svg';
+import Discord from '../assets/svgs/discord-logo-png-7622 2.svg';
+import Twitter from '../assets/svgs/twitter.svg';
+import Reddit from '../assets/svgs/reddit.svg';
 import {useMemo} from 'react';
 import {FC} from 'react';
 import Image from 'next/image';

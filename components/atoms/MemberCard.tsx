@@ -1,7 +1,7 @@
 
 import {FC} from 'react';
-import iconlinkidin from '../../assets/images/linkedin1.png';
-import icontwitter from '../../assets/images/twitter1.png';
+import iconlinkidin from '../assets/images/linkedin1.png';
+import icontwitter from '../assets/images/twitter1.png';
 import Image, {StaticImageData} from 'next/image';
 
 const MemberCard: FC<{

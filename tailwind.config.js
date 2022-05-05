@@ -37,12 +37,12 @@ module.exports = {
         carousel: 'url(\'../components/assets/images/carousel-bg.png\')',
         sidenav: 'url(\'../components/assets/images/sidenav-bg.png\')',
 
-        nadjib: 'url(\'../assets/images/nadjib.png\')',
-        natur: 'url(\'../assets/images/natur.png\')',
-        pngwing: 'url(\'../assets/images/pngwing.png\')',
-        wing: 'url(\'../assets/images/wing.png\')',
+        nadjib: 'url(\'../components/assets/images/nadjib.png\')',
+        natur: 'url(\'../components/assets/images/natur.png\')',
+        pngwing: 'url(\'../components/assets/images/pngwing.png\')',
+        wing: 'url(\'../components/assets/images/wing.png\')',
         notoriouspirateoutcast:
-        'url(\'../assets/images/notoriouspirateoutcast.png\')',
+        'url(\'../components/assets/images/notoriouspirateoutcast.png\')',
         scrollimage: 'url(\'../components/assets/images/scrollimage.png\')',
         banner: 'url(\'../components/assets/images/banner-bg.png\')',
         news: 'url(\'../components/assets/images/news-header.png\')',

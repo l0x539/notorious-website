@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../assets/images/np.png';
+import logo from '../assets/images/np.png';
 
 
 const FooterPartOne = ()=>{

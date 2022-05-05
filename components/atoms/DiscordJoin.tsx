@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import discordJoin from '../../assets/images/footerDiscord.png';
+import discordJoin from '../assets/images/footerDiscord.png';
 
 const DiscordJoin = () => {
   return (

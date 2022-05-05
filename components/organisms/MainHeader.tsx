@@ -1,11 +1,11 @@
 
-import blue from '../../assets/images/blue.png';
-import pirate from '../../assets/images/pirate.png';
-import black from '../../assets/images/black.png';
-import piratesnoto from '../../assets/images/piratesNoto.png';
-import skeleton from '../../assets/images/skeleton.png';
-import red from '../../assets/images/red.png';
-import women from '../../assets/images/women.png';
+import blue from '../assets/images/blue.png';
+import pirate from '../assets/images/pirate.png';
+import black from '../assets/images/black.png';
+import piratesnoto from '../assets/images/piratesNoto.png';
+import skeleton from '../assets/images/skeleton.png';
+import red from '../assets/images/red.png';
+import women from '../assets/images/women.png';
 import Image from 'next/image';
 import Header from './Header';
 

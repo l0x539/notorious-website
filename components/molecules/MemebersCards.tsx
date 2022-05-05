@@ -1,10 +1,10 @@
 
 import MemberCard from '../atoms/MemberCard';
-import chris from '../../assets/images/ChrisHeuvel.png';
-import pearso from '../../assets/images/PearsonWright.png';
-import muhammed from '../../assets/images/MuhammadSafdar.png';
-import holten from '../../assets/images/HoltenRuff.png';
-import jeff from '../../assets/images/jefft1.png';
+import chris from '../assets/images/ChrisHeuvel.png';
+import pearso from '../assets/images/PearsonWright.png';
+import muhammed from '../assets/images/MuhammadSafdar.png';
+import holten from '../assets/images/HoltenRuff.png';
+import jeff from '../assets/images/jefft1.png';
 
 const MemebersCards = () =>{
   return (
