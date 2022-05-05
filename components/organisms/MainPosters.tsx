@@ -34,12 +34,6 @@ const FAQ = [
     potion brewing, and more`,
   },
   {
-    question: 'How do I get involved?',
-    response: `What was the inspiration for this project?
-    Can I apply to become a staff member?
-    I have no money.Can I still participate?`,
-  },
-  {
     question: 'When will the game be completed?',
     response: `While many aspects of Notorious Pirates are already
     functional since this project is a continuation of Pirates Online
@@ -66,12 +60,6 @@ const FAQ = [
     response: `YoGundi, ItzCrimzon, and Capt. Moon all work together to 
     carefully customize each individual character, and bring 
     it to life in its own unique way.`,
-  },
-  {
-    question: 'How do I get involved?',
-    response: `What was the inspiration for this project?
-    Can I apply to become a staff member?
-    I have no money.Can I still participate?`,
   },
   {
     question: 'Do you host competitions or giveaways?',
