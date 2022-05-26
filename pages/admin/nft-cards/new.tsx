@@ -12,7 +12,7 @@ const NewPet = () => {
 
   return (
     <Layout>
-      <Form formId="add-pet-form" cardForm={cardForm} />
+      <Form formId="add-card-form" cardForm={cardForm} />
     </Layout>
   );
 };

@@ -18,19 +18,19 @@ const handler = async (
   switch (method) {
     case 'GET':
       try {
-        const pets = await Card.find({}); /* find all the
+        const cards = await Card.find({}); /* find all the
         data in our database */
-        res.status(200).json({success: true, data: pets});
+        res.status(200).json({success: true, data: cards});
       } catch (error) {
         res.status(400).json({success: false});
       }
       break;
     case 'POST':
       try {
-        const pet = await Card.create(
+        const card = await Card.create(
             req.body,
         ); /* create a new model in the database */
-        res.status(201).json({success: true, data: pet});
+        res.status(201).json({success: true, data: card});
       } catch (error) {
         res.status(400).json({success: false});
       }

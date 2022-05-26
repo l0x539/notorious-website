@@ -61,7 +61,7 @@ const Index: FC<{
   </Layout>
 );
 
-/* Retrieves pet(s) data from mongodb database */
+/* Retrieves card(s) data from mongodb database */
 export const getServerSideProps = async () => {
   await dbConnect();
 
