@@ -19,7 +19,7 @@ const Layout = ({children}: LayoutProps) => {
     <Loading />
   ) :
     (
-      <div className='h-screen bg-white'>
+      <body className='min-h-full bg-white'>
         <Head>
           <title>NFT cards</title>
         </Head>
@@ -43,7 +43,7 @@ const Layout = ({children}: LayoutProps) => {
         <div className='container mx-auto'>
           {children}
         </div>
-      </div>
+      </body>
     );
 };
 
