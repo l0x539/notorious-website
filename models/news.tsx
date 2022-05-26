@@ -1,33 +1,33 @@
 import mongoose from 'mongoose';
-import {ICard} from '../lib/types';
+import {Inews} from '../lib/types';
 
-/* CardSchema will correspond to a collection in your MongoDB database. */
+/* newsSchema will correspond to a collection in your MongoDB database. */
 
 mongoose.Promise = global.Promise;
 
-const newsSchema = new mongoose.Schema<ICard>({
+const newsSchema = new mongoose.Schema<Inews>({
   image: {
-    /* The  pirate of your card */
+    /* The  pthe image url of your news */
 
     type: String,
     required: [true, 'Please provide the image url of your news.'],
     maxlength: [4000, 'Species specified cannot be more than 4000 characters'],
   },
   description: {
-    /* The notoriety of your card */
+    /* the description of your news*/
 
     type: String,
     required: [true, 'Please provide the description of your news.'],
     maxlength: [4000, 'Species specified cannot be more than 4000 characters'],
   },
   date: {
-    /* The primary_skills of your card */
+    /* the date of your news */
 
     type: String,
-    required: [true, 'Please primary_skills the date of your news.'],
+    required: [true, 'Please provide the date of your news.'],
     maxlength: [40, 'Species specified cannot be more than 40 characters'],
   },
 });
 
 export default mongoose.models.news ||
-mongoose.model<ICard>('news', newsSchema);
+mongoose.model<Inews>('news', newsSchema);

@@ -11,12 +11,12 @@ const fetcher = (url: any) =>
 const EditPet = () => {
   const router = useRouter();
   const {id} = router.query;
-  const {data: news1, error} = useSWR(id ? `/api/cards/${id}` : null, fetcher);
+  const {data: news1, error} = useSWR(id ? `/api/news/${id}` : null, fetcher);
 
   if (error) return <p>Failed to load</p>;
   if (!news1) return <p>Loading...</p>;
 
-  const cardForm = {
+  const newsForm = {
     name: news1.name,
     pirate: news1.pirate,
     notoriety: news1.notoriety,
@@ -27,8 +27,8 @@ const EditPet = () => {
   return (
     <Layout>
       <Form
-        formId="edit-card-form"
-        cardForm={cardForm}
+        formId="edit-news-form"
+        cardForm={newsForm}
         forNewCard={false} />
     </Layout>
   );

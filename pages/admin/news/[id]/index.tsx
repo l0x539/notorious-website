@@ -4,10 +4,10 @@ import Link from 'next/link';
 import dbConnect from '../../../../lib/dbConnect';
 import news from '../../../../models/news';
 import Layout from '../../../../components/layout/adminLayout/Layout';
-import {ICard} from '../../../../lib/types';
+import {Inews} from '../../../../lib/types';
 
 /* Allows you to view card card info and delete card card*/
-const newsPage: FC<{new1:ICard}> = ({new1}) => {
+const newsPage: FC<{new1:Inews}> = ({new1}) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -33,7 +33,8 @@ const newsPage: FC<{new1:ICard}> = ({new1}) => {
         shadow-[0_0_10px_5px_transparent]
         hover:shadow-[0_0_10px_5px_rgba(53,_53,_53,_0.103)]
         relative">
-          <img className='w-full h-full object-cover' src={new1.img} />
+          <img className='w-full h-full object-cover'
+            src={new1.img} />
           <h5 className="text-white absolute text-2xl
           left-0 bottom-0 p-2.5 text-shadow">
             {new1.title}
@@ -51,8 +52,8 @@ const newsPage: FC<{new1:ICard}> = ({new1}) => {
 
 
             <div className="text-right p-2.5 absolute bottom-0 right-0">
-              <Link href="/admin/nft-cards/[id]/edit"
-                as={`/admin/nft-cards/${new1._id}/edit`} passHref>
+              <Link href="/admin/news/[id]/edit"
+                as={`/admin/news/${new1._id}/edit`} passHref>
                 <button className="cursor-pointer bg-transparent border
                 border-teal-400 rounded px-2.5 py-4 font-[90%]
                 transition-all duration-500 outline-none mr-4">
