@@ -6,4 +6,8 @@ export interface ICard extends Document {
   pirate: string;
   notoriety: string;
   primary_skills: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
 }
