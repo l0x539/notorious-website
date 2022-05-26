@@ -1,7 +1,11 @@
 import mongoose from 'mongoose';
+import {ICard} from '../lib/types';
 
-/* PetSchema will correspond to a collection in your MongoDB database. */
-const CardSchema = new mongoose.Schema({
+/* CardSchema will correspond to a collection in your MongoDB database. */
+
+mongoose.Promise = global.Promise;
+
+const CardSchema = new mongoose.Schema<ICard>({
   img: {
     /* The img of this Card */
     type: String,
@@ -38,4 +42,5 @@ const CardSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.models.Pet || mongoose.model('card', CardSchema);
+export default mongoose.models.Card ||
+mongoose.model<ICard>('Card', CardSchema);
