@@ -16,7 +16,7 @@ const Maintenance = () => {
       </div>
       <div className='relative flex flex-col h-full justify-center'>
         <h1 className="text-white text-center text-xl font-semibold">
-            Not supported for mobile yer, use a Desktop</h1>
+            Error</h1>
       </div>
     </div>
   );
