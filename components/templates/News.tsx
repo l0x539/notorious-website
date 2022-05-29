@@ -23,6 +23,8 @@ const News: FC<{
 
   useEffect(() => {
     let allNews = news;
+
+    // TODO: Use debounced fetching searches (react-query)
     if (search.length) {
       allNews = news.filter((article) => {
         return (article?.title?.toLowerCase()

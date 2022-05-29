@@ -8,7 +8,7 @@ const HeaderLinks = () =>{
      grid grid-col-5 gap-3'>
       <HeaderLink title='Earn Notoriety' link='/'/>
       <HeaderLink title='News' link='/news'/>
-      <HeaderLink title='Community' link='/#'/>
+      <HeaderLink title='Community' link='#'/>
       <HeaderLink title='Pirate Store' link='#'/>
       <HeaderLink title='Play Game' link='#'/>
     </div>
