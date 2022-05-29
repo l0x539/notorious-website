@@ -49,6 +49,9 @@ const newsPage: NextPage<{
           transition-all duration-500">
             <p className="font-bold text-[130%]">{new1.title}</p>
             <p className="text-gray-600 text-[110%]">
+            Owner: {new1.owner}
+            </p>
+            <p className="text-gray-600 text-[110%]">
                 description: {new1.description}</p>
             <p className="text-gray-600 text-[110%]">
             date: {new1.date}

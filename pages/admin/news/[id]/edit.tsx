@@ -22,9 +22,10 @@ const EditPet : NextPage<{
 
   const newsForm = {
     title: news1.title,
-    description: news1.pirate,
-    date: news1.notoriety,
+    description: news1.description,
+    date: news1.date,
     img: news1.img,
+    owner: news1.owner,
   };
 
   return (
