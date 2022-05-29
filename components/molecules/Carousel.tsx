@@ -1,17 +1,18 @@
 import ArrowNext from '../assets/svgs/Arrow 1.svg';
 import ArrowPrev from '../assets/svgs/Arrow 2.svg';
 import Image from 'next/image';
-import {FC, ReactChild, useEffect} from 'react';
+import {FC, useEffect} from 'react';
+import {INews} from '../../lib/types';
 
 const Carousel : FC<{
-    id: string;
-    title: ReactChild;
-    description: ReactChild
+  news: INews[];
+  id: string;
 }> = ({
+  news=[],
   id,
-  title,
-  description,
 }) => {
+  console.log({news});
+
   useEffect(() => {
     require('tw-elements');
   });
@@ -21,61 +22,63 @@ const Carousel : FC<{
       data-bs-ride="carousel">
       <div className="carousel-indicators absolute right-0 bottom-0
          left-0 flex justify-center p-0 mb-4">
-        <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1" >
-        </button>
-        <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="1"
-          aria-label="Slide 2" ></button>
-        {/* <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="1"
-          aria-label="Slide 2" >
-        </button>
-        <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="2"
-          aria-label="Slide 3" >
-        </button>
-        <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="3"
-          aria-label="Slide 4" >
-        </button>
-        <button
-          type="button"
-          data-bs-target={`#${id}`}
-          data-bs-slide-to="4"
-          aria-label="Slide 5" >
-        </button> */}
+        {
+          (Array(news.length).fill(0).map((_, index) => {
+            return (
+              <button
+                key={index}
+                type="button"
+                data-bs-target={`#${id}`}
+                data-bs-slide-to={`${index}`}
+                className={!index?'active':''}
+                aria-current="true"
+                aria-label={`Slide ${index}`} >
+              </button>
+            );
+          }))
+        }
       </div>
-      <div className="carousel-inner relative overflow-hidden">
-        <div className="carousel-item
-        w-full bg-carousel border-8 border-[#C0AB75]
-        carousel-item active  float-left pb-12
-        shadow-[inset_0px_4px_62px_rgba(192,_171,_117,_0.25)]">
-          <div className=" text-center">
-            <h1 className="text-[1.875rem] text-white mt-4">{title}
-            </h1>
-            <p className='text-white text-center font-normal
+      <div className="carousel-inner relative w-full overflow-hidden
+      shadow-[inset_0px_4px_62px_rgba(192,_171,_117,_0.25)]
+      bg-carousel border-8 border-[#C0AB75] h-[269px]
+      ">
+        {
+          news.map((article, index) => {
+            const beautifyTitle = article?.title?.split('Notorious Pirate!') ??
+             '';
+            return (
+              <div key={index}
+                className={`carousel-item ${index=== 0 ? 'active':''}
+                w-full carousel-item float-left pb-12
+                `}>
+                <div className=" text-center">
+                  <h1 className="text-[1.875rem] text-white mt-4">
+                    {beautifyTitle[0]}
+                    {
+                      beautifyTitle.length > 1 ?
+                      (
+                        <>
+                          <span className='text-3xl text-notorious-golden-500
+                            truncate block'>
+                            Notorious Pirate!</span>
+                          {beautifyTitle.slice(1).join('Notorious Pirate!')}
+                        </>
+                      ): ''
+                    }
+
+                  </h1>
+                  <p className='text-white text-center font-normal
             text-[1.375rem] my-1'>
-              {description}</p>
-            <button className='text-black bg-white text-sm font-normal
+                    {article.description}</p>
+                  <button className='text-black bg-white text-sm font-normal
                    py-1 px-4 border rounded mt-1'>
                   Learn More...
-            </button>
-          </div>
-        </div>
+                  </button>
+                </div>
+              </div>
+            );
+          })
+        }
       </div>
       <button
         className="carousel-control-prev absolute top-0 bottom-0 flex
