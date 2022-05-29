@@ -6,17 +6,16 @@ import news from '../../../../models/news';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import {Inews} from '../../../../lib/types';
 
-/* Allows you to view card card info and delete card card*/
 const newsPage: FC<{new1:Inews}> = ({new1}) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [message, setMessage] = useState('');
   const handleDelete = async () => {
-    const cardID = router.query.id;
+    const newsID = router.query.id;
 
     try {
-      await fetch(`/api/news/${cardID}`, {
+      await fetch(`/api/news/${newsID}`, {
         method: 'Delete',
       });
       router.push('/admin/news');
