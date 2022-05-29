@@ -1,9 +1,8 @@
-import {StaticImageData} from 'next/image';
 import {FC} from 'react';
 
 
 const NftCard: FC<{
-  link: StaticImageData;
+  link: string;
   name: string;
   Pirate: string;
   Notoriety: string;
@@ -17,7 +16,7 @@ const NftCard: FC<{
         'cursor-pointer boxshadowcard w-[11rem]'
     }`}>
       <div className='border-b-4 border-[#8F8F8F] bg-cover bg-center
-        bg-no-repeat h-[11rem]' style={{backgroundImage: `url(${link.src})`}} >
+        bg-no-repeat h-[11rem]' style={{backgroundImage: `url(${link})`}} >
       </div>
       <div className="card-desc-background
         bg-cover bg-center bg-no-repeat px-2 py-4

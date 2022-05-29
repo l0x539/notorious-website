@@ -1,10 +1,9 @@
-import {NextApiRequest, NextApiResponse} from 'next';
-import {FC} from 'react';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import Layout from '../../../components/layout/adminLayout/Layout';
 import Form from '../../../components/layout/NewsForm';
 import {getSession} from '../../../lib/session';
 
-const NewPet: FC<{
+const NewPet: NextPage<{
   loggedIn: boolean;
 }> = ({loggedIn}) => {
   const newsForm = {

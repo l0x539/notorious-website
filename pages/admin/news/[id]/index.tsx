@@ -1,14 +1,14 @@
-import {FC, useState} from 'react';
+import {useState} from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 import dbConnect from '../../../../lib/dbConnect';
 import news from '../../../../models/News';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import {INews} from '../../../../lib/types';
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import {getSession} from '../../../../lib/session';
 
-const newsPage: FC<{
+const newsPage: NextPage<{
   new1:INews;
   loggedIn: boolean;
 }> = ({new1, loggedIn}) => {

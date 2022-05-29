@@ -1,6 +1,5 @@
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import {useRouter} from 'next/router';
-import {FC} from 'react';
 import useSWR from 'swr';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import Form from '../../../../components/layout/CardForm';
@@ -11,7 +10,7 @@ const fetcher = (url: any) =>
       .then((res) => res.json())
       .then((json) => json.data);
 
-const EditPet: FC<{
+const EditPet: NextPage<{
   loggedIn: boolean;
 }> = ({loggedIn}) => {
   const router = useRouter();

@@ -1,13 +1,12 @@
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import Link from 'next/link';
-import {FC} from 'react';
 import Layout from '../../../components/layout/adminLayout/Layout';
 import dbConnect from '../../../lib/dbConnect';
 import {getSession} from '../../../lib/session';
 import {INews} from '../../../lib/types';
 import News from '../../../models/News';
 
-const Index: FC<{
+const Index: NextPage<{
   newss: INews[];
   loggedIn: boolean;
 }> = ({newss, loggedIn}) => (

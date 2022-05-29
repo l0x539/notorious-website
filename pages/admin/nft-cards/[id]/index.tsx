@@ -1,15 +1,15 @@
-import {FC, useState} from 'react';
+import {useState} from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 import dbConnect from '../../../../lib/dbConnect';
 import Card from '../../../../models/Card';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import {ICard} from '../../../../lib/types';
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import {getSession} from '../../../../lib/session';
 
 /* Allows you to view card card info and delete card card*/
-const CardPage: FC<{card:ICard}> = ({card}) => {
+const CardPage: NextPage<{card:ICard}> = ({card}) => {
   const router = useRouter();
   const [message, setMessage] = useState('');
   const handleDelete = async () => {

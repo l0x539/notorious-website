@@ -1,13 +1,12 @@
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import Link from 'next/link';
-import {FC} from 'react';
 import Layout from '../../../components/layout/adminLayout/Layout';
 import dbConnect from '../../../lib/dbConnect';
 import {getSession} from '../../../lib/session';
 import {ICard} from '../../../lib/types';
 import Card from '../../../models/Card';
 
-const Index: FC<{
+const Index: NextPage<{
   loggedIn: boolean;
   cards: ICard[]
 }> = ({cards, loggedIn}) => (
