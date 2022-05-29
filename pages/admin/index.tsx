@@ -1,10 +1,9 @@
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiRequest, NextApiResponse, NextPage} from 'next';
 import Link from 'next/link';
-import {FC} from 'react';
 import Layout from '../../components/layout/adminLayout/Layout';
 import {getSession} from '../../lib/session';
 
-const Index: FC<{
+const Index: NextPage<{
   loggedIn: boolean;
 }> = ({loggedIn}) => {
   return (<Layout loggedIn={loggedIn}>
@@ -33,7 +32,6 @@ export const getServerSideProps = async ({req, res}:
     res: NextApiResponse
   }) => {
   const session = await getSession(req, res);
-  console.log('isl:', session.loggedIn);
 
   return {
     props: {

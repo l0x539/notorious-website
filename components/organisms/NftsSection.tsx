@@ -1,11 +1,11 @@
 import NftCard from '../atoms/NftCard';
-import link from '../assets/svg/ghosty3.png';
-import big from '../assets/images/bigbuck1.png';
-import bourbon from '../assets/images/bourbon1.png';
-import anne from '../assets/images/anne.png';
 import Carousel from '../molecules/NftsCarousel';
+import {FC} from 'react';
+import {ICard} from '../../lib/types';
 
-const NftsSection = () => {
+const NftsSection: FC<{
+  cards: ICard[]
+}> = ({cards=[]}) => {
   return (
     <div className='pb-24
     border-b-[5px] border-[#8F8F8F]
@@ -22,102 +22,18 @@ const NftsSection = () => {
           </div>
         </h1>
         <Carousel show={7} >
-          <NftCard
-            Pirate='217'
-            name='Juan Carlos Trastamara'
-            Notoriety='27'
-            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
-
-          <NftCard
-            Pirate='217'
-            name='Juan Carlos Trastamara'
-            Notoriety='27'
-            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
-            link={anne} />
-          <NftCard
-            Pirate='2'
-            name='Captain Bourbon'
-            Notoriety='18'
-            PrimarySkills=' Poker, Blackjack, Daggers'
-            link={bourbon} />
-
-          <NftCard
-            Pirate='1'
-            name='Big Buck Buccaneer'
-            Notoriety='27'
-            PrimarySkills='Sailing, Swordcraft, Gunnery' link={big} />
-
-          <NftCard
-            Pirate='217'
-            name='Juan Carlos Trastamara'
-            Notoriety='27'
-            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
-            link={anne} />
-
-          <NftCard
-            Pirate='2'
-            name='Captain Bourbon'
-            Notoriety='18'
-            PrimarySkills=' Poker, Blackjack, Daggers'
-            link={bourbon} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
-            link={anne} />
-
-          <NftCard
-            Pirate='1'
-            name='Big Buck Buccaneer'
-            Notoriety='27'
-            PrimarySkills='Sailing, Swordcraft, Gunnery' link={big} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
-            link={anne} />
-
-          <NftCard
-            Pirate='217'
-            name='Juan Carlos Trastamara'
-            Notoriety='27'
-            PrimarySkills=' Sailing, Swordcraft, Gunnery' link={link} />
-
-          <NftCard
-            Pirate='3'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewing'
-            link={anne} />
-
-          <NftCard
-            Pirate='2'
-            name='Anne Bonny'
-            Notoriety='20'
-            PrimarySkills=' Sailing, Swordcraft, Potion Brewin' link={big} />
-
-          <NftCard
-            Pirate='2'
-            name='Captain Bourbon'
-            Notoriety='18'
-            PrimarySkills=' Poker, Blackjack, Daggers'
-            link={bourbon} />
+          {cards.length &&
+            cards.map((card, index) => {
+              return (
+                <NftCard
+                  key={index}
+                  Pirate={card.pirate}
+                  name={card.name}
+                  Notoriety={card.notoriety}
+                  PrimarySkills={card.primary_skills} link={card.img} />
+              );
+            })
+          }
         </Carousel>
       </div>
     </div>
