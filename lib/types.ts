@@ -7,9 +7,8 @@ export interface ICard extends Document {
   notoriety: string;
   primary_skills: string;
 };
-export interface Inews extends Document{
-  img: string | undefined;
-  image: string;
+export interface INews extends Document{
+  img: string;
   title: string;
   description: string;
   date: string;

@@ -10,7 +10,7 @@ const CardSchema = new mongoose.Schema<ICard>({
     /* The img of this Card */
     type: String,
     required: [true, 'Please provide a image for this card.'],
-    maxlength: [200, 'Name cannot be more than 200 characters'],
+    maxlength: [200, 'Image cannot be more than 200 characters'],
   },
   name: {
     /* The name of this card */
@@ -24,21 +24,22 @@ const CardSchema = new mongoose.Schema<ICard>({
 
     type: String,
     required: [true, 'Please provide the pirate of your card.'],
-    maxlength: [40, 'Species specified cannot be more than 40 characters'],
+    maxlength: [40, 'Pirate specified cannot be more than 40 characters'],
   },
   notoriety: {
     /* The notoriety of your card */
 
     type: String,
     required: [true, 'Please provide the notoriety of your card.'],
-    maxlength: [100, 'Species specified cannot be more than 100 characters'],
+    maxlength: [100, 'Notriety specified cannot be more than 100 characters'],
   },
   primary_skills: {
     /* The primary_skills of your card */
 
     type: String,
     required: [true, 'Please primary_skills the notoriety of your card.'],
-    maxlength: [40, 'Species specified cannot be more than 40 characters'],
+    maxlength: [40,
+      'Primary Skills specified cannot be more than 40 characters'],
   },
 });
 

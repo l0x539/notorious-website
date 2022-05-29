@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import dbConnect from '../../../lib/dbConnect';
-import news from '../../../models/news';
+import news from '../../../models/News';
 
 type Data = {
   success: boolean;
@@ -21,11 +21,11 @@ const handler = async (
   switch (method) {
     case 'GET': /* Get a model by its ID */
       try {
-        const card = await news.findById(id);
-        if (!card) {
+        const article = await news.findById(id);
+        if (!article) {
           return res.status(400).json({success: false});
         }
-        res.status(200).json({success: true, data: card});
+        res.status(200).json({success: true, data: article});
       } catch (error) {
         res.status(400).json({success: false});
       }
@@ -33,14 +33,14 @@ const handler = async (
 
     case 'PUT': /* Edit a model by its ID */
       try {
-        const card = await news.findByIdAndUpdate(id, req.body, {
+        const article = await news.findByIdAndUpdate(id, req.body, {
           new: true,
           runValidators: true,
         });
-        if (!card) {
+        if (!article) {
           return res.status(400).json({success: false});
         }
-        res.status(200).json({success: true, data: card});
+        res.status(200).json({success: true, data: article});
       } catch (error) {
         res.status(400).json({success: false});
       }
@@ -48,8 +48,8 @@ const handler = async (
 
     case 'DELETE': /* Delete a model by its ID */
       try {
-        const deletedCard = await news.deleteOne({_id: id});
-        if (!deletedCard) {
+        const deletedarticle = await news.deleteOne({_id: id});
+        if (!deletedarticle) {
           return res.status(400).json({success: false});
         }
         res.status(200).json({success: true, data: []});

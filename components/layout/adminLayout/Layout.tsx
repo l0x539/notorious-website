@@ -5,10 +5,11 @@ import Logo from '../../atoms/Logo';
 import Loading from '../../templates/Loading';
 
 interface LayoutProps {
-  children: ReactNode
+  children: ReactNode;
+  isNews?: boolean;
 }
 
-const Layout = ({children}: LayoutProps) => {
+const Layout = ({children, isNews}: LayoutProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -27,13 +28,18 @@ const Layout = ({children}: LayoutProps) => {
         <div className="container mx-auto
         w-full relative h-20 text-right bg-white mb-20">
           <div className="h-full inline-block">
-            <Link href="/admin/nft-cards">
+            <Link href="/admin">
               <a className='mx-10 font-[120%] h-full inline-flex
               jusitfy-center align-center'>Home</a>
             </Link>
-            <Link href="/admin/nft-cards/new">
+            <Link href={isNews?'/admin/news':'/admin/nft-cards'}>
+              <a className='mx-10 font-[120%] h-full inline-flex
+              jusitfy-center align-center'>{isNews?'News':'NFTs'}</a>
+            </Link>
+            <Link href={isNews?'/admin/news/new':'/admin/nft-cards/new'}>
               <a className='my-10 font-[120%] h-full inline-flex
-              jusitfy-center align-center'>Add NFT Card</a>
+              jusitfy-center align-center'>{isNews?
+              'Add News':'Add NFT Card'}</a>
             </Link>
           </div>
           <div className='absolute left-5 top-0 inline-block h-full'>

@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import dbConnect from '../../../lib/dbConnect';
-import news from '../../../models/news';
+import news from '../../../models/News';
 
 type Data = {
   success: boolean;

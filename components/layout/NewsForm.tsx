@@ -2,38 +2,36 @@ import {ChangeEvent, FC, FormEvent, useState} from 'react';
 import {useRouter} from 'next/router';
 import {mutate} from 'swr';
 
-interface ICard {
-  name: string;
-  pirate: string;
-  notoriety: string;
-  primary_skills: string;
+interface INews {
   img: string;
+  title: string;
+  description: string;
+  date: string;
 }
 
 const Form: FC<{
   formId: string;
-  cardForm: ICard;
+  newsForm: INews;
   forNewCard?: boolean
-}> = ({formId, cardForm, forNewCard = true}) => {
+}> = ({formId, newsForm, forNewCard = true}) => {
   const router = useRouter();
   const contentType = 'application/json';
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState('');
 
   const [form, setForm] = useState({
-    name: cardForm.name,
-    pirate: cardForm.pirate,
-    notoriety: cardForm.notoriety,
-    primary_skills: cardForm.primary_skills,
-    img: cardForm.img,
+    img: newsForm.img,
+    title: newsForm.title,
+    description: newsForm.description,
+    date: newsForm.date,
   });
 
   /* The PUT method edits an existing entry in the mongodb database. */
-  const putData = async (form: ICard) => {
+  const putData = async (form: INews) => {
     const {id} = router.query;
 
     try {
-      const res = await fetch(`/api/cards/${id}`, {
+      const res = await fetch(`/api/news/${id}`, {
         method: 'PUT',
         headers: {
           'Accept': contentType,
@@ -50,18 +48,18 @@ const Form: FC<{
       const {data} = await res.json();
 
       // Update the local data without a revalidation
-      mutate(`/api/cards/${id}`, data, false);
+      mutate(`/api/news/${id}`, data, false);
 
-      router.push('/admin/nft-cards');
+      router.push('/admin/news');
     } catch (error) {
-      setMessage('Failed to update card');
+      setMessage('Failed to update news');
     }
   };
 
   /* The POST method adds a new entry in the mongodb database. */
-  const postData = async (form: ICard) => {
+  const postData = async (form: INews) => {
     try {
-      const res = await fetch('/api/cards', {
+      const res = await fetch('/api/news', {
         method: 'POST',
         headers: {
           'Accept': contentType,
@@ -75,16 +73,16 @@ const Form: FC<{
         throw new Error(`${res.status}`);
       }
 
-      router.push('/admin/nft-cards');
+      router.push('/admin/news');
     } catch (error) {
-      setMessage('Failed to add card');
+      setMessage('Failed to add news');
     }
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange =
+  (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const target = e.target;
-    const value =
-      target.name === 'poddy_trained' ? target.checked : target.value;
+    const value = target.value;
     const name = target.name;
 
     setForm({
@@ -103,7 +101,7 @@ const Form: FC<{
     }
   };
 
-  /* Makes sure card info is filled for card name,
+  /* Makes sure news info is filled for news name,
   owner name, notoriety, and image url*/
   const formValidate = () => {
     const err: {
@@ -113,11 +111,10 @@ const Form: FC<{
       img?: string;
       primary_skills?: string;
     } = {};
-    if (!form.name) err.name = 'Name is required';
-    if (!form.pirate) err.pirate = 'Owner is required';
-    if (!form.notoriety) err.notoriety = 'Species is required';
+    if (!form.title) err.name = 'Title is required';
+    if (!form.description) err.pirate = 'Description is required';
+    if (!form.date) err.notoriety = 'Date is required';
     if (!form.img) err.img = 'Image URL is required';
-    if (!form.primary_skills) err.primary_skills = 'primary_skills is required';
     return err;
   };
 
@@ -125,51 +122,37 @@ const Form: FC<{
     <>
       <form id={formId} onSubmit={handleSubmit}
         className="w-[90%] m-auto max-w-[550px]">
-        <label className='mt-2.5' htmlFor="name">Name</label>
+        <label className='mt-2.5' htmlFor="title">Title</label>
         <input
           className='border border-gray-300 p-2.5 font-[90%] w-full
           h-8 text-neutral-700 rounded'
           type="text"
           maxLength={20}
-          name="name"
-          value={form.name}
+          name="title"
+          value={form.title}
           onChange={handleChange}
           required
         />
 
-        <label className='mt-2.5' htmlFor="pirate">Pirate</label>
-        <input
+        <label className='mt-2.5' htmlFor="description">Description</label>
+        <textarea
           className='border border-gray-300 p-2.5 font-[90%] w-full
           h-8 text-neutral-700 rounded'
-          type="text"
-          maxLength={20}
-          name="pirate"
-          value={form.pirate}
+          maxLength={2000}
+          name="description"
+          value={form.description}
           onChange={handleChange}
           required
         />
 
-        <label className='mt-2.5' htmlFor="notoriety">Notoriety</label>
+        <label className='mt-2.5' htmlFor="date">Date</label>
         <input
           className='border border-gray-300 p-2.5 font-[90%] w-full
           h-8 text-neutral-700 rounded'
-          type="text"
+          type="date"
           maxLength={30}
-          name="notoriety"
-          value={form.notoriety}
-          onChange={handleChange}
-          required
-        />
-
-        <label className='mt-2.5'
-          htmlFor="primary_skills">Primary Skills</label>
-        <input
-          className='border border-gray-300 p-2.5 font-[90%] w-full
-          h-8 text-neutral-700 rounded'
-          type="text"
-          maxLength={30}
-          name="primary_skills"
-          value={form.primary_skills}
+          name="date"
+          value={form.date}
           onChange={handleChange}
           required
         />
@@ -185,7 +168,8 @@ const Form: FC<{
           required
         />
 
-        <button type="submit" className="btn">
+        <button type="submit" className="mt-4 px-6 py-4 rounded border
+        hover:bg-cyan-500 hover:text-white">
           Submit
         </button>
       </form>

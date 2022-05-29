@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router';
 import useSWR from 'swr';
 import Layout from '../../../../components/layout/adminLayout/Layout';
-import Form from '../../../../components/layout/Form';
+import Form from '../../../../components/layout/NewsForm';
 
 const fetcher = (url: any) =>
   fetch(url)
@@ -17,18 +17,17 @@ const EditPet = () => {
   if (!news1) return <p>Loading...</p>;
 
   const newsForm = {
-    name: news1.name,
-    pirate: news1.pirate,
-    notoriety: news1.notoriety,
-    primary_skills: news1.primary_skills,
+    title: news1.title,
+    description: news1.pirate,
+    date: news1.notoriety,
     img: news1.img,
   };
 
   return (
-    <Layout>
+    <Layout isNews>
       <Form
         formId="edit-news-form"
-        cardForm={newsForm}
+        newsForm={newsForm}
         forNewCard={false} />
     </Layout>
   );

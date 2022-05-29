@@ -2,11 +2,11 @@ import {FC, useState} from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 import dbConnect from '../../../../lib/dbConnect';
-import news from '../../../../models/news';
+import news from '../../../../models/News';
 import Layout from '../../../../components/layout/adminLayout/Layout';
-import {Inews} from '../../../../lib/types';
+import {INews} from '../../../../lib/types';
 
-const newsPage: FC<{new1:Inews}> = ({new1}) => {
+const newsPage: FC<{new1:INews}> = ({new1}) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -25,7 +25,7 @@ const newsPage: FC<{new1:Inews}> = ({new1}) => {
   };
 
   return (
-    <Layout>
+    <Layout isNews>
       <div key={new1._id}>
         <div className="group inline-block w-[300px] h-[400px] overflow-hidden
         border border-slate-100 rounded-2xl m-2.5 transition-all duration-500
