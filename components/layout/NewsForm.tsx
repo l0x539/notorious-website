@@ -172,7 +172,7 @@ const Form: FC<{
           Submit
         </button>
       </form>
-      <p>{message}</p>
+      <p className='flex items-center justify-center text-red-500'>{message}</p>
       <div>
         {Object.keys(errors).map((err, index) => (
           <li key={index}>{err}</li>

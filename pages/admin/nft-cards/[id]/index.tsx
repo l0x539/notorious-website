@@ -5,6 +5,8 @@ import dbConnect from '../../../../lib/dbConnect';
 import Card from '../../../../models/Card';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import {ICard} from '../../../../lib/types';
+import {NextApiRequest, NextApiResponse} from 'next';
+import {getSession} from '../../../../lib/session';
 
 /* Allows you to view card card info and delete card card*/
 const CardPage: FC<{card:ICard}> = ({card}) => {
@@ -72,13 +74,25 @@ const CardPage: FC<{card:ICard}> = ({card}) => {
   );
 };
 
-export const getServerSideProps = async ({params}: {params:any}) => {
+export const getServerSideProps = async ({
+  req,
+  res,
+  params,
+}: {
+  params:any;
+  req: NextApiRequest;
+  res: NextApiResponse
+}) => {
   await dbConnect();
+  const session = await getSession(req, res);
 
   const card = await Card.findById(params.id).lean();
   card._id = card._id.toString();
 
-  return {props: {card}};
+  return {props: {
+    card,
+    loggedIn: typeof session.loggedIn === 'boolean' ? session.loggedIn: null,
+  }};
 };
 
 export default CardPage;

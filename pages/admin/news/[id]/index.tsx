@@ -5,8 +5,13 @@ import dbConnect from '../../../../lib/dbConnect';
 import news from '../../../../models/News';
 import Layout from '../../../../components/layout/adminLayout/Layout';
 import {INews} from '../../../../lib/types';
+import {NextApiRequest, NextApiResponse} from 'next';
+import {getSession} from '../../../../lib/session';
 
-const newsPage: FC<{new1:INews}> = ({new1}) => {
+const newsPage: FC<{
+  new1:INews;
+  loggedIn: boolean;
+}> = ({new1, loggedIn}) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -25,7 +30,7 @@ const newsPage: FC<{new1:INews}> = ({new1}) => {
   };
 
   return (
-    <Layout isNews>
+    <Layout isNews loggedIn={loggedIn}>
       <div key={new1._id}>
         <div className="group inline-block w-[300px] h-[400px] overflow-hidden
         border border-slate-100 rounded-2xl m-2.5 transition-all duration-500
@@ -73,13 +78,25 @@ const newsPage: FC<{new1:INews}> = ({new1}) => {
   );
 };
 
-export const getServerSideProps = async ({params}: {params:any}) => {
+export const getServerSideProps = async ({
+  params,
+  req,
+  res,
+}: {
+  params:any;
+  req: NextApiRequest;
+  res: NextApiResponse;
+}) => {
   await dbConnect();
 
+  const session = await getSession(req, res);
   const new1 = await news.findById(params.id).lean();
   new1._id = new1._id.toString();
 
-  return {props: {new1}};
+  return {props: {
+    loggedIn: typeof session.loggedIn === 'boolean' ? session.loggedIn: null,
+    new1,
+  }};
 };
 
 export default newsPage;

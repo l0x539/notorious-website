@@ -1,5 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import dbConnect from '../../../lib/dbConnect';
+import {getSession} from '../../../lib/session';
 import Card from '../../../models/Card';
 
 type Data = {
@@ -15,6 +16,10 @@ const handler = async (
     query: {id},
     method,
   } = req;
+  const session = await getSession(req, res);
+  if (!session.loggedIn) {
+    return res.status(401).json({success: false});
+  }
 
   await dbConnect();
 

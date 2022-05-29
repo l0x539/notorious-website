@@ -1,8 +1,13 @@
+import {NextApiRequest, NextApiResponse} from 'next';
 import Link from 'next/link';
+import {FC} from 'react';
 import Layout from '../../components/layout/adminLayout/Layout';
+import {getSession} from '../../lib/session';
 
-const Index = () => {
-  return (<Layout>
+const Index: FC<{
+  loggedIn: boolean;
+}> = ({loggedIn}) => {
+  return (<Layout loggedIn={loggedIn}>
     <div className='flex items-center justify-center'>
       <div className='mx-4'>
         <Link href="/admin/nft-cards">
@@ -21,3 +26,18 @@ const Index = () => {
 };
 
 export default Index;
+
+export const getServerSideProps = async ({req, res}:
+  {
+    req: NextApiRequest,
+    res: NextApiResponse
+  }) => {
+  const session = await getSession(req, res);
+  console.log('isl:', session.loggedIn);
+
+  return {
+    props: {
+      loggedIn: typeof session.loggedIn === 'boolean' ? session.loggedIn: null,
+    },
+  };
+};

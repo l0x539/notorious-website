@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 import {ReactNode, useEffect, useState} from 'react';
 import Logo from '../../atoms/Logo';
 import Loading from '../../templates/Loading';
@@ -7,9 +8,16 @@ import Loading from '../../templates/Loading';
 interface LayoutProps {
   children: ReactNode;
   isNews?: boolean;
+  loggedIn?: boolean;
 }
 
-const Layout = ({children, isNews}: LayoutProps) => {
+const Layout = ({children, isNews, loggedIn}: LayoutProps) => {
+  const router = useRouter();
+  useEffect(() => {
+    if (!loggedIn) {
+      router.push('/admin/login');
+    }
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

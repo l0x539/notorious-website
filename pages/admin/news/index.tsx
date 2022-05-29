@@ -1,14 +1,17 @@
+import {NextApiRequest, NextApiResponse} from 'next';
 import Link from 'next/link';
 import {FC} from 'react';
 import Layout from '../../../components/layout/adminLayout/Layout';
 import dbConnect from '../../../lib/dbConnect';
+import {getSession} from '../../../lib/session';
 import {INews} from '../../../lib/types';
 import News from '../../../models/News';
 
 const Index: FC<{
-  newss: INews[]
-}> = ({newss}) => (
-  <Layout isNews>
+  newss: INews[];
+  loggedIn: boolean;
+}> = ({newss, loggedIn}) => (
+  <Layout isNews loggedIn={loggedIn}>
     <div className='flex flex-wrap justify-center'>
       {/* Create a news for each NFTNews */}
       {newss.map((_new) => (
@@ -60,8 +63,13 @@ const Index: FC<{
 );
 
 /* Retrieves news(s) data from mongodb database */
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({req, res}:
+  {
+    req: NextApiRequest,
+    res: NextApiResponse
+  }) => {
   await dbConnect();
+  const session = await getSession(req, res);
 
   /* find all the data in our database */
   const result = await News.find({});
@@ -71,7 +79,10 @@ export const getServerSideProps = async () => {
     return news;
   });
 
-  return {props: {newss}};
+  return {props: {
+    newss,
+    loggedIn: typeof session.loggedIn === 'boolean' ? session.loggedIn: null,
+  }};
 };
 
 export default Index;

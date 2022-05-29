@@ -1,14 +1,17 @@
+import {NextApiRequest, NextApiResponse} from 'next';
 import Link from 'next/link';
 import {FC} from 'react';
 import Layout from '../../../components/layout/adminLayout/Layout';
 import dbConnect from '../../../lib/dbConnect';
+import {getSession} from '../../../lib/session';
 import {ICard} from '../../../lib/types';
 import Card from '../../../models/Card';
 
 const Index: FC<{
+  loggedIn: boolean;
   cards: ICard[]
-}> = ({cards}) => (
-  <Layout >
+}> = ({cards, loggedIn}) => (
+  <Layout loggedIn={loggedIn}>
     <div className='flex flex-wrap justify-center'>
       {/* Create a card for each NFTCard */}
       {cards.map((card) => (
@@ -62,8 +65,13 @@ const Index: FC<{
 );
 
 /* Retrieves card(s) data from mongodb database */
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({req, res}:
+  {
+    req: NextApiRequest,
+    res: NextApiResponse
+  }) => {
   await dbConnect();
+  const session = await getSession(req, res);
 
   /* find all the data in our database */
   const result = await Card.find({});
@@ -73,7 +81,10 @@ export const getServerSideProps = async () => {
     return card;
   });
 
-  return {props: {cards}};
+  return {props: {
+    cards,
+    loggedIn: typeof session.loggedIn === 'boolean' ? session.loggedIn: null,
+  }};
 };
 
 export default Index;
