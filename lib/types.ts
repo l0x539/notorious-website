@@ -9,6 +9,7 @@ export interface ICard extends Document {
 };
 export interface INews extends Document{
   img: string;
+  owner:string;
   title: string;
   description: string;
   date: string;

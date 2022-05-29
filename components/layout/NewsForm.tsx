@@ -7,6 +7,7 @@ interface INews {
   title: string;
   description: string;
   date: string;
+  owner: string;
 }
 
 const Form: FC<{
@@ -24,7 +25,9 @@ const Form: FC<{
     title: newsForm.title,
     description: newsForm.description,
     date: newsForm.date,
+    owner: newsForm.owner,
   });
+  console.log({form});
 
   /* The PUT method edits an existing entry in the mongodb database. */
   const putData = async (form: INews) => {
@@ -109,11 +112,13 @@ const Form: FC<{
       description?: string;
       date?: string;
       img?: string;
+      owner?: string;
     } = {};
     if (!form.title) err.title = 'Title is required';
     if (!form.description) err.description = 'Description is required';
     if (!form.date) err.date = 'Date is required';
     if (!form.img) err.img = 'Image URL is required';
+    if (!form.owner) err.owner = 'Owner is required';
     return err;
   };
 
@@ -121,6 +126,17 @@ const Form: FC<{
     <>
       <form id={formId} onSubmit={handleSubmit}
         className="w-[90%] m-auto max-w-[550px]">
+        <label className='mt-2.5' htmlFor="owner">Owner</label>
+        <input
+          className='border border-gray-300 p-2.5 font-[90%] w-full
+          h-8 text-neutral-700 rounded'
+          type="text"
+          maxLength={20}
+          name="owner"
+          value={form.owner}
+          onChange={handleChange}
+          required
+        />
         <label className='mt-2.5' htmlFor="title">Title</label>
         <input
           className='border border-gray-300 p-2.5 font-[90%] w-full

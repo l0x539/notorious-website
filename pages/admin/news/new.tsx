@@ -11,6 +11,7 @@ const NewPet: NextPage<{
     title: '',
     description: '',
     date: '',
+    owner: '',
   };
 
   return (

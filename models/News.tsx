@@ -13,6 +13,20 @@ const newsSchema = new mongoose.Schema<INews>({
     required: [true, 'Please provide the image url of your news.'],
     maxlength: [4000, 'Image specified cannot be more than 4000 characters'],
   },
+  owner: {
+    /* The  owner url of your news */
+
+    type: String,
+    required: [true, 'Please provide the image url of your news.'],
+    maxlength: [30, 'Owner specified cannot be more than 30 characters'],
+  },
+  title: {
+    /* The  title url of your news */
+
+    type: String,
+    required: [true, 'Please provide the image url of your news.'],
+    maxlength: [100, 'Title specified cannot be more than 100 characters'],
+  },
   description: {
     /* the description of your news*/
 

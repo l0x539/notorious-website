@@ -4,8 +4,14 @@ import Carousel from '../molecules/Carousel';
 import PirateMoon from '../assets/images/piratesmoon.png';
 import Ocean from '../assets/images/d.png';
 import Divider from '../atoms/Divider';
+import {FC} from 'react';
+import {INews} from '../../lib/types';
 
-const MainHangers = () => {
+const MainHangers:FC<{
+  news: INews[]
+}> = ({
+  news,
+}) => {
   return (
     <div className='bg-black'>
       <div className='bg-main bg-no-repeat bg-cover
@@ -68,16 +74,7 @@ const MainHangers = () => {
               '>
                 <Carousel
                   id="carousel-news"
-                  title={
-                    <>
-                    Find out what it means to become a
-                      <span className='text-3xl text-notorious-golden-500
-                      truncate block'>
-                      Notorious Pirate!</span></>}
-                  description={<>
-                  Discover the true meaning of notoriety in the<br/>
-                  world’s first upcoming Pirate themed Metaverse
-                  </>} />
+                  news={news} />
                 <Divider />
                 <div className='text-center'>
                   <h1 className='font-semibold text-center text-3xl text-white
