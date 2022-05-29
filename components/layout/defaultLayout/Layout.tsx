@@ -1,6 +1,5 @@
 import {ReactNode, useEffect, useState} from 'react';
 import Loading from '../../templates/Loading';
-import Maintenance from '../../templates/Maintenance';
 
 
 interface LayoutProps {
@@ -19,10 +18,7 @@ const Layout = ({children}: LayoutProps) => {
   ) :
     (
       <>
-        <div className='block lg:hidden'>
-          <Maintenance />
-        </div>
-        <div className='hidden lg:block'>
+        <div className='lg:block'>
           {children}
         </div>
       </>

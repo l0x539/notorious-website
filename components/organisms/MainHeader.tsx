@@ -25,7 +25,7 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={pirate.src}
-              alt="twitter"
+              alt="Pirate captain"
               width='202'
               height='335'/>
           </div>
@@ -35,7 +35,7 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={skeleton.src}
-              alt="twitter"
+              alt="Skeleton pirate"
               width='475'
               height='350'
             />
@@ -47,17 +47,17 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={black.src}
-              alt="twitter"
+              alt="Drinking Pirate"
               width='267'
               height='316'/>
           </div>
         </div>
 
         <div className=' flex
-    items-center place-content-around  '>
+    items-center place-content-around h-40 lg:h-auto '>
           <Image className=''
             src={piratesnoto.src}
-            alt="twitter"
+            alt="Notorious Pirates"
             width='725'
             height='213'/>
         </div>
@@ -69,7 +69,7 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={red.src}
-              alt="twitter"
+              alt="Ghost Pirate"
               width='289'
               height='382'/>
 
@@ -80,7 +80,7 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={women.src}
-              alt="twitter"
+              alt="Women Pirate"
               width='180'
               height='300'/>
           </div>
@@ -90,7 +90,7 @@ const MainHeader = () => {
             <Image
               layout='responsive'
               src={blue.src}
-              alt="twitter"
+              alt="Casual Pirate"
               width='300'
               height='420'/>
           </div>

@@ -3,7 +3,7 @@ import HeaderLink from '../atoms/HeaderLink';
 
 const HeaderLinks = () =>{
   return (
-    <div className='w-full block flex-grow lg:flex
+    <div className='w-full hidden lg:block flex-grow lg:flex
      lg:items-center lg:w-auto h-[89px]
      grid grid-col-5 gap-3'>
       <HeaderLink title='Earn Notoriety' link='/'/>

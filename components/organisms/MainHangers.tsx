@@ -13,7 +13,7 @@ const MainHangers:FC<{
   news,
 }) => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black hidden lg:block'>
       <div className='bg-main bg-no-repeat bg-cover
         border-b-[5px] border-[#8F8F8F]'>
         <div
@@ -86,7 +86,7 @@ const MainHangers:FC<{
                   <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
-                  <div className='text-white text-lg px-48 mb-4'>
+                  <div className='text-white text-lg lg:px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal
@@ -105,7 +105,7 @@ const MainHangers:FC<{
                   <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
-                  <div className='text-white text-lg px-48 mb-4'>
+                  <div className='text-white text-lg 2xl:px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal

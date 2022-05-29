@@ -10,8 +10,8 @@ import jeff from '../assets/images/jefft1.png';
 
 const MemebersCards = () =>{
   return (
-    <div className='2xl:max-w-[1620px] mx-auto
-    grid grid-cols-7 gap-[2.5rem]'>
+    <div className='2xl:max-w-[1620px] mx-4 lg:mx-16 xl:mx-auto
+    grid lg:grid-cols-3 sm:grid-cols-2 xl:grid-cols-7 gap-[2.5rem]'>
       <MemberCard link={holten} name='Holten Ruff'
         description='Character Designer & GFX Assisant'
         twitter='https://twitter.com/ruff_holten'

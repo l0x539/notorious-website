@@ -4,7 +4,7 @@ import logo from '../assets/images/np.png';
 
 const FooterPartOne = ()=>{
   return (
-    <div className="">
+    <div className="mb-8 lg:mb-0">
       <Image
         src={logo}
         alt="image" width="306.38px"
@@ -15,7 +15,8 @@ const FooterPartOne = ()=>{
       </h4>
 
       <p className='text-white font-semibold leading-5
-        text-[1.125rem] pb-1 mt-3 w-[18rem] ml-4'>Notorious Pirates
+        text-[1.125rem] pb-1 mt-3 w-[18rem] ml-4
+        lg:pr-4 xl:pr-auto'>Notorious Pirates
         is an NFT  MMORPG(Massively Multiplayer
         Online Roleplaying Game) aimed at  allowing its
         holders to earn while they play.

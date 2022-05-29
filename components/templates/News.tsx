@@ -56,8 +56,8 @@ const News: FC<{
       <div className="relative border-b-[5px]
        border-b-[#8F8F8F]">
         <div className="relative container mx-auto grid z-20
-           grid-cols-[minmax(0,1fr)_19.375rem] gap-[2.375rem]">
-          <div className='pb-5 mt-10 flex flex-col pl-36'>
+           lg:grid-cols-[minmax(0,1fr)_19.375rem] gap-[2.375rem]">
+          <div className='pb-5 mt-10 flex flex-col lg:pl-36'>
             <Paging
               onNext={(e)=> page < news.length &&
                 setPage((prevPage) => ++prevPage)}
@@ -72,7 +72,8 @@ const News: FC<{
                   (prevPage) => prevPage+FORWARD_PAGES <= news.length?
                   prevPage+FORWARD_PAGES:totalPages)}
               onPrevious={(e)=> page > 0 && setPage((prevPage) => --prevPage)}
-              title={<div className='text-[35px] font-semibold text-white'
+              title={<div className='text-[35px] flex items-center
+              justify-center font-semibold text-white'
               >News <span className='text-notorious-golden-500'>List!</span>
               </div>}
               totalPages={totalPages}
@@ -94,7 +95,7 @@ const News: FC<{
               }
             </Paging>
           </div>
-          <div className='pb-5 mt-10 flex flex-col'>
+          <div className='pb-5 mt-10 hidden lg:flex flex-col'>
             <SideNavBar />
             <div className='mt-[25rem]'>
               <SearchBar
