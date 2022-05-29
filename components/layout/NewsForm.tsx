@@ -105,15 +105,14 @@ const Form: FC<{
   owner name, notoriety, and image url*/
   const formValidate = () => {
     const err: {
-      name?: string;
-      pirate?: string;
-      notoriety?: string;
+      title?: string;
+      description?: string;
+      date?: string;
       img?: string;
-      primary_skills?: string;
     } = {};
-    if (!form.title) err.name = 'Title is required';
-    if (!form.description) err.pirate = 'Description is required';
-    if (!form.date) err.notoriety = 'Date is required';
+    if (!form.title) err.title = 'Title is required';
+    if (!form.description) err.description = 'Description is required';
+    if (!form.date) err.date = 'Date is required';
     if (!form.img) err.img = 'Image URL is required';
     return err;
   };
