@@ -3,7 +3,7 @@ import FooterLink from '../atoms/FooterLink';
 
 const FooterPartTwo =()=>{
   return (
-    <div className='text-notorious-golden-100 ' >
+    <div className='hidden lg:block text-notorious-golden-100 ' >
       <h3 className='underline underline-offset-4
       font-bold text-xl text-white'>Your Compass
       </h3>

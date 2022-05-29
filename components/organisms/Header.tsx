@@ -7,11 +7,11 @@ import SocialIcons from '../molecules/SocialIcons';
 const Header = () => {
   return (
     <header>
-
       <div className=" bg-nav bg-cover
-      border-b-[5px] border-[#8F8F8F]">
-        <nav className='container mx-auto flex items-center flex-wrap'>
-          {/* <Logo /> */}
+      border-b-[5px] border-[#8F8F8F] flex items-center lg:block">
+        <nav className='container mx-auto flex items-center flex-wrap
+      grid grid-cols-2 gap-4 px-16
+      lg:flex lg:flex-nowrap lg:justify-start lg:items-center'>
           <Compass />
           <HeaderLinks />
           <SocialIcons />

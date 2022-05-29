@@ -3,7 +3,7 @@ import SocialIcon from '../atoms/SocialIcon';
 
 const FooterPartThree =()=>{
   return (
-    <div className=''>
+    <div className='hidden lg:block '>
       <h3 className='text-white text-xl underline
       underline-offset-4 font-bold mb-3.5'>
   Engage with us!</h3>

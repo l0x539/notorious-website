@@ -16,15 +16,17 @@ const MainHeader = () => {
       </div>
       <div className='
   grid grid-cols-[repeat(3,_1fr)]
+  min-h-[236px]
   2xl:min-h-[24.875rem] xl:min-h-[18.875rem]
   border-b-[5px] border-[#8F8F8F]
-  overflow-y-hidden'>
+  overflow-hidden'>
         <div className='relative'>
           <div className='absolute bottom-0 -left-0 z-20  2xl:w-[12.625rem]
        2xl:h-[20.938rem] xl:w-[8.625rem] xl:h-[14.304rem]'>
             <Captain />
           </div>
-          <div className='absolute bottom-0 2xl:left-[4.6rem]
+          <div className='absolute bottom-0 -left-[2rem] 2xl:left-[4.6rem]
+          h-full
       z-0 2xl:w-[29.688rem] 2xl:h-[21.875rem] xl:left-[4rem]
       xl:w-[19.7rem] xl:h-[14.515rem]'>
             <Skeleton />
@@ -32,6 +34,7 @@ const MainHeader = () => {
 
           <div className=' absolute -bottom-2 2xl:left-[19.5rem] z-10
       2xl:w-[16.688rem] 2xl:h-[19.75rem]
+      -left-[4rem] h-full
       xl:w-[11.5rem] xl:h-[13.5rem] xl:left-[13.9rem]'>
             <RedPirate />
           </div>
@@ -39,7 +42,9 @@ const MainHeader = () => {
 
         <div className=' flex
     items-center place-content-around'>
-          <NotoriousPiratesMain />
+          <div className='w-[60vw] lg:w-auto'>
+            <NotoriousPiratesMain />
+          </div>
           {/* <Image className=''
         src={piratesnoto.src}
         alt="twitter"
@@ -48,8 +53,10 @@ const MainHeader = () => {
         </div>
 
         <div className='relative'>
-          <div className='absolute bottom-0 2xl:right-[20.625rem]
-      z-20 2xl:w-[18.063rem]  2xl:h-[23.875rem]
+          <div className='absolute bottom-0
+          -right-[2rem] h-full
+          2xl:right-[20.625rem]
+      z-10 2xl:w-[18.063rem]  2xl:h-[23.875rem]
       xl:right-[15.625rem] xl:h-[17.85rem] xl:w-[13.5rem] '>
             <Ghost />
           </div>
@@ -59,8 +66,10 @@ const MainHeader = () => {
             <Lady />
           </div>
 
-          <div className='absolute -bottom-1 right-0
-      z-10 2xl:w-[18.75rem] 2xl:h-[26.25rem] xl:w-[13.78rem] xl:h-[19.3rem]'>
+          <div className='absolute -bottom-1
+          -right-[4rem] h-full lg:right-0
+          z-20 2xl:w-[18.75rem] 2xl:h-[26.25rem] xl:w-[13.78rem]
+          xl:h-[19.3rem]'>
             <BluePirate />
           </div>
         </div>

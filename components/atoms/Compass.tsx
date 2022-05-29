@@ -1,4 +1,5 @@
 import {useLottie} from 'lottie-react';
+import Link from 'next/link';
 import CompassJson from '../assets/json/compass.json';
 
 const Compass = () => {
@@ -11,9 +12,11 @@ const Compass = () => {
   const {View} = useLottie(options);
 
   return (
-    <div className='w-[120px] h-[120px]'>
-      {View}
-    </div>
+    <Link href="/" passHref>
+      <div className='w-[120px] h-[120px]'>
+        {View}
+      </div>
+    </Link>
   );
 };
 

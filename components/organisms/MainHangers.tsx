@@ -3,11 +3,19 @@ import Card from '../molecules/Card';
 import Carousel from '../molecules/Carousel';
 import PirateMoon from '../assets/images/piratesmoon.png';
 import Ocean from '../assets/images/d.png';
+import discord from '../assets/images/disc.png';
 import Divider from '../atoms/Divider';
+import {FC} from 'react';
+import {INews} from '../../lib/types';
+import Link from 'next/link';
 
-const MainHangers = () => {
+const MainHangers:FC<{
+  news: INews[]
+}> = ({
+  news,
+}) => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black hidden lg:block'>
       <div className='bg-main bg-no-repeat bg-cover
         border-b-[5px] border-[#8F8F8F]'>
         <div
@@ -52,11 +60,26 @@ const MainHangers = () => {
                     <span className='text-notorious-golden-500 mx-2'>on</span>
                     <span className='text-blue-400 mx-1'>Discord!</span>
                   </h1>
-                  <Image
-                    src={Ocean}
-                    layout='responsive'
-                    alt="Pirate image"
-                  />
+                  <div className='relative'>
+                    <Image
+                      src={Ocean}
+                      layout='responsive'
+                      alt="Pirate image"
+                    />
+                    <a href={'https://discord.gg/Au6rp6JQn7'}
+                      target="_blank" rel="noopener noreferrer">
+                      <div
+                        className='flex justify-center
+                        absolute w-full top-16'
+                      >
+                        <Image
+                          src={discord}
+                          alt="Pirate image"
+                          width={250}
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -68,16 +91,7 @@ const MainHangers = () => {
               '>
                 <Carousel
                   id="carousel-news"
-                  title={
-                    <>
-                    Find out what it means to become a
-                      <span className='text-3xl text-notorious-golden-500
-                      truncate block'>
-                      Notorious Pirate!</span></>}
-                  description={<>
-                  Discover the true meaning of notoriety in the<br/>
-                  world’s first upcoming Pirate themed Metaverse
-                  </>} />
+                  news={news} />
                 <Divider />
                 <div className='text-center'>
                   <h1 className='font-semibold text-center text-3xl text-white
@@ -89,7 +103,7 @@ const MainHangers = () => {
                   <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
-                  <div className='text-white text-lg px-48 mb-4'>
+                  <div className='text-white text-lg lg:px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal
@@ -108,7 +122,7 @@ const MainHangers = () => {
                   <div className='text-white text-xl mb-1'>
                       January 5th, 2021 at 2:30pm
                   </div>
-                  <div className='text-white text-lg px-48 mb-4'>
+                  <div className='text-white text-lg 2xl:px-48 mb-4'>
                       Discover the true meaning of notoriety in the
                       world’s first upcoming Pirate themed Metaverse</div>
                   <button className='text-black bg-white text-sm font-normal

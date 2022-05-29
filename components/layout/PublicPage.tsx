@@ -11,7 +11,6 @@ interface PublicPageProps {
 
 const PublicPage = ({children}: PublicPageProps) => {
   const router = useRouter();
-  console.log();
 
   return (
     <Layout>

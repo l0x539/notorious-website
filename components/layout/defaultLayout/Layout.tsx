@@ -1,6 +1,5 @@
 import {ReactNode, useEffect, useState} from 'react';
 import Loading from '../../templates/Loading';
-import Maintenance from '../../templates/Maintenance';
 
 
 interface LayoutProps {
@@ -9,23 +8,26 @@ interface LayoutProps {
 
 const Layout = ({children}: LayoutProps) => {
   const [loading, setLoading] = useState(true);
+  const loadPage = () => {
+    setLoading(false);
+  };
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    if (document.readyState === 'complete') {
+      loadPage();
+    } else {
+      window.addEventListener('load', loadPage);
+      return () => window.removeEventListener('load', loadPage);
+    }
   }, []);
 
   return (
     <>
-      {loading && <Loading />}
-      <div className={`${loading?'invisible':'visible'}`}>
-        <div className='block lg:hidden'>
-          <Maintenance />
-        </div>
-        <div className='hidden lg:block'>
-          {children}
-        </div>
+      <div className={`fixed ${loading ? 'block':'hidden'} z-[100]`}>
+        <Loading />
+      </div>
+      <div className='lg:block'>
+        {children}
       </div>
     </>
   );

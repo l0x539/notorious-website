@@ -1,15 +1,21 @@
+import {FC} from 'react';
+import {INews} from '../../lib/types';
 import NewsArticlePartOne from '../molecules/NewsArticlePartOne';
 import NewsArticlePartThree from '../molecules/NewsArticlePartThree';
 import NewsArticlePartTow from '../molecules/NewsArticlePartTow';
 
-const Articles = () => {
+const Article: FC<{
+  article: INews
+}> = ({
+  article,
+}) => {
   return (
     <div className=''>
       <NewsArticlePartOne />
-      <NewsArticlePartTow/>
+      <NewsArticlePartTow article={article}/>
       <NewsArticlePartThree/>
     </div>
   );
 };
 
-export default Articles;
+export default Article;
