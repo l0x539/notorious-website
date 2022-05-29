@@ -17,17 +17,19 @@ const NewsBanner: FC<{
       border-solid border-[#8F8F8F] flex items-center
       flex-wrap banner-div hover:shadow-banner text
       cursor-pointer">
-          <div className='inline-flex mx-20 banner'>
+          <div className='inline-flex flex-col justify-center sm:justify-start
+          items-center sm:items-start w-full
+          sm:flex-row lg:mx-20 banner'>
             <Image src={bannerlogo} width={141} height={139} alt=""
               className=
                 'hover:drop-shadow-[0_4px_50px_1px_rgba(187, 173, 123, 1)]'/>
-            <div className='my-2 banner-items'>
+            <div className='my-2 sm:banner-items'>
               <h1 className='text-3xl fonst-semibold
             text-white text-center'>{title}
                 <span className='text-notorious-golden-500 block mb-4'>
                 Notorious Pirate!</span></h1>
-              <p className='text-white text-center text-[22px] max-h-[70px]
-            max-w-[500px] truncate
+              <p className='text-white text-center text-[22px] max-h-[40vh]
+              lg:max-h-[70px] max-w-[50vw] lg:max-w-[500px] truncate
             font-normal'>
                 {description}
               </p>

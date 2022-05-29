@@ -1,11 +1,17 @@
 import NftCard from '../atoms/NftCard';
 import Carousel from '../molecules/NftsCarousel';
-import {FC} from 'react';
+import {FC, useEffect, useState} from 'react';
 import {ICard} from '../../lib/types';
 
 const NftsSection: FC<{
   cards: ICard[]
 }> = ({cards=[]}) => {
+  const [show, setShow] = useState(7);
+
+  useEffect(() => {
+    window.innerWidth < 1024 && setShow(1);
+  }, []);
+
   return (
     <div className='pb-24
     border-b-[5px] border-[#8F8F8F]
@@ -21,7 +27,7 @@ const NftsSection: FC<{
           on the Open Seas!
           </div>
         </h1>
-        <Carousel show={7} >
+        <Carousel show={show} >
           {cards.length &&
             cards.map((card, index) => {
               return (

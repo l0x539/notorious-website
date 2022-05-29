@@ -133,8 +133,8 @@ const FAQ = [
 const MainPosters = () => {
   return (
     <div className='pb-[5.75rem] relative border-b-[5px] border-[#8F8F8F]'>
-      <div className="container mx-auto grid grid-flow-col gap-40
-      grid-cols-[repeat(2,_minmax(0,_1fr))]">
+      <div className="container mx-auto grid lg:grid-flow-col lg:gap-40
+      lg:grid-cols-[repeat(2,_minmax(0,_1fr))]">
         <Card>
           <div className='flex flex-col flex-wrap
           drop-shadow-[3px_6px_4px_rgba(0,0,0,0.25)]

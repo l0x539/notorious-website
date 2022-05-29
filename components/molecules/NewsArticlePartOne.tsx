@@ -6,7 +6,7 @@ const NewsArticlePartOne= ()=>{
     border-b-[#8F8F8F]">
       <div className="container mx-auto">
         <div className="border-white border-1
-      py-[7.125rem] mx-[6.75rem] ">
+      py-[7.125rem] sm:mx-[6.75rem] ">
           <div className={`${ 'text-white ' + 'py-[0.625rem] '+
         'bg-black/50 text-[3.438rem] '+
         // eslint-disable-next-line max-len

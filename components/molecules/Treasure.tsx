@@ -11,7 +11,7 @@ const Treasure: FC<{
   const [isHovering, setIsHovered] = useState(false);
   return (
     <div className='z-5 cursor-pointer relative flex flex-col items-center
-     bg-scrollimage bg-cover'
+     bg-scrollimage bg-contain bg-center bg-no-repeat'
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}>
       <>
