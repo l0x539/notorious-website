@@ -3,9 +3,11 @@ import Card from '../molecules/Card';
 import Carousel from '../molecules/Carousel';
 import PirateMoon from '../assets/images/piratesmoon.png';
 import Ocean from '../assets/images/d.png';
+import discord from '../assets/images/disc.png';
 import Divider from '../atoms/Divider';
 import {FC} from 'react';
 import {INews} from '../../lib/types';
+import Link from 'next/link';
 
 const MainHangers:FC<{
   news: INews[]
@@ -58,11 +60,26 @@ const MainHangers:FC<{
                     <span className='text-notorious-golden-500 mx-2'>on</span>
                     <span className='text-blue-400 mx-1'>Discord!</span>
                   </h1>
-                  <Image
-                    src={Ocean}
-                    layout='responsive'
-                    alt="Pirate image"
-                  />
+                  <div className='relative'>
+                    <Image
+                      src={Ocean}
+                      layout='responsive'
+                      alt="Pirate image"
+                    />
+                    <a href={'https://discord.gg/Au6rp6JQn7'}
+                      target="_blank" rel="noopener noreferrer">
+                      <div
+                        className='flex justify-center
+                        absolute w-full top-16'
+                      >
+                        <Image
+                          src={discord}
+                          alt="Pirate image"
+                          width={250}
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </Card>
