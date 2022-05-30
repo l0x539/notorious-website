@@ -27,7 +27,6 @@ const Form: FC<{
     date: newsForm.date,
     owner: newsForm.owner,
   });
-  console.log({form});
 
   /* The PUT method edits an existing entry in the mongodb database. */
   const putData = async (form: INews) => {

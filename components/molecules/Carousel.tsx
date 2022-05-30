@@ -11,8 +11,6 @@ const Carousel : FC<{
   news=[],
   id,
 }) => {
-  console.log({news});
-
   useEffect(() => {
     require('tw-elements');
   });
