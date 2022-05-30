@@ -3,6 +3,7 @@ import ArrowPrev from '../assets/svgs/Arrow 2.svg';
 import Image from 'next/image';
 import {FC, useEffect} from 'react';
 import {INews} from '../../lib/types';
+import Link from 'next/link';
 
 const Carousel : FC<{
   news: INews[];
@@ -68,10 +69,14 @@ const Carousel : FC<{
                   <p className='text-white text-center font-normal
             text-[1.375rem] my-1'>
                     {article.description}</p>
-                  <button className='text-black bg-white text-sm font-normal
+                  <Link
+                    href={'/news/[article]'}
+                    as={`/news/${article._id}`} passHref>
+                    <button className='text-black bg-white text-sm font-normal
                    py-1 px-4 border rounded mt-1'>
                   Learn More...
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
             );

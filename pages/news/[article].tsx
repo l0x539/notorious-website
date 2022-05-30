@@ -39,10 +39,16 @@ export const getServerSideProps = async ({
 }) => {
   await dbConnect();
 
-  const article = await News.findById(params.article).lean();
-  article._id = article._id.toString();
+  try {
+    const article = await News.findById(params.article).lean();
+    article._id = article._id.toString();
 
-  return {props: {
-    article,
-  }};
+    return {props: {
+      article,
+    }};
+  } catch {
+    res.statusCode = 302;
+    res.setHeader('Location', `/news`);
+    return {props: {article: {}}};
+  }
 };
