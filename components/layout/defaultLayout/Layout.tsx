@@ -9,20 +9,29 @@ interface LayoutProps {
 const Layout = ({children}: LayoutProps) => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const loadPage = () => {
     setLoading(false);
+  };
+
+  useEffect(() => {
+    if (document.readyState === 'complete') {
+      loadPage();
+    } else {
+      window.addEventListener('load', loadPage);
+      return () => window.removeEventListener('load', loadPage);
+    }
   }, []);
 
-  return loading ? (
-    <Loading />
-  ) :
-    (
-      <>
-        <div className='lg:block'>
-          {children}
-        </div>
-      </>
-    );
+  return (
+    <>
+      <div className={`fixed ${loading ? 'block':'hidden'} z-[100]`}>
+        <Loading />
+      </div>
+      <div className='lg:block'>
+        {children}
+      </div>
+    </>
+  );
 };
 
 export default Layout;
