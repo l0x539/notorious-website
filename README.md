@@ -39,7 +39,21 @@ Please note that only the developers that have access to this repository are all
 
 ## Getting Started
 
-First, run the development server:
+* First, add correct credentials by renaming `.env.local.example` to `.env.example`, then use the correct mongodb credentials and add an admin email and password:
+
+```
+MONGODB_URI=<MONGO URI GOES HERE>
+
+ADMIN_NAME=<ADMIN EMAIL>
+ADMIN_PASSWORD=<ADMIN PASSWORD>
+```
+
+* install packages: 
+```bash
+npm i
+```
+
+* run the development server:
 
 ```bash
 npm run dev
