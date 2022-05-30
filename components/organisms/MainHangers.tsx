@@ -7,7 +7,6 @@ import discord from '../assets/images/disc.png';
 import Divider from '../atoms/Divider';
 import {FC} from 'react';
 import {INews} from '../../lib/types';
-import Link from 'next/link';
 
 const MainHangers:FC<{
   news: INews[]
