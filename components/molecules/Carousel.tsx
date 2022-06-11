@@ -69,7 +69,7 @@ const Carousel : FC<{
                   </h1>
                   <p className='w-96 text-white
                   text-center font-normal
-                  text-[1.375rem] my-1 line-clamp-3'>
+                  text-[1.375rem] my-1 line-clamp-3 overflow-hidden'>
                     {article.description}</p>
                   <Link
                     href={'/news/[article]'}
