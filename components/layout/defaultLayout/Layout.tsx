@@ -24,7 +24,10 @@ const Layout = ({children}: LayoutProps) => {
   return (
     <>
       <div className={`fixed ${loading ? 'block':'hidden'} z-[100]`}>
-        <Loading />
+        {
+          loading &&
+            <Loading />
+        }
       </div>
       <div className='lg:block'>
         {children}

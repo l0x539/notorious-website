@@ -13,7 +13,7 @@ const Compass = () => {
 
   return (
     <Link href="/" passHref>
-      <div className='w-[120px] h-[120px] cursor-pointer'>
+      <div className='w-[80px] h-[80px] cursor-pointer my-2'>
         {View}
       </div>
     </Link>

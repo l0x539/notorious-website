@@ -30,7 +30,9 @@ const Layout = ({children, isNews, loggedIn}: LayoutProps) => {
         <title>NFT cards</title>
       </Head>
       <div className={loading ? 'block':'hidden'}>
-        <Loading />
+        {loading &&
+          <Loading />
+        }
       </div>
 
       <div className="container mx-auto

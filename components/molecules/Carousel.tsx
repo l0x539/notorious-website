@@ -48,9 +48,10 @@ const Carousel : FC<{
             return (
               <div key={index}
                 className={`carousel-item ${index=== 0 ? 'active':''}
-                w-full carousel-item float-left pb-12
+                w-full carousel-item float-left
                 `}>
-                <div className=" text-center">
+                <div className="flex flex-col items-center justify-between
+                text-center">
                   <h1 className="text-[1.875rem] text-white mt-4">
                     {beautifyTitle[0]}
                     {
@@ -66,14 +67,15 @@ const Carousel : FC<{
                     }
 
                   </h1>
-                  <p className='text-white text-center font-normal
-            text-[1.375rem] my-1'>
+                  <p className='w-96 text-white
+                  text-center font-normal
+                  text-[1.375rem] my-1 line-clamp-3'>
                     {article.description}</p>
                   <Link
                     href={'/news/[article]'}
                     as={`/news/${article._id}`} passHref>
                     <button className='text-black bg-white text-sm font-normal
-                   py-1 px-4 border rounded mt-1'>
+                   py-1 px-4 border rounded mt-2'>
                   Learn More...
                     </button>
                   </Link>
