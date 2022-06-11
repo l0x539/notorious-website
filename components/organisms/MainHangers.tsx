@@ -86,7 +86,7 @@ const MainHangers:FC<{
           <div>
             <Card>
               <div className='flex flex-col align-center
-              justify-center pt-[1rem] pb-[4.75rem] px-[2.875rem]
+              justify-center pt-[1rem] pb-[4.75rem] px-[1.5rem]
               '>
                 <Carousel
                   id="carousel-news"
