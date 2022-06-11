@@ -150,12 +150,17 @@ const MainPosters = () => {
               <div>
                 {FAQ.map(({question, response}, index) => {
                   return (
-                    <div key={index}>
+                    <div className='group hover:cursor-pointer
+                    overflow-hidden' key={index}>
                       <h4 className='my-2 text-[25px] text-white
-                      hover:text-notorious-golden-500 hover:cursor-pointer'>
+                      group-hover:text-notorious-golden-500
+                      '>
                         {question}
                       </h4>
-                      <p className='text-[20px] text-white'>
+                      <p className='text-[20px] text-white max-h-[0px]
+                      scale-y-0 group-hover:max-h-full transition-all
+                      group-hover:scale-y-100 origin-top
+                      '>
                         {response}
                       </p>
                     </div>
