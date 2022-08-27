@@ -75,7 +75,7 @@ export const getServerSideProps = async ({req, res}:
   /* find all the data in our database */
   const result = await Card.find({});
   const cards = result.map((doc: ICard) => {
-    const card = doc.toObject();
+    const card = doc.toObject() as any;
     card._id = card._id.toString();
     return card;
   });

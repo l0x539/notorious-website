@@ -73,7 +73,7 @@ export const getServerSideProps = async ({req, res}:
   /* find all the data in our database */
   const result = await News.find({});
   const newss = result.map((doc: INews) => {
-    const news = doc.toObject();
+    const news = doc.toObject() as any;
     news._id = news._id.toString();
     return news;
   });
