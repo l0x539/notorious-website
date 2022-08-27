@@ -43,8 +43,8 @@ const FAQ = [
   },
   {
     question: 'How do I purchase a pirate?',
-    response: `All NFTs will eventually be purchasable directly from opensea.
-    io, but will also be displayed with relevant details on our 
+    response: `All NFTs will eventually be purchasable directly from
+    opensea.io, but will also be displayed with relevant details on our 
     website at notoriouspirates.gg.`,
   },
   {

@@ -16,8 +16,11 @@ const Home: NextPage<{
     <PublicPage>
       <Head>
         <title>Notorious Pirates</title>
-        <meta name="description" content="Notorious Pirates Main website" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="The World's first Pirate
+        NFT MMO (Massively Multiplayer Online)
+          Video game centered around Pirates,
+          Buccaneers, and all other manner of Swashbuckling characters!" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <Main cards={cards} mainNews={mainNews} />
     </PublicPage>
@@ -35,13 +38,13 @@ export const getServerSideProps = async ({req, res}:
   const resultCards = await Card.find({}).limit(14);
   const resultNews = await News.find({}).limit(5);
   const cards = resultCards.map((doc: ICard) => {
-    const card = doc.toObject();
+    const card = doc.toObject() as any;
     card._id = card._id.toString();
     return card;
   });
 
   const mainNews = resultNews.map((doc: ICard) => {
-    const article = doc.toObject();
+    const article = doc.toObject() as any;
     article._id = article._id.toString();
     return article;
   });

@@ -12,7 +12,7 @@ const FooterPartFour= () =>{
       mt-2.5 text-lg ml-2 w-[18rem]'>
         The Notorious Pirates video game is a fan-made,
         nonprofit remake of Pirates of the Caribbean Online,
-        and is no way affiliated with Disney Interactive.
+        and is in no way affiliated with Disney Interactive.
       </p>
     </div>);
 };

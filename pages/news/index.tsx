@@ -31,7 +31,7 @@ export const getServerSideProps = async ({req, res}:
   await dbConnect();
   const result = await NewsModel.find({}).limit(14);
   const news = result.map((doc: INews) => {
-    const article = doc.toObject();
+    const article = doc.toObject() as any;
     article._id = article._id.toString();
     return article;
   });
